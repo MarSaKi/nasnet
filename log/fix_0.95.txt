@@ -1,0 +1,1003 @@
+2020-03-24 00:25:09,045 args = Namespace(arch_epochs=100, arch_lr=0.00035, batch_size=1024, data='./mnist', embedding_size=32, entropy_weight=1e-05, episodes=8, gpu=0, init_baseline=0.95, init_channel=4, model_epochs=2, model_lr=0.025, model_lr_min=0.001, model_momentum=0.9, model_weight_decay=0.0003, seed=2, train_portion=0.9)
+2020-03-24 00:25:09,206 using gpu : 0
+2020-03-24 00:25:15,941 controller param size = 0.055839MB
+2020-03-24 00:25:39,321 episode 000 acc 0.9361 avg_acc 0.9500 reward -0.0139 loss -0.5843 entropy 14.1577
+2020-03-24 00:26:01,275 episode 001 acc 0.9457 avg_acc 0.9500 reward -0.0043 loss -0.1838 entropy 14.1563
+2020-03-24 00:26:27,242 episode 002 acc 0.9721 avg_acc 0.9500 reward 0.0221 loss 0.9350 entropy 14.1362
+2020-03-24 00:26:50,837 episode 003 acc 0.9665 avg_acc 0.9500 reward 0.0165 loss 0.6941 entropy 14.1537
+2020-03-24 00:27:15,531 episode 004 acc 0.9580 avg_acc 0.9500 reward 0.0080 loss 0.3367 entropy 14.1606
+2020-03-24 00:27:35,186 episode 005 acc 0.9343 avg_acc 0.9500 reward -0.0157 loss -0.6638 entropy 14.1451
+2020-03-24 00:27:55,420 episode 006 acc 0.9421 avg_acc 0.9500 reward -0.0079 loss -0.3340 entropy 14.1632
+2020-03-24 00:28:22,276 episode 007 acc 0.9659 avg_acc 0.9500 reward 0.0159 loss 0.6739 entropy 14.1580
+2020-03-24 00:28:22,279 arch_epoch 000 acc 0.9526 loss 0.1092 entropy 14.1539
+2020-03-24 00:28:22,279 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:28:45,045 episode 000 acc 0.9556 avg_acc 0.9500 reward 0.0056 loss 0.2380 entropy 14.1456
+2020-03-24 00:29:07,627 episode 001 acc 0.8325 avg_acc 0.9500 reward -0.1175 loss -4.9676 entropy 14.1705
+2020-03-24 00:29:28,622 episode 002 acc 0.8237 avg_acc 0.9500 reward -0.1263 loss -5.3201 entropy 14.1507
+2020-03-24 00:29:51,475 episode 003 acc 0.9564 avg_acc 0.9500 reward 0.0064 loss 0.2709 entropy 14.1654
+2020-03-24 00:30:07,099 episode 004 acc 0.8718 avg_acc 0.9500 reward -0.0782 loss -3.2989 entropy 14.1725
+2020-03-24 00:30:27,843 episode 005 acc 0.9548 avg_acc 0.9500 reward 0.0048 loss 0.2037 entropy 14.1754
+2020-03-24 00:31:00,189 episode 006 acc 0.9552 avg_acc 0.9500 reward 0.0052 loss 0.2201 entropy 14.1355
+2020-03-24 00:31:26,567 episode 007 acc 0.9619 avg_acc 0.9500 reward 0.0119 loss 0.5051 entropy 14.1500
+2020-03-24 00:31:26,569 arch_epoch 001 acc 0.9140 loss -1.5186 entropy 14.1582
+2020-03-24 00:31:26,569 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:31:48,717 episode 000 acc 0.9667 avg_acc 0.9500 reward 0.0167 loss 0.7069 entropy 14.1337
+2020-03-24 00:32:12,954 episode 001 acc 0.9643 avg_acc 0.9500 reward 0.0143 loss 0.6048 entropy 14.1706
+2020-03-24 00:32:41,799 episode 002 acc 0.9627 avg_acc 0.9500 reward 0.0127 loss 0.5343 entropy 14.1599
+2020-03-24 00:33:01,663 episode 003 acc 0.8328 avg_acc 0.9500 reward -0.1172 loss -4.9673 entropy 14.1693
+2020-03-24 00:33:21,685 episode 004 acc 0.7518 avg_acc 0.9500 reward -0.1982 loss -8.3475 entropy 14.1788
+2020-03-24 00:33:42,605 episode 005 acc 0.8668 avg_acc 0.9500 reward -0.0832 loss -3.5250 entropy 14.1353
+2020-03-24 00:34:09,594 episode 006 acc 0.9423 avg_acc 0.9500 reward -0.0077 loss -0.3236 entropy 14.1603
+2020-03-24 00:34:30,637 episode 007 acc 0.8664 avg_acc 0.9500 reward -0.0836 loss -3.5355 entropy 14.1704
+2020-03-24 00:34:30,639 arch_epoch 002 acc 0.8942 loss -2.3566 entropy 14.1598
+2020-03-24 00:34:30,639 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:34:59,793 episode 000 acc 0.9572 avg_acc 0.9500 reward 0.0072 loss 0.3038 entropy 14.1368
+2020-03-24 00:35:20,701 episode 001 acc 0.9399 avg_acc 0.9500 reward -0.0101 loss -0.4251 entropy 14.1500
+2020-03-24 00:35:42,018 episode 002 acc 0.8667 avg_acc 0.9500 reward -0.0833 loss -3.5326 entropy 14.1556
+2020-03-24 00:36:07,402 episode 003 acc 0.8855 avg_acc 0.9500 reward -0.0645 loss -2.7232 entropy 14.1761
+2020-03-24 00:36:27,864 episode 004 acc 0.8274 avg_acc 0.9500 reward -0.1226 loss -5.1827 entropy 14.1736
+2020-03-24 00:36:53,190 episode 005 acc 0.9582 avg_acc 0.9500 reward 0.0082 loss 0.3473 entropy 14.1628
+2020-03-24 00:37:17,484 episode 006 acc 0.9103 avg_acc 0.9500 reward -0.0397 loss -1.6760 entropy 14.1415
+2020-03-24 00:37:43,413 episode 007 acc 0.9659 avg_acc 0.9500 reward 0.0159 loss 0.6732 entropy 14.1648
+2020-03-24 00:37:43,415 arch_epoch 003 acc 0.9139 loss -1.5269 entropy 14.1576
+2020-03-24 00:37:43,415 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:38:08,473 episode 000 acc 0.9481 avg_acc 0.9500 reward -0.0019 loss -0.0817 entropy 14.1484
+2020-03-24 00:38:21,511 episode 001 acc 0.7206 avg_acc 0.9500 reward -0.2294 loss -9.7426 entropy 14.1880
+2020-03-24 00:38:43,305 episode 002 acc 0.9440 avg_acc 0.9500 reward -0.0060 loss -0.2508 entropy 14.1520
+2020-03-24 00:39:08,883 episode 003 acc 0.8588 avg_acc 0.9500 reward -0.0912 loss -3.8601 entropy 14.1513
+2020-03-24 00:39:33,647 episode 004 acc 0.9387 avg_acc 0.9500 reward -0.0113 loss -0.4776 entropy 14.1353
+2020-03-24 00:39:53,116 episode 005 acc 0.9119 avg_acc 0.9500 reward -0.0381 loss -1.6140 entropy 14.1346
+2020-03-24 00:40:22,806 episode 006 acc 0.9529 avg_acc 0.9500 reward 0.0029 loss 0.1216 entropy 14.1701
+2020-03-24 00:40:48,315 episode 007 acc 0.9317 avg_acc 0.9500 reward -0.0183 loss -0.7710 entropy 14.1705
+2020-03-24 00:40:48,317 arch_epoch 004 acc 0.9008 loss -2.0845 entropy 14.1563
+2020-03-24 00:40:48,317 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:41:14,749 episode 000 acc 0.9646 avg_acc 0.9500 reward 0.0146 loss 0.6171 entropy 14.1334
+2020-03-24 00:41:46,786 episode 001 acc 0.9490 avg_acc 0.9500 reward -0.0010 loss -0.0424 entropy 14.1649
+2020-03-24 00:42:14,412 episode 002 acc 0.9505 avg_acc 0.9500 reward 0.0005 loss 0.0228 entropy 14.1634
+2020-03-24 00:42:36,997 episode 003 acc 0.9265 avg_acc 0.9500 reward -0.0235 loss -0.9925 entropy 14.1269
+2020-03-24 00:42:58,817 episode 004 acc 0.9551 avg_acc 0.9500 reward 0.0051 loss 0.2135 entropy 14.1552
+2020-03-24 00:43:20,876 episode 005 acc 0.8734 avg_acc 0.9500 reward -0.0766 loss -3.2454 entropy 14.1633
+2020-03-24 00:43:39,546 episode 006 acc 0.9347 avg_acc 0.9500 reward -0.0153 loss -0.6504 entropy 14.1436
+2020-03-24 00:43:58,742 episode 007 acc 0.9546 avg_acc 0.9500 reward 0.0046 loss 0.1940 entropy 14.1473
+2020-03-24 00:43:58,743 arch_epoch 005 acc 0.9385 loss -0.4854 entropy 14.1497
+2020-03-24 00:43:58,743 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:44:24,535 episode 000 acc 0.9399 avg_acc 0.9500 reward -0.0101 loss -0.4274 entropy 14.1626
+2020-03-24 00:44:47,310 episode 001 acc 0.9703 avg_acc 0.9500 reward 0.0203 loss 0.8567 entropy 14.1442
+2020-03-24 00:45:06,520 episode 002 acc 0.9536 avg_acc 0.9500 reward 0.0036 loss 0.1520 entropy 14.1461
+2020-03-24 00:45:23,734 episode 003 acc 0.8998 avg_acc 0.9500 reward -0.0502 loss -2.1216 entropy 14.1388
+2020-03-24 00:45:47,275 episode 004 acc 0.9544 avg_acc 0.9500 reward 0.0044 loss 0.1875 entropy 14.1483
+2020-03-24 00:46:15,238 episode 005 acc 0.9595 avg_acc 0.9500 reward 0.0095 loss 0.4035 entropy 14.1804
+2020-03-24 00:46:36,410 episode 006 acc 0.8908 avg_acc 0.9500 reward -0.0592 loss -2.5057 entropy 14.1729
+2020-03-24 00:47:07,521 episode 007 acc 0.9489 avg_acc 0.9500 reward -0.0011 loss -0.0474 entropy 14.1672
+2020-03-24 00:47:07,523 arch_epoch 006 acc 0.9397 loss -0.4378 entropy 14.1576
+2020-03-24 00:47:07,523 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:47:31,575 episode 000 acc 0.7785 avg_acc 0.9500 reward -0.1715 loss -7.2533 entropy 14.1381
+2020-03-24 00:47:58,086 episode 001 acc 0.8261 avg_acc 0.9500 reward -0.1239 loss -5.2342 entropy 14.1690
+2020-03-24 00:48:20,247 episode 002 acc 0.9124 avg_acc 0.9500 reward -0.0376 loss -1.5807 entropy 14.1299
+2020-03-24 00:48:38,639 episode 003 acc 0.8739 avg_acc 0.9500 reward -0.0761 loss -3.2185 entropy 14.1426
+2020-03-24 00:49:01,808 episode 004 acc 0.9501 avg_acc 0.9500 reward 0.0001 loss 0.0055 entropy 14.1800
+2020-03-24 00:49:30,014 episode 005 acc 0.9276 avg_acc 0.9500 reward -0.0224 loss -0.9458 entropy 14.1538
+2020-03-24 00:49:56,064 episode 006 acc 0.8691 avg_acc 0.9500 reward -0.0809 loss -3.4120 entropy 14.1814
+2020-03-24 00:50:20,734 episode 007 acc 0.9095 avg_acc 0.9500 reward -0.0405 loss -1.7111 entropy 14.1874
+2020-03-24 00:50:20,736 arch_epoch 007 acc 0.8809 loss -2.9188 entropy 14.1603
+2020-03-24 00:50:20,736 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:50:51,485 episode 000 acc 0.9620 avg_acc 0.9500 reward 0.0120 loss 0.5067 entropy 14.1973
+2020-03-24 00:51:17,087 episode 001 acc 0.8315 avg_acc 0.9500 reward -0.1185 loss -5.0221 entropy 14.1883
+2020-03-24 00:51:37,857 episode 002 acc 0.9670 avg_acc 0.9500 reward 0.0170 loss 0.7133 entropy 14.1252
+2020-03-24 00:52:00,035 episode 003 acc 0.9219 avg_acc 0.9500 reward -0.0281 loss -1.1933 entropy 14.1639
+2020-03-24 00:52:18,027 episode 004 acc 0.9561 avg_acc 0.9500 reward 0.0061 loss 0.2571 entropy 14.1180
+2020-03-24 00:52:39,583 episode 005 acc 0.9559 avg_acc 0.9500 reward 0.0059 loss 0.2482 entropy 14.1698
+2020-03-24 00:52:55,416 episode 006 acc 0.8114 avg_acc 0.9500 reward -0.1386 loss -5.8780 entropy 14.1487
+2020-03-24 00:53:17,201 episode 007 acc 0.8871 avg_acc 0.9500 reward -0.0629 loss -2.6561 entropy 14.1574
+2020-03-24 00:53:17,203 arch_epoch 008 acc 0.9116 loss -1.6280 entropy 14.1586
+2020-03-24 00:53:17,203 0.9721 Genotype(normal=[(1, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 0, 'max_pool_3x3', 'identity', 'add'), (0, 0, 'max_pool_3x3', 'sep_conv_3x3', 'add')], normal_concat={4, 5}, reduce=[(0, 1, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (3, 2, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (3, 2, 'identity', 'identity', 'add')], reduce_concat={4, 5})
+2020-03-24 00:53:43,066 episode 000 acc 0.9517 avg_acc 0.9500 reward 0.0017 loss 0.0709 entropy 14.1360
+2020-03-24 00:54:07,670 episode 001 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2735 entropy 14.1597
+2020-03-24 00:54:34,892 episode 002 acc 0.8792 avg_acc 0.9500 reward -0.0708 loss -2.9993 entropy 14.1892
+2020-03-24 00:54:54,185 episode 003 acc 0.9307 avg_acc 0.9500 reward -0.0193 loss -0.8184 entropy 14.1438
+2020-03-24 00:55:15,322 episode 004 acc 0.9746 avg_acc 0.9500 reward 0.0246 loss 1.0343 entropy 14.1307
+2020-03-24 00:55:32,121 episode 005 acc 0.9163 avg_acc 0.9500 reward -0.0337 loss -1.4286 entropy 14.1529
+2020-03-24 00:55:50,985 episode 006 acc 0.9363 avg_acc 0.9500 reward -0.0137 loss -0.5809 entropy 14.1206
+2020-03-24 00:56:19,856 episode 007 acc 0.9648 avg_acc 0.9500 reward 0.0148 loss 0.6220 entropy 14.1508
+2020-03-24 00:56:19,858 arch_epoch 009 acc 0.9371 loss -0.5467 entropy 14.1480
+2020-03-24 00:56:19,858 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 00:56:37,911 episode 000 acc 0.7392 avg_acc 0.9500 reward -0.2108 loss -8.9747 entropy 14.1681
+2020-03-24 00:57:01,333 episode 001 acc 0.9385 avg_acc 0.9500 reward -0.0115 loss -0.4840 entropy 14.1480
+2020-03-24 00:57:21,709 episode 002 acc 0.9184 avg_acc 0.9500 reward -0.0316 loss -1.3337 entropy 14.1282
+2020-03-24 00:57:52,976 episode 003 acc 0.9289 avg_acc 0.9500 reward -0.0211 loss -0.8916 entropy 14.1854
+2020-03-24 00:58:14,499 episode 004 acc 0.9539 avg_acc 0.9500 reward 0.0039 loss 0.1651 entropy 14.1339
+2020-03-24 00:58:39,267 episode 005 acc 0.9538 avg_acc 0.9500 reward 0.0038 loss 0.1615 entropy 14.1268
+2020-03-24 00:59:06,916 episode 006 acc 0.9577 avg_acc 0.9500 reward 0.0077 loss 0.3235 entropy 14.1333
+2020-03-24 00:59:31,374 episode 007 acc 0.9456 avg_acc 0.9500 reward -0.0044 loss -0.1863 entropy 14.1584
+2020-03-24 00:59:31,376 arch_epoch 010 acc 0.9170 loss -1.4025 entropy 14.1477
+2020-03-24 00:59:31,376 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 00:59:54,735 episode 000 acc 0.9620 avg_acc 0.9500 reward 0.0120 loss 0.5065 entropy 14.1475
+2020-03-24 01:00:20,496 episode 001 acc 0.9420 avg_acc 0.9500 reward -0.0080 loss -0.3370 entropy 14.1525
+2020-03-24 01:00:41,489 episode 002 acc 0.9458 avg_acc 0.9500 reward -0.0042 loss -0.1764 entropy 14.1316
+2020-03-24 01:01:03,674 episode 003 acc 0.9618 avg_acc 0.9500 reward 0.0118 loss 0.4980 entropy 14.1400
+2020-03-24 01:01:24,302 episode 004 acc 0.9476 avg_acc 0.9500 reward -0.0024 loss -0.1017 entropy 14.0969
+2020-03-24 01:01:49,036 episode 005 acc 0.8578 avg_acc 0.9500 reward -0.0922 loss -3.9004 entropy 14.1646
+2020-03-24 01:02:02,225 episode 006 acc 0.8718 avg_acc 0.9500 reward -0.0782 loss -3.3138 entropy 14.1363
+2020-03-24 01:02:24,603 episode 007 acc 0.9381 avg_acc 0.9500 reward -0.0119 loss -0.5016 entropy 14.1176
+2020-03-24 01:02:24,604 arch_epoch 011 acc 0.9284 loss -0.9158 entropy 14.1359
+2020-03-24 01:02:24,604 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:02:45,291 episode 000 acc 0.9415 avg_acc 0.9500 reward -0.0085 loss -0.3578 entropy 14.1211
+2020-03-24 01:03:12,908 episode 001 acc 0.9315 avg_acc 0.9500 reward -0.0185 loss -0.7836 entropy 14.1617
+2020-03-24 01:03:39,117 episode 002 acc 0.9700 avg_acc 0.9500 reward 0.0200 loss 0.8428 entropy 14.1642
+2020-03-24 01:03:59,498 episode 003 acc 0.9427 avg_acc 0.9500 reward -0.0073 loss -0.3073 entropy 14.1431
+2020-03-24 01:04:22,959 episode 004 acc 0.9554 avg_acc 0.9500 reward 0.0054 loss 0.2293 entropy 14.1662
+2020-03-24 01:04:48,942 episode 005 acc 0.7065 avg_acc 0.9500 reward -0.2435 loss -10.2784 entropy 14.1252
+2020-03-24 01:05:13,374 episode 006 acc 0.9582 avg_acc 0.9500 reward 0.0082 loss 0.3452 entropy 14.1391
+2020-03-24 01:05:37,109 episode 007 acc 0.8927 avg_acc 0.9500 reward -0.0573 loss -2.4233 entropy 14.1355
+2020-03-24 01:05:37,111 arch_epoch 012 acc 0.9123 loss -1.5916 entropy 14.1445
+2020-03-24 01:05:37,111 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:06:00,119 episode 000 acc 0.9510 avg_acc 0.9500 reward 0.0010 loss 0.0435 entropy 14.1325
+2020-03-24 01:06:24,275 episode 001 acc 0.9634 avg_acc 0.9500 reward 0.0134 loss 0.5704 entropy 14.1466
+2020-03-24 01:06:41,151 episode 002 acc 0.9211 avg_acc 0.9500 reward -0.0289 loss -1.2260 entropy 14.1408
+2020-03-24 01:07:05,619 episode 003 acc 0.9562 avg_acc 0.9500 reward 0.0062 loss 0.2625 entropy 14.1472
+2020-03-24 01:07:24,702 episode 004 acc 0.5914 avg_acc 0.9500 reward -0.3586 loss -15.2071 entropy 14.1539
+2020-03-24 01:07:52,622 episode 005 acc 0.9331 avg_acc 0.9500 reward -0.0169 loss -0.7091 entropy 14.1486
+2020-03-24 01:08:16,857 episode 006 acc 0.9676 avg_acc 0.9500 reward 0.0176 loss 0.7412 entropy 14.1468
+2020-03-24 01:08:43,232 episode 007 acc 0.9525 avg_acc 0.9500 reward 0.0025 loss 0.1036 entropy 14.1556
+2020-03-24 01:08:43,233 arch_epoch 013 acc 0.9045 loss -1.9276 entropy 14.1465
+2020-03-24 01:08:43,234 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:09:04,481 episode 000 acc 0.9435 avg_acc 0.9500 reward -0.0065 loss -0.2767 entropy 14.1802
+2020-03-24 01:09:27,886 episode 001 acc 0.9652 avg_acc 0.9500 reward 0.0152 loss 0.6411 entropy 14.1194
+2020-03-24 01:09:46,791 episode 002 acc 0.9405 avg_acc 0.9500 reward -0.0095 loss -0.4051 entropy 14.1426
+2020-03-24 01:10:14,428 episode 003 acc 0.9401 avg_acc 0.9500 reward -0.0099 loss -0.4179 entropy 14.1245
+2020-03-24 01:10:34,970 episode 004 acc 0.9617 avg_acc 0.9500 reward 0.0117 loss 0.4924 entropy 14.1407
+2020-03-24 01:10:55,667 episode 005 acc 0.9368 avg_acc 0.9500 reward -0.0132 loss -0.5579 entropy 14.1588
+2020-03-24 01:11:23,052 episode 006 acc 0.9521 avg_acc 0.9500 reward 0.0021 loss 0.0889 entropy 14.1525
+2020-03-24 01:11:46,310 episode 007 acc 0.9661 avg_acc 0.9500 reward 0.0161 loss 0.6797 entropy 14.1725
+2020-03-24 01:11:46,311 arch_epoch 014 acc 0.9507 loss 0.0306 entropy 14.1489
+2020-03-24 01:11:46,312 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:12:06,137 episode 000 acc 0.9659 avg_acc 0.9500 reward 0.0159 loss 0.6720 entropy 14.1503
+2020-03-24 01:12:32,165 episode 001 acc 0.9618 avg_acc 0.9500 reward 0.0118 loss 0.4961 entropy 14.1494
+2020-03-24 01:12:59,633 episode 002 acc 0.9376 avg_acc 0.9500 reward -0.0124 loss -0.5184 entropy 14.1374
+2020-03-24 01:13:26,763 episode 003 acc 0.9612 avg_acc 0.9500 reward 0.0112 loss 0.4728 entropy 14.1666
+2020-03-24 01:13:51,702 episode 004 acc 0.9534 avg_acc 0.9500 reward 0.0034 loss 0.1438 entropy 14.1402
+2020-03-24 01:14:11,008 episode 005 acc 0.9438 avg_acc 0.9500 reward -0.0062 loss -0.2660 entropy 14.1742
+2020-03-24 01:14:34,005 episode 006 acc 0.9148 avg_acc 0.9500 reward -0.0352 loss -1.4915 entropy 14.1393
+2020-03-24 01:14:58,723 episode 007 acc 0.9258 avg_acc 0.9500 reward -0.0242 loss -1.0272 entropy 14.1801
+2020-03-24 01:14:58,724 arch_epoch 015 acc 0.9455 loss -0.1898 entropy 14.1547
+2020-03-24 01:14:58,724 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:15:23,039 episode 000 acc 0.9641 avg_acc 0.9500 reward 0.0141 loss 0.5957 entropy 14.1457
+2020-03-24 01:15:50,249 episode 001 acc 0.9692 avg_acc 0.9500 reward 0.0192 loss 0.8084 entropy 14.1241
+2020-03-24 01:16:11,822 episode 002 acc 0.9638 avg_acc 0.9500 reward 0.0138 loss 0.5842 entropy 14.1242
+2020-03-24 01:16:34,173 episode 003 acc 0.9594 avg_acc 0.9500 reward 0.0094 loss 0.3997 entropy 14.1597
+2020-03-24 01:16:59,070 episode 004 acc 0.9589 avg_acc 0.9500 reward 0.0089 loss 0.3790 entropy 14.1546
+2020-03-24 01:17:19,179 episode 005 acc 0.9395 avg_acc 0.9500 reward -0.0105 loss -0.4444 entropy 14.1375
+2020-03-24 01:17:37,619 episode 006 acc 0.9412 avg_acc 0.9500 reward -0.0088 loss -0.3731 entropy 14.1456
+2020-03-24 01:18:00,203 episode 007 acc 0.9623 avg_acc 0.9500 reward 0.0123 loss 0.5195 entropy 14.1485
+2020-03-24 01:18:00,205 arch_epoch 016 acc 0.9573 loss 0.3086 entropy 14.1425
+2020-03-24 01:18:00,205 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:18:26,629 episode 000 acc 0.9697 avg_acc 0.9500 reward 0.0197 loss 0.8239 entropy 14.1192
+2020-03-24 01:18:52,232 episode 001 acc 0.9298 avg_acc 0.9500 reward -0.0202 loss -0.8554 entropy 14.1522
+2020-03-24 01:19:19,619 episode 002 acc 0.9608 avg_acc 0.9500 reward 0.0108 loss 0.4527 entropy 14.1253
+2020-03-24 01:19:39,519 episode 003 acc 0.9527 avg_acc 0.9500 reward 0.0027 loss 0.1123 entropy 14.1413
+2020-03-24 01:20:10,941 episode 004 acc 0.9587 avg_acc 0.9500 reward 0.0087 loss 0.3654 entropy 14.1695
+2020-03-24 01:20:37,142 episode 005 acc 0.9383 avg_acc 0.9500 reward -0.0117 loss -0.4927 entropy 14.1495
+2020-03-24 01:20:54,058 episode 006 acc 0.8611 avg_acc 0.9500 reward -0.0889 loss -3.7574 entropy 14.1309
+2020-03-24 01:21:20,969 episode 007 acc 0.9562 avg_acc 0.9500 reward 0.0062 loss 0.2616 entropy 14.1465
+2020-03-24 01:21:20,971 arch_epoch 017 acc 0.9409 loss -0.3862 entropy 14.1418
+2020-03-24 01:21:20,971 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:21:38,866 episode 000 acc 0.8885 avg_acc 0.9500 reward -0.0615 loss -2.6026 entropy 14.1541
+2020-03-24 01:22:00,308 episode 001 acc 0.9595 avg_acc 0.9500 reward 0.0095 loss 0.4011 entropy 14.1539
+2020-03-24 01:22:24,450 episode 002 acc 0.8071 avg_acc 0.9500 reward -0.1429 loss -6.0320 entropy 14.1902
+2020-03-24 01:22:48,827 episode 003 acc 0.9359 avg_acc 0.9500 reward -0.0141 loss -0.5885 entropy 14.1533
+2020-03-24 01:23:10,446 episode 004 acc 0.9211 avg_acc 0.9500 reward -0.0289 loss -1.2181 entropy 14.1104
+2020-03-24 01:23:36,055 episode 005 acc 0.9704 avg_acc 0.9500 reward 0.0204 loss 0.8595 entropy 14.1466
+2020-03-24 01:24:02,661 episode 006 acc 0.9318 avg_acc 0.9500 reward -0.0182 loss -0.7618 entropy 14.1604
+2020-03-24 01:24:23,984 episode 007 acc 0.8935 avg_acc 0.9500 reward -0.0565 loss -2.3930 entropy 14.2003
+2020-03-24 01:24:23,985 arch_epoch 018 acc 0.9135 loss -1.5419 entropy 14.1586
+2020-03-24 01:24:23,985 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:24:49,086 episode 000 acc 0.9626 avg_acc 0.9500 reward 0.0126 loss 0.5322 entropy 14.1398
+2020-03-24 01:25:12,316 episode 001 acc 0.7550 avg_acc 0.9500 reward -0.1950 loss -8.2381 entropy 14.1273
+2020-03-24 01:25:32,602 episode 002 acc 0.9240 avg_acc 0.9500 reward -0.0260 loss -1.0964 entropy 14.1012
+2020-03-24 01:25:59,263 episode 003 acc 0.9692 avg_acc 0.9500 reward 0.0192 loss 0.8080 entropy 14.1752
+2020-03-24 01:26:19,154 episode 004 acc 0.9581 avg_acc 0.9500 reward 0.0081 loss 0.3449 entropy 14.1213
+2020-03-24 01:26:45,151 episode 005 acc 0.9067 avg_acc 0.9500 reward -0.0433 loss -1.8218 entropy 14.1450
+2020-03-24 01:27:13,698 episode 006 acc 0.9181 avg_acc 0.9500 reward -0.0319 loss -1.3411 entropy 14.1456
+2020-03-24 01:27:33,173 episode 007 acc 0.7500 avg_acc 0.9500 reward -0.2000 loss -8.4489 entropy 14.1639
+2020-03-24 01:27:33,175 arch_epoch 019 acc 0.8930 loss -2.4077 entropy 14.1399
+2020-03-24 01:27:33,175 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:27:59,616 episode 000 acc 0.9334 avg_acc 0.9500 reward -0.0166 loss -0.7032 entropy 14.1429
+2020-03-24 01:28:18,384 episode 001 acc 0.8975 avg_acc 0.9500 reward -0.0525 loss -2.2121 entropy 14.1608
+2020-03-24 01:28:41,899 episode 002 acc 0.9556 avg_acc 0.9500 reward 0.0056 loss 0.2364 entropy 14.1047
+2020-03-24 01:29:06,411 episode 003 acc 0.9488 avg_acc 0.9500 reward -0.0012 loss -0.0516 entropy 14.1367
+2020-03-24 01:29:28,598 episode 004 acc 0.9597 avg_acc 0.9500 reward 0.0097 loss 0.4136 entropy 14.1681
+2020-03-24 01:29:44,128 episode 005 acc 0.4416 avg_acc 0.9500 reward -0.5084 loss -21.6875 entropy 14.1880
+2020-03-24 01:30:10,215 episode 006 acc 0.9628 avg_acc 0.9500 reward 0.0128 loss 0.5386 entropy 14.1560
+2020-03-24 01:30:32,582 episode 007 acc 0.9118 avg_acc 0.9500 reward -0.0382 loss -1.6096 entropy 14.1568
+2020-03-24 01:30:32,583 arch_epoch 020 acc 0.8764 loss -3.1344 entropy 14.1517
+2020-03-24 01:30:32,583 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:30:59,740 episode 000 acc 0.8956 avg_acc 0.9500 reward -0.0544 loss -2.3101 entropy 14.1790
+2020-03-24 01:31:29,109 episode 001 acc 0.9119 avg_acc 0.9500 reward -0.0381 loss -1.6084 entropy 14.1987
+2020-03-24 01:31:50,815 episode 002 acc 0.9602 avg_acc 0.9500 reward 0.0102 loss 0.4324 entropy 14.1088
+2020-03-24 01:32:12,200 episode 003 acc 0.9434 avg_acc 0.9500 reward -0.0066 loss -0.2777 entropy 14.1091
+2020-03-24 01:32:39,410 episode 004 acc 0.9422 avg_acc 0.9500 reward -0.0078 loss -0.3287 entropy 14.1302
+2020-03-24 01:33:05,489 episode 005 acc 0.9660 avg_acc 0.9500 reward 0.0160 loss 0.6683 entropy 14.1109
+2020-03-24 01:33:29,633 episode 006 acc 0.9219 avg_acc 0.9500 reward -0.0281 loss -1.1911 entropy 14.1222
+2020-03-24 01:33:57,818 episode 007 acc 0.9653 avg_acc 0.9500 reward 0.0153 loss 0.6412 entropy 14.1304
+2020-03-24 01:33:57,818 arch_epoch 021 acc 0.9383 loss -0.4968 entropy 14.1362
+2020-03-24 01:33:57,818 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:34:20,367 episode 000 acc 0.9322 avg_acc 0.9500 reward -0.0178 loss -0.7487 entropy 14.1179
+2020-03-24 01:34:37,801 episode 001 acc 0.8539 avg_acc 0.9500 reward -0.0961 loss -4.1105 entropy 14.1219
+2020-03-24 01:35:01,185 episode 002 acc 0.9102 avg_acc 0.9500 reward -0.0398 loss -1.6682 entropy 14.1583
+2020-03-24 01:35:26,356 episode 003 acc 0.9246 avg_acc 0.9500 reward -0.0254 loss -1.0689 entropy 14.1426
+2020-03-24 01:35:45,016 episode 004 acc 0.9409 avg_acc 0.9500 reward -0.0091 loss -0.3836 entropy 14.0737
+2020-03-24 01:36:13,690 episode 005 acc 0.9274 avg_acc 0.9500 reward -0.0226 loss -0.9497 entropy 14.1271
+2020-03-24 01:36:40,021 episode 006 acc 0.9573 avg_acc 0.9500 reward 0.0073 loss 0.3053 entropy 14.1254
+2020-03-24 01:37:03,284 episode 007 acc 0.9481 avg_acc 0.9500 reward -0.0019 loss -0.0789 entropy 14.1403
+2020-03-24 01:37:03,285 arch_epoch 022 acc 0.9243 loss -1.0879 entropy 14.1259
+2020-03-24 01:37:03,285 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:37:26,850 episode 000 acc 0.7958 avg_acc 0.9500 reward -0.1542 loss -6.5716 entropy 14.1544
+2020-03-24 01:37:50,178 episode 001 acc 0.9292 avg_acc 0.9500 reward -0.0208 loss -0.8797 entropy 14.1622
+2020-03-24 01:38:17,985 episode 002 acc 0.9373 avg_acc 0.9500 reward -0.0127 loss -0.5344 entropy 14.1818
+2020-03-24 01:38:41,776 episode 003 acc 0.9066 avg_acc 0.9500 reward -0.0434 loss -1.8652 entropy 14.2209
+2020-03-24 01:39:05,373 episode 004 acc 0.9106 avg_acc 0.9500 reward -0.0394 loss -1.6580 entropy 14.0945
+2020-03-24 01:39:23,074 episode 005 acc 0.6657 avg_acc 0.9500 reward -0.2843 loss -12.0747 entropy 14.1181
+2020-03-24 01:39:47,747 episode 006 acc 0.9477 avg_acc 0.9500 reward -0.0023 loss -0.0978 entropy 14.1027
+2020-03-24 01:40:15,229 episode 007 acc 0.9564 avg_acc 0.9500 reward 0.0064 loss 0.2676 entropy 14.1332
+2020-03-24 01:40:15,231 arch_epoch 023 acc 0.8812 loss -2.9267 entropy 14.1460
+2020-03-24 01:40:15,232 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:40:39,470 episode 000 acc 0.9510 avg_acc 0.9500 reward 0.0010 loss 0.0424 entropy 14.0950
+2020-03-24 01:41:00,295 episode 001 acc 0.9579 avg_acc 0.9500 reward 0.0079 loss 0.3328 entropy 14.1044
+2020-03-24 01:41:26,014 episode 002 acc 0.9594 avg_acc 0.9500 reward 0.0094 loss 0.3913 entropy 14.0963
+2020-03-24 01:41:40,380 episode 003 acc 0.7207 avg_acc 0.9500 reward -0.2293 loss -9.6495 entropy 14.1087
+2020-03-24 01:42:08,098 episode 004 acc 0.9679 avg_acc 0.9500 reward 0.0179 loss 0.7534 entropy 14.1722
+2020-03-24 01:42:25,901 episode 005 acc 0.7860 avg_acc 0.9500 reward -0.1640 loss -6.9585 entropy 14.1616
+2020-03-24 01:42:45,510 episode 006 acc 0.8844 avg_acc 0.9500 reward -0.0656 loss -2.8114 entropy 14.1784
+2020-03-24 01:43:02,316 episode 007 acc 0.3750 avg_acc 0.9500 reward -0.5750 loss -24.4411 entropy 14.1577
+2020-03-24 01:43:02,318 arch_epoch 024 acc 0.8253 loss -5.2926 entropy 14.1343
+2020-03-24 01:43:02,318 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:43:22,280 episode 000 acc 0.9553 avg_acc 0.9500 reward 0.0053 loss 0.2242 entropy 14.1508
+2020-03-24 01:43:43,615 episode 001 acc 0.9686 avg_acc 0.9500 reward 0.0186 loss 0.7859 entropy 14.1324
+2020-03-24 01:44:04,256 episode 002 acc 0.9521 avg_acc 0.9500 reward 0.0021 loss 0.0910 entropy 14.1130
+2020-03-24 01:44:17,388 episode 003 acc 0.5889 avg_acc 0.9500 reward -0.3611 loss -15.4808 entropy 14.2049
+2020-03-24 01:44:34,403 episode 004 acc 0.8790 avg_acc 0.9500 reward -0.0710 loss -3.0172 entropy 14.1376
+2020-03-24 01:45:04,923 episode 005 acc 0.9519 avg_acc 0.9500 reward 0.0019 loss 0.0795 entropy 14.0731
+2020-03-24 01:45:28,468 episode 006 acc 0.9457 avg_acc 0.9500 reward -0.0043 loss -0.1836 entropy 14.1298
+2020-03-24 01:45:47,600 episode 007 acc 0.9697 avg_acc 0.9500 reward 0.0197 loss 0.8328 entropy 14.0887
+2020-03-24 01:45:47,601 arch_epoch 025 acc 0.9014 loss -2.0835 entropy 14.1288
+2020-03-24 01:45:47,601 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:46:10,007 episode 000 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2745 entropy 14.1842
+2020-03-24 01:46:28,367 episode 001 acc 0.9334 avg_acc 0.9500 reward -0.0166 loss -0.7050 entropy 14.1416
+2020-03-24 01:46:52,628 episode 002 acc 0.9534 avg_acc 0.9500 reward 0.0034 loss 0.1414 entropy 14.1644
+2020-03-24 01:47:15,796 episode 003 acc 0.9414 avg_acc 0.9500 reward -0.0086 loss -0.3665 entropy 14.1409
+2020-03-24 01:47:41,464 episode 004 acc 0.9732 avg_acc 0.9500 reward 0.0232 loss 0.9760 entropy 14.1530
+2020-03-24 01:48:07,558 episode 005 acc 0.9700 avg_acc 0.9500 reward 0.0200 loss 0.8396 entropy 14.0650
+2020-03-24 01:48:32,452 episode 006 acc 0.9665 avg_acc 0.9500 reward 0.0165 loss 0.6903 entropy 14.0616
+2020-03-24 01:48:56,309 episode 007 acc 0.8524 avg_acc 0.9500 reward -0.0976 loss -4.1922 entropy 14.1763
+2020-03-24 01:48:56,310 arch_epoch 026 acc 0.9417 loss -0.3613 entropy 14.1359
+2020-03-24 01:48:56,310 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:49:16,908 episode 000 acc 0.9287 avg_acc 0.9500 reward -0.0213 loss -0.8997 entropy 14.1150
+2020-03-24 01:49:38,418 episode 001 acc 0.9011 avg_acc 0.9500 reward -0.0489 loss -2.0698 entropy 14.1030
+2020-03-24 01:50:03,957 episode 002 acc 0.9577 avg_acc 0.9500 reward 0.0077 loss 0.3241 entropy 14.1326
+2020-03-24 01:50:27,401 episode 003 acc 0.8262 avg_acc 0.9500 reward -0.1238 loss -5.2892 entropy 14.1879
+2020-03-24 01:50:50,303 episode 004 acc 0.9100 avg_acc 0.9500 reward -0.0400 loss -1.7063 entropy 14.1470
+2020-03-24 01:51:13,506 episode 005 acc 0.8761 avg_acc 0.9500 reward -0.0739 loss -3.1206 entropy 14.1978
+2020-03-24 01:51:40,615 episode 006 acc 0.9559 avg_acc 0.9500 reward 0.0059 loss 0.2478 entropy 14.1180
+2020-03-24 01:52:04,514 episode 007 acc 0.9008 avg_acc 0.9500 reward -0.0492 loss -2.0792 entropy 14.1389
+2020-03-24 01:52:04,515 arch_epoch 027 acc 0.9071 loss -1.8241 entropy 14.1425
+2020-03-24 01:52:04,516 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:52:28,692 episode 000 acc 0.9483 avg_acc 0.9500 reward -0.0017 loss -0.0737 entropy 14.1772
+2020-03-24 01:52:49,297 episode 001 acc 0.9530 avg_acc 0.9500 reward 0.0030 loss 0.1246 entropy 14.1042
+2020-03-24 01:53:16,022 episode 002 acc 0.9599 avg_acc 0.9500 reward 0.0099 loss 0.4103 entropy 14.1068
+2020-03-24 01:53:32,976 episode 003 acc 0.9377 avg_acc 0.9500 reward -0.0123 loss -0.5237 entropy 14.1649
+2020-03-24 01:53:55,638 episode 004 acc 0.9535 avg_acc 0.9500 reward 0.0035 loss 0.1491 entropy 14.1902
+2020-03-24 01:54:23,968 episode 005 acc 0.9447 avg_acc 0.9500 reward -0.0053 loss -0.2227 entropy 14.1485
+2020-03-24 01:54:44,584 episode 006 acc 0.8206 avg_acc 0.9500 reward -0.1294 loss -5.5088 entropy 14.1246
+2020-03-24 01:55:07,076 episode 007 acc 0.9470 avg_acc 0.9500 reward -0.0030 loss -0.1251 entropy 14.1026
+2020-03-24 01:55:07,077 arch_epoch 028 acc 0.9331 loss -0.7212 entropy 14.1399
+2020-03-24 01:55:07,077 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:55:29,908 episode 000 acc 0.9586 avg_acc 0.9500 reward 0.0086 loss 0.3664 entropy 14.1307
+2020-03-24 01:55:53,069 episode 001 acc 0.9548 avg_acc 0.9500 reward 0.0048 loss 0.2053 entropy 14.1732
+2020-03-24 01:56:13,834 episode 002 acc 0.9551 avg_acc 0.9500 reward 0.0051 loss 0.2152 entropy 14.1133
+2020-03-24 01:56:42,507 episode 003 acc 0.9227 avg_acc 0.9500 reward -0.0273 loss -1.1486 entropy 14.1764
+2020-03-24 01:57:08,554 episode 004 acc 0.9476 avg_acc 0.9500 reward -0.0024 loss -0.0998 entropy 14.1329
+2020-03-24 01:57:28,262 episode 005 acc 0.9415 avg_acc 0.9500 reward -0.0085 loss -0.3609 entropy 14.1624
+2020-03-24 01:57:52,131 episode 006 acc 0.9553 avg_acc 0.9500 reward 0.0053 loss 0.2207 entropy 14.1072
+2020-03-24 01:58:21,655 episode 007 acc 0.9707 avg_acc 0.9500 reward 0.0207 loss 0.8632 entropy 14.1663
+2020-03-24 01:58:21,656 arch_epoch 029 acc 0.9508 loss 0.0327 entropy 14.1453
+2020-03-24 01:58:21,657 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 01:58:43,883 episode 000 acc 0.9403 avg_acc 0.9500 reward -0.0097 loss -0.4116 entropy 14.0552
+2020-03-24 01:59:04,315 episode 001 acc 0.9272 avg_acc 0.9500 reward -0.0228 loss -0.9591 entropy 14.0882
+2020-03-24 01:59:25,611 episode 002 acc 0.9506 avg_acc 0.9500 reward 0.0006 loss 0.0238 entropy 14.0810
+2020-03-24 01:59:48,260 episode 003 acc 0.9279 avg_acc 0.9500 reward -0.0221 loss -0.9381 entropy 14.1517
+2020-03-24 02:00:10,542 episode 004 acc 0.9429 avg_acc 0.9500 reward -0.0071 loss -0.3000 entropy 14.1058
+2020-03-24 02:00:30,599 episode 005 acc 0.7505 avg_acc 0.9500 reward -0.1995 loss -8.4085 entropy 14.0956
+2020-03-24 02:00:52,162 episode 006 acc 0.8623 avg_acc 0.9500 reward -0.0877 loss -3.7790 entropy 14.2081
+2020-03-24 02:01:15,020 episode 007 acc 0.9514 avg_acc 0.9500 reward 0.0014 loss 0.0609 entropy 14.1585
+2020-03-24 02:01:15,022 arch_epoch 030 acc 0.9066 loss -1.8390 entropy 14.1180
+2020-03-24 02:01:15,022 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:01:38,441 episode 000 acc 0.9192 avg_acc 0.9500 reward -0.0308 loss -1.3080 entropy 14.1628
+2020-03-24 02:02:04,419 episode 001 acc 0.8757 avg_acc 0.9500 reward -0.0743 loss -3.1180 entropy 14.1422
+2020-03-24 02:02:30,887 episode 002 acc 0.9621 avg_acc 0.9500 reward 0.0121 loss 0.5162 entropy 14.2043
+2020-03-24 02:02:54,102 episode 003 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2711 entropy 14.1425
+2020-03-24 02:03:18,358 episode 004 acc 0.9569 avg_acc 0.9500 reward 0.0069 loss 0.2920 entropy 14.1652
+2020-03-24 02:03:41,739 episode 005 acc 0.9230 avg_acc 0.9500 reward -0.0270 loss -1.1416 entropy 14.0977
+2020-03-24 02:04:05,765 episode 006 acc 0.9531 avg_acc 0.9500 reward 0.0031 loss 0.1319 entropy 14.1714
+2020-03-24 02:04:29,553 episode 007 acc 0.9496 avg_acc 0.9500 reward -0.0004 loss -0.0182 entropy 14.1101
+2020-03-24 02:04:29,555 arch_epoch 031 acc 0.9354 loss -0.6146 entropy 14.1495
+2020-03-24 02:04:29,555 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:04:48,285 episode 000 acc 0.9544 avg_acc 0.9500 reward 0.0044 loss 0.1849 entropy 14.1221
+2020-03-24 02:05:11,982 episode 001 acc 0.9278 avg_acc 0.9500 reward -0.0222 loss -0.9526 entropy 14.1782
+2020-03-24 02:05:35,242 episode 002 acc 0.9621 avg_acc 0.9500 reward 0.0121 loss 0.5126 entropy 14.1376
+2020-03-24 02:05:52,465 episode 003 acc 0.9242 avg_acc 0.9500 reward -0.0258 loss -1.0910 entropy 14.1366
+2020-03-24 02:06:12,030 episode 004 acc 0.9428 avg_acc 0.9500 reward -0.0072 loss -0.3058 entropy 14.1248
+2020-03-24 02:06:30,625 episode 005 acc 0.9664 avg_acc 0.9500 reward 0.0164 loss 0.7029 entropy 14.1762
+2020-03-24 02:06:54,697 episode 006 acc 0.9635 avg_acc 0.9500 reward 0.0135 loss 0.5633 entropy 14.1148
+2020-03-24 02:07:18,179 episode 007 acc 0.9454 avg_acc 0.9500 reward -0.0046 loss -0.1975 entropy 14.1148
+2020-03-24 02:07:18,182 arch_epoch 032 acc 0.9483 loss -0.0729 entropy 14.1381
+2020-03-24 02:07:18,182 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:07:45,540 episode 000 acc 0.9464 avg_acc 0.9500 reward -0.0036 loss -0.1510 entropy 14.0906
+2020-03-24 02:08:08,239 episode 001 acc 0.9723 avg_acc 0.9500 reward 0.0223 loss 0.9376 entropy 14.0571
+2020-03-24 02:08:30,379 episode 002 acc 0.9649 avg_acc 0.9500 reward 0.0149 loss 0.6279 entropy 14.1056
+2020-03-24 02:08:56,249 episode 003 acc 0.9283 avg_acc 0.9500 reward -0.0217 loss -0.9180 entropy 14.1006
+2020-03-24 02:09:21,662 episode 004 acc 0.9371 avg_acc 0.9500 reward -0.0129 loss -0.5364 entropy 14.0721
+2020-03-24 02:09:43,232 episode 005 acc 0.9506 avg_acc 0.9500 reward 0.0006 loss 0.0248 entropy 14.0931
+2020-03-24 02:10:09,240 episode 006 acc 0.9572 avg_acc 0.9500 reward 0.0072 loss 0.3045 entropy 14.1603
+2020-03-24 02:10:33,226 episode 007 acc 0.8842 avg_acc 0.9500 reward -0.0658 loss -2.7872 entropy 14.1269
+2020-03-24 02:10:33,227 arch_epoch 033 acc 0.9426 loss -0.3122 entropy 14.1008
+2020-03-24 02:10:33,228 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:10:56,598 episode 000 acc 0.9452 avg_acc 0.9500 reward -0.0048 loss -0.2041 entropy 14.0908
+2020-03-24 02:11:18,675 episode 001 acc 0.8089 avg_acc 0.9500 reward -0.1411 loss -6.0249 entropy 14.1420
+2020-03-24 02:11:42,828 episode 002 acc 0.9642 avg_acc 0.9500 reward 0.0142 loss 0.5971 entropy 14.1343
+2020-03-24 02:11:59,317 episode 003 acc 0.9285 avg_acc 0.9500 reward -0.0215 loss -0.9114 entropy 14.0475
+2020-03-24 02:12:27,357 episode 004 acc 0.9699 avg_acc 0.9500 reward 0.0199 loss 0.8352 entropy 14.1219
+2020-03-24 02:12:50,425 episode 005 acc 0.9579 avg_acc 0.9500 reward 0.0079 loss 0.3374 entropy 14.1266
+2020-03-24 02:13:13,375 episode 006 acc 0.9558 avg_acc 0.9500 reward 0.0058 loss 0.2455 entropy 14.1211
+2020-03-24 02:13:35,329 episode 007 acc 0.9458 avg_acc 0.9500 reward -0.0042 loss -0.1767 entropy 14.0773
+2020-03-24 02:13:35,331 arch_epoch 034 acc 0.9345 loss -0.6627 entropy 14.1077
+2020-03-24 02:13:35,331 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:13:57,093 episode 000 acc 0.9687 avg_acc 0.9500 reward 0.0187 loss 0.7901 entropy 14.1189
+2020-03-24 02:14:24,821 episode 001 acc 0.9643 avg_acc 0.9500 reward 0.0143 loss 0.6014 entropy 14.1224
+2020-03-24 02:14:54,890 episode 002 acc 0.8122 avg_acc 0.9500 reward -0.1378 loss -5.7514 entropy 14.1369
+2020-03-24 02:15:24,533 episode 003 acc 0.9419 avg_acc 0.9500 reward -0.0081 loss -0.3391 entropy 14.1780
+2020-03-24 02:15:54,773 episode 004 acc 0.9650 avg_acc 0.9500 reward 0.0150 loss 0.6357 entropy 14.1552
+2020-03-24 02:16:18,425 episode 005 acc 0.9723 avg_acc 0.9500 reward 0.0223 loss 0.9457 entropy 14.1265
+2020-03-24 02:16:45,964 episode 006 acc 0.9660 avg_acc 0.9500 reward 0.0160 loss 0.6756 entropy 14.1560
+2020-03-24 02:17:08,557 episode 007 acc 0.9478 avg_acc 0.9500 reward -0.0022 loss -0.0945 entropy 14.1122
+2020-03-24 02:17:08,559 arch_epoch 035 acc 0.9423 loss -0.3171 entropy 14.1383
+2020-03-24 02:17:08,559 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:17:27,674 episode 000 acc 0.9412 avg_acc 0.9500 reward -0.0088 loss -0.3801 entropy 14.1767
+2020-03-24 02:17:50,653 episode 001 acc 0.9355 avg_acc 0.9500 reward -0.0145 loss -0.6227 entropy 14.1763
+2020-03-24 02:18:18,501 episode 002 acc 0.9532 avg_acc 0.9500 reward 0.0032 loss 0.1324 entropy 14.1397
+2020-03-24 02:18:33,844 episode 003 acc 0.9339 avg_acc 0.9500 reward -0.0161 loss -0.6802 entropy 14.0618
+2020-03-24 02:18:56,596 episode 004 acc 0.9419 avg_acc 0.9500 reward -0.0081 loss -0.3444 entropy 14.1910
+2020-03-24 02:19:20,378 episode 005 acc 0.8964 avg_acc 0.9500 reward -0.0536 loss -2.2612 entropy 14.1257
+2020-03-24 02:19:43,351 episode 006 acc 0.9485 avg_acc 0.9500 reward -0.0015 loss -0.0639 entropy 14.1004
+2020-03-24 02:20:07,321 episode 007 acc 0.9493 avg_acc 0.9500 reward -0.0007 loss -0.0285 entropy 14.0927
+2020-03-24 02:20:07,322 arch_epoch 036 acc 0.9375 loss -0.5311 entropy 14.1330
+2020-03-24 02:20:07,322 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:20:35,516 episode 000 acc 0.9420 avg_acc 0.9500 reward -0.0080 loss -0.3391 entropy 14.1625
+2020-03-24 02:20:56,360 episode 001 acc 0.4383 avg_acc 0.9500 reward -0.5117 loss -21.3897 entropy 14.0709
+2020-03-24 02:21:24,969 episode 002 acc 0.9604 avg_acc 0.9500 reward 0.0104 loss 0.4341 entropy 14.1227
+2020-03-24 02:21:57,313 episode 003 acc 0.9291 avg_acc 0.9500 reward -0.0209 loss -0.8633 entropy 14.1359
+2020-03-24 02:22:17,570 episode 004 acc 0.9486 avg_acc 0.9500 reward -0.0014 loss -0.0604 entropy 14.0479
+2020-03-24 02:22:38,679 episode 005 acc 0.9644 avg_acc 0.9500 reward 0.0144 loss 0.6075 entropy 14.0464
+2020-03-24 02:23:01,108 episode 006 acc 0.9580 avg_acc 0.9500 reward 0.0080 loss 0.3400 entropy 14.1273
+2020-03-24 02:23:25,103 episode 007 acc 0.9084 avg_acc 0.9500 reward -0.0416 loss -1.7311 entropy 14.0743
+2020-03-24 02:23:25,105 arch_epoch 037 acc 0.8812 loss -2.8753 entropy 14.0985
+2020-03-24 02:23:25,105 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:23:50,791 episode 000 acc 0.9632 avg_acc 0.9500 reward 0.0132 loss 0.5573 entropy 14.0981
+2020-03-24 02:24:11,602 episode 001 acc 0.9387 avg_acc 0.9500 reward -0.0113 loss -0.4720 entropy 14.0697
+2020-03-24 02:24:37,470 episode 002 acc 0.9722 avg_acc 0.9500 reward 0.0222 loss 0.9411 entropy 14.2007
+2020-03-24 02:24:57,514 episode 003 acc 0.9520 avg_acc 0.9500 reward 0.0020 loss 0.0821 entropy 14.0529
+2020-03-24 02:25:15,304 episode 004 acc 0.8642 avg_acc 0.9500 reward -0.0858 loss -3.7123 entropy 14.1763
+2020-03-24 02:25:40,819 episode 005 acc 0.8532 avg_acc 0.9500 reward -0.0968 loss -4.0643 entropy 14.1110
+2020-03-24 02:26:09,666 episode 006 acc 0.9020 avg_acc 0.9500 reward -0.0480 loss -2.0366 entropy 14.1336
+2020-03-24 02:26:29,518 episode 007 acc 0.8889 avg_acc 0.9500 reward -0.0611 loss -2.5844 entropy 14.1217
+2020-03-24 02:26:29,521 arch_epoch 038 acc 0.9168 loss -1.4111 entropy 14.1205
+2020-03-24 02:26:29,521 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:26:56,065 episode 000 acc 0.9255 avg_acc 0.9500 reward -0.0245 loss -1.0097 entropy 14.0428
+2020-03-24 02:27:22,048 episode 001 acc 0.9406 avg_acc 0.9500 reward -0.0094 loss -0.3986 entropy 14.2011
+2020-03-24 02:27:48,055 episode 002 acc 0.9406 avg_acc 0.9500 reward -0.0094 loss -0.3938 entropy 14.0633
+2020-03-24 02:28:14,429 episode 003 acc 0.8997 avg_acc 0.9500 reward -0.0503 loss -2.1367 entropy 14.1447
+2020-03-24 02:28:33,412 episode 004 acc 0.9224 avg_acc 0.9500 reward -0.0276 loss -1.1891 entropy 14.1612
+2020-03-24 02:28:52,974 episode 005 acc 0.9380 avg_acc 0.9500 reward -0.0120 loss -0.5116 entropy 14.1033
+2020-03-24 02:29:17,615 episode 006 acc 0.9463 avg_acc 0.9500 reward -0.0037 loss -0.1573 entropy 14.0678
+2020-03-24 02:29:43,418 episode 007 acc 0.9364 avg_acc 0.9500 reward -0.0136 loss -0.5771 entropy 14.2211
+2020-03-24 02:29:43,419 arch_epoch 039 acc 0.9312 loss -0.7967 entropy 14.1257
+2020-03-24 02:29:43,420 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:30:02,086 episode 000 acc 0.8221 avg_acc 0.9500 reward -0.1279 loss -5.3978 entropy 14.1188
+2020-03-24 02:30:27,074 episode 001 acc 0.9041 avg_acc 0.9500 reward -0.0459 loss -1.9341 entropy 14.1025
+2020-03-24 02:30:56,155 episode 002 acc 0.9577 avg_acc 0.9500 reward 0.0077 loss 0.3198 entropy 14.1468
+2020-03-24 02:31:19,333 episode 003 acc 0.9509 avg_acc 0.9500 reward 0.0009 loss 0.0366 entropy 14.1593
+2020-03-24 02:31:33,098 episode 004 acc 0.8191 avg_acc 0.9500 reward -0.1309 loss -5.5459 entropy 14.1069
+2020-03-24 02:31:54,630 episode 005 acc 0.9539 avg_acc 0.9500 reward 0.0039 loss 0.1671 entropy 14.0751
+2020-03-24 02:32:18,258 episode 006 acc 0.9598 avg_acc 0.9500 reward 0.0098 loss 0.4142 entropy 14.0951
+2020-03-24 02:32:42,581 episode 007 acc 0.9470 avg_acc 0.9500 reward -0.0030 loss -0.1257 entropy 14.0832
+2020-03-24 02:32:42,582 arch_epoch 040 acc 0.9143 loss -1.5082 entropy 14.1109
+2020-03-24 02:32:42,582 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:33:06,305 episode 000 acc 0.9650 avg_acc 0.9500 reward 0.0150 loss 0.6246 entropy 14.0551
+2020-03-24 02:33:28,131 episode 001 acc 0.9347 avg_acc 0.9500 reward -0.0153 loss -0.6432 entropy 14.0780
+2020-03-24 02:33:53,434 episode 002 acc 0.9567 avg_acc 0.9500 reward 0.0067 loss 0.2799 entropy 14.0640
+2020-03-24 02:34:21,164 episode 003 acc 0.9145 avg_acc 0.9500 reward -0.0355 loss -1.4750 entropy 14.0610
+2020-03-24 02:34:43,697 episode 004 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2695 entropy 14.0480
+2020-03-24 02:35:06,777 episode 005 acc 0.9203 avg_acc 0.9500 reward -0.0297 loss -1.2537 entropy 14.1117
+2020-03-24 02:35:29,096 episode 006 acc 0.9382 avg_acc 0.9500 reward -0.0118 loss -0.5009 entropy 14.1435
+2020-03-24 02:35:57,648 episode 007 acc 0.9686 avg_acc 0.9500 reward 0.0186 loss 0.7679 entropy 14.0657
+2020-03-24 02:35:57,649 arch_epoch 041 acc 0.9427 loss -0.3087 entropy 14.0784
+2020-03-24 02:35:57,649 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:36:14,298 episode 000 acc 0.7849 avg_acc 0.9500 reward -0.1651 loss -7.0485 entropy 14.1611
+2020-03-24 02:36:33,811 episode 001 acc 0.9185 avg_acc 0.9500 reward -0.0315 loss -1.3388 entropy 14.0743
+2020-03-24 02:36:57,429 episode 002 acc 0.9597 avg_acc 0.9500 reward 0.0097 loss 0.4072 entropy 14.0813
+2020-03-24 02:37:21,848 episode 003 acc 0.9553 avg_acc 0.9500 reward 0.0053 loss 0.2260 entropy 14.1120
+2020-03-24 02:37:43,834 episode 004 acc 0.9332 avg_acc 0.9500 reward -0.0168 loss -0.7093 entropy 14.0802
+2020-03-24 02:38:04,056 episode 005 acc 0.9552 avg_acc 0.9500 reward 0.0052 loss 0.2214 entropy 14.1505
+2020-03-24 02:38:28,083 episode 006 acc 0.9032 avg_acc 0.9500 reward -0.0468 loss -1.9734 entropy 14.1033
+2020-03-24 02:38:54,363 episode 007 acc 0.9642 avg_acc 0.9500 reward 0.0142 loss 0.5849 entropy 14.0731
+2020-03-24 02:38:54,365 arch_epoch 042 acc 0.9218 loss -1.2038 entropy 14.1045
+2020-03-24 02:38:54,366 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:39:21,120 episode 000 acc 0.9412 avg_acc 0.9500 reward -0.0088 loss -0.3696 entropy 14.1771
+2020-03-24 02:39:46,521 episode 001 acc 0.9661 avg_acc 0.9500 reward 0.0161 loss 0.6751 entropy 14.1260
+2020-03-24 02:40:07,430 episode 002 acc 0.9494 avg_acc 0.9500 reward -0.0006 loss -0.0254 entropy 14.0754
+2020-03-24 02:40:29,948 episode 003 acc 0.9437 avg_acc 0.9500 reward -0.0063 loss -0.2640 entropy 14.0878
+2020-03-24 02:40:54,111 episode 004 acc 0.8978 avg_acc 0.9500 reward -0.0522 loss -2.2193 entropy 14.1739
+2020-03-24 02:41:18,118 episode 005 acc 0.9703 avg_acc 0.9500 reward 0.0203 loss 0.8611 entropy 14.1397
+2020-03-24 02:41:40,881 episode 006 acc 0.9024 avg_acc 0.9500 reward -0.0476 loss -2.0001 entropy 14.0423
+2020-03-24 02:42:03,650 episode 007 acc 0.9576 avg_acc 0.9500 reward 0.0076 loss 0.3166 entropy 14.0442
+2020-03-24 02:42:03,652 arch_epoch 043 acc 0.9411 loss -0.3782 entropy 14.1083
+2020-03-24 02:42:03,653 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:42:25,397 episode 000 acc 0.9576 avg_acc 0.9500 reward 0.0076 loss 0.3196 entropy 14.1201
+2020-03-24 02:42:50,522 episode 001 acc 0.9289 avg_acc 0.9500 reward -0.0211 loss -0.8909 entropy 14.1608
+2020-03-24 02:43:11,061 episode 002 acc 0.9518 avg_acc 0.9500 reward 0.0018 loss 0.0750 entropy 14.0919
+2020-03-24 02:43:35,931 episode 003 acc 0.9668 avg_acc 0.9500 reward 0.0168 loss 0.7112 entropy 14.0797
+2020-03-24 02:43:54,064 episode 004 acc 0.9552 avg_acc 0.9500 reward 0.0052 loss 0.2185 entropy 14.0184
+2020-03-24 02:44:19,291 episode 005 acc 0.9539 avg_acc 0.9500 reward 0.0039 loss 0.1625 entropy 14.1002
+2020-03-24 02:44:41,157 episode 006 acc 0.9667 avg_acc 0.9500 reward 0.0167 loss 0.7056 entropy 14.0493
+2020-03-24 02:45:04,639 episode 007 acc 0.9594 avg_acc 0.9500 reward 0.0094 loss 0.3974 entropy 14.1098
+2020-03-24 02:45:04,640 arch_epoch 044 acc 0.9550 loss 0.2124 entropy 14.0913
+2020-03-24 02:45:04,640 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:45:27,319 episode 000 acc 0.9301 avg_acc 0.9500 reward -0.0199 loss -0.8386 entropy 14.0704
+2020-03-24 02:45:50,961 episode 001 acc 0.9368 avg_acc 0.9500 reward -0.0132 loss -0.5525 entropy 14.1254
+2020-03-24 02:46:15,192 episode 002 acc 0.8281 avg_acc 0.9500 reward -0.1219 loss -5.1241 entropy 14.0501
+2020-03-24 02:46:35,971 episode 003 acc 0.9339 avg_acc 0.9500 reward -0.0161 loss -0.6875 entropy 14.1169
+2020-03-24 02:46:54,006 episode 004 acc 0.9359 avg_acc 0.9500 reward -0.0141 loss -0.5950 entropy 14.0297
+2020-03-24 02:47:19,363 episode 005 acc 0.9515 avg_acc 0.9500 reward 0.0015 loss 0.0654 entropy 14.1607
+2020-03-24 02:47:42,659 episode 006 acc 0.9623 avg_acc 0.9500 reward 0.0123 loss 0.5209 entropy 14.1079
+2020-03-24 02:48:01,338 episode 007 acc 0.9501 avg_acc 0.9500 reward 0.0001 loss 0.0034 entropy 14.1111
+2020-03-24 02:48:01,340 arch_epoch 045 acc 0.9286 loss -0.9010 entropy 14.0965
+2020-03-24 02:48:01,340 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:48:29,399 episode 000 acc 0.9434 avg_acc 0.9500 reward -0.0066 loss -0.2735 entropy 14.0525
+2020-03-24 02:48:48,305 episode 001 acc 0.7907 avg_acc 0.9500 reward -0.1593 loss -6.8410 entropy 14.1353
+2020-03-24 02:49:11,051 episode 002 acc 0.9630 avg_acc 0.9500 reward 0.0130 loss 0.5495 entropy 14.0942
+2020-03-24 02:49:36,908 episode 003 acc 0.8641 avg_acc 0.9500 reward -0.0859 loss -3.6661 entropy 14.1943
+2020-03-24 02:49:59,909 episode 004 acc 0.9281 avg_acc 0.9500 reward -0.0219 loss -0.9225 entropy 14.1177
+2020-03-24 02:50:30,827 episode 005 acc 0.9629 avg_acc 0.9500 reward 0.0129 loss 0.5424 entropy 14.1763
+2020-03-24 02:50:57,446 episode 006 acc 0.9508 avg_acc 0.9500 reward 0.0008 loss 0.0343 entropy 14.1136
+2020-03-24 02:51:18,118 episode 007 acc 0.9512 avg_acc 0.9500 reward 0.0012 loss 0.0503 entropy 14.0310
+2020-03-24 02:51:18,120 arch_epoch 046 acc 0.9193 loss -1.3158 entropy 14.1144
+2020-03-24 02:51:18,120 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:51:37,962 episode 000 acc 0.9449 avg_acc 0.9500 reward -0.0051 loss -0.2157 entropy 14.0734
+2020-03-24 02:52:04,610 episode 001 acc 0.9557 avg_acc 0.9500 reward 0.0057 loss 0.2369 entropy 14.0946
+2020-03-24 02:52:25,866 episode 002 acc 0.9284 avg_acc 0.9500 reward -0.0216 loss -0.9099 entropy 14.0500
+2020-03-24 02:52:46,839 episode 003 acc 0.8673 avg_acc 0.9500 reward -0.0827 loss -3.4813 entropy 14.0618
+2020-03-24 02:53:08,912 episode 004 acc 0.4336 avg_acc 0.9500 reward -0.5164 loss -21.9787 entropy 14.0597
+2020-03-24 02:53:35,599 episode 005 acc 0.9682 avg_acc 0.9500 reward 0.0182 loss 0.7631 entropy 14.0332
+2020-03-24 02:54:03,776 episode 006 acc 0.9358 avg_acc 0.9500 reward -0.0142 loss -0.5968 entropy 14.1704
+2020-03-24 02:54:31,548 episode 007 acc 0.9431 avg_acc 0.9500 reward -0.0069 loss -0.2865 entropy 14.0675
+2020-03-24 02:54:31,549 arch_epoch 047 acc 0.8721 loss -3.3086 entropy 14.0763
+2020-03-24 02:54:31,549 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:54:57,275 episode 000 acc 0.9526 avg_acc 0.9500 reward 0.0026 loss 0.1095 entropy 14.1279
+2020-03-24 02:55:24,180 episode 001 acc 0.9634 avg_acc 0.9500 reward 0.0134 loss 0.5639 entropy 14.1357
+2020-03-24 02:55:47,490 episode 002 acc 0.9636 avg_acc 0.9500 reward 0.0136 loss 0.5712 entropy 14.1357
+2020-03-24 02:56:13,294 episode 003 acc 0.9657 avg_acc 0.9500 reward 0.0157 loss 0.6610 entropy 14.1563
+2020-03-24 02:56:42,788 episode 004 acc 0.9073 avg_acc 0.9500 reward -0.0427 loss -1.7499 entropy 14.0706
+2020-03-24 02:57:05,362 episode 005 acc 0.9425 avg_acc 0.9500 reward -0.0075 loss -0.3185 entropy 14.0965
+2020-03-24 02:57:29,366 episode 006 acc 0.9671 avg_acc 0.9500 reward 0.0171 loss 0.7238 entropy 14.1061
+2020-03-24 02:57:53,625 episode 007 acc 0.8935 avg_acc 0.9500 reward -0.0565 loss -2.4471 entropy 14.2078
+2020-03-24 02:57:53,627 arch_epoch 048 acc 0.9445 loss -0.2358 entropy 14.1296
+2020-03-24 02:57:53,627 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 02:58:20,656 episode 000 acc 0.9470 avg_acc 0.9500 reward -0.0030 loss -0.1267 entropy 14.1531
+2020-03-24 02:58:42,986 episode 001 acc 0.9385 avg_acc 0.9500 reward -0.0115 loss -0.4880 entropy 14.1116
+2020-03-24 02:59:07,532 episode 002 acc 0.8211 avg_acc 0.9500 reward -0.1289 loss -5.4221 entropy 14.1100
+2020-03-24 02:59:32,276 episode 003 acc 0.9368 avg_acc 0.9500 reward -0.0132 loss -0.5508 entropy 14.0478
+2020-03-24 02:59:50,865 episode 004 acc 0.9153 avg_acc 0.9500 reward -0.0347 loss -1.4374 entropy 14.0805
+2020-03-24 03:00:16,682 episode 005 acc 0.9704 avg_acc 0.9500 reward 0.0204 loss 0.8556 entropy 14.0766
+2020-03-24 03:00:36,416 episode 006 acc 0.9540 avg_acc 0.9500 reward 0.0040 loss 0.1693 entropy 14.0324
+2020-03-24 03:01:02,287 episode 007 acc 0.5371 avg_acc 0.9500 reward -0.4129 loss -17.5245 entropy 14.1487
+2020-03-24 03:01:02,288 arch_epoch 049 acc 0.8775 loss -3.0656 entropy 14.0951
+2020-03-24 03:01:02,288 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:01:25,990 episode 000 acc 0.9470 avg_acc 0.9500 reward -0.0030 loss -0.1295 entropy 14.1060
+2020-03-24 03:01:51,108 episode 001 acc 0.9246 avg_acc 0.9500 reward -0.0254 loss -1.0786 entropy 14.1115
+2020-03-24 03:02:16,861 episode 002 acc 0.9272 avg_acc 0.9500 reward -0.0228 loss -0.9545 entropy 14.0853
+2020-03-24 03:02:45,128 episode 003 acc 0.9716 avg_acc 0.9500 reward 0.0216 loss 0.8925 entropy 14.0388
+2020-03-24 03:03:13,403 episode 004 acc 0.9606 avg_acc 0.9500 reward 0.0106 loss 0.4393 entropy 14.0797
+2020-03-24 03:03:35,447 episode 005 acc 0.9448 avg_acc 0.9500 reward -0.0052 loss -0.2232 entropy 14.1424
+2020-03-24 03:04:00,067 episode 006 acc 0.9047 avg_acc 0.9500 reward -0.0453 loss -1.8976 entropy 14.0880
+2020-03-24 03:04:30,619 episode 007 acc 0.9655 avg_acc 0.9500 reward 0.0155 loss 0.6482 entropy 14.1716
+2020-03-24 03:04:30,621 arch_epoch 050 acc 0.9432 loss -0.2879 entropy 14.1029
+2020-03-24 03:04:30,622 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:04:58,666 episode 000 acc 0.8227 avg_acc 0.9500 reward -0.1273 loss -5.3233 entropy 14.1283
+2020-03-24 03:05:20,088 episode 001 acc 0.8366 avg_acc 0.9500 reward -0.1134 loss -4.8798 entropy 14.1807
+2020-03-24 03:05:48,274 episode 002 acc 0.9530 avg_acc 0.9500 reward 0.0030 loss 0.1258 entropy 14.1304
+2020-03-24 03:06:14,116 episode 003 acc 0.9366 avg_acc 0.9500 reward -0.0134 loss -0.5689 entropy 14.1042
+2020-03-24 03:06:39,662 episode 004 acc 0.9564 avg_acc 0.9500 reward 0.0064 loss 0.2671 entropy 14.1032
+2020-03-24 03:07:04,045 episode 005 acc 0.9527 avg_acc 0.9500 reward 0.0027 loss 0.1148 entropy 14.2007
+2020-03-24 03:07:21,841 episode 006 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2735 entropy 14.0624
+2020-03-24 03:07:42,214 episode 007 acc 0.8104 avg_acc 0.9500 reward -0.1396 loss -5.9578 entropy 14.0984
+2020-03-24 03:07:42,216 arch_epoch 051 acc 0.9015 loss -2.0619 entropy 14.1260
+2020-03-24 03:07:42,216 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:08:02,150 episode 000 acc 0.8503 avg_acc 0.9500 reward -0.0997 loss -4.3219 entropy 14.1765
+2020-03-24 03:08:27,422 episode 001 acc 0.9627 avg_acc 0.9500 reward 0.0127 loss 0.5287 entropy 14.1221
+2020-03-24 03:08:52,155 episode 002 acc 0.9282 avg_acc 0.9500 reward -0.0218 loss -0.9273 entropy 14.1456
+2020-03-24 03:09:17,590 episode 003 acc 0.9605 avg_acc 0.9500 reward 0.0105 loss 0.4342 entropy 14.0536
+2020-03-24 03:09:41,821 episode 004 acc 0.9593 avg_acc 0.9500 reward 0.0093 loss 0.3940 entropy 14.0726
+2020-03-24 03:10:07,479 episode 005 acc 0.9123 avg_acc 0.9500 reward -0.0377 loss -1.5755 entropy 14.0813
+2020-03-24 03:10:31,321 episode 006 acc 0.9485 avg_acc 0.9500 reward -0.0015 loss -0.0620 entropy 14.0753
+2020-03-24 03:10:56,543 episode 007 acc 0.9399 avg_acc 0.9500 reward -0.0101 loss -0.4267 entropy 14.1030
+2020-03-24 03:10:56,545 arch_epoch 052 acc 0.9327 loss -0.7446 entropy 14.1038
+2020-03-24 03:10:56,546 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:11:22,306 episode 000 acc 0.9550 avg_acc 0.9500 reward 0.0050 loss 0.2129 entropy 14.1515
+2020-03-24 03:11:55,803 episode 001 acc 0.8869 avg_acc 0.9500 reward -0.0631 loss -2.6200 entropy 14.1076
+2020-03-24 03:12:18,589 episode 002 acc 0.9619 avg_acc 0.9500 reward 0.0119 loss 0.5034 entropy 14.1175
+2020-03-24 03:12:41,430 episode 003 acc 0.9566 avg_acc 0.9500 reward 0.0066 loss 0.2769 entropy 14.0234
+2020-03-24 03:13:05,629 episode 004 acc 0.9237 avg_acc 0.9500 reward -0.0263 loss -1.0915 entropy 14.0358
+2020-03-24 03:13:23,335 episode 005 acc 0.9035 avg_acc 0.9500 reward -0.0465 loss -1.9845 entropy 14.0477
+2020-03-24 03:13:47,539 episode 006 acc 0.9419 avg_acc 0.9500 reward -0.0081 loss -0.3409 entropy 14.0738
+2020-03-24 03:14:09,694 episode 007 acc 0.9378 avg_acc 0.9500 reward -0.0122 loss -0.5113 entropy 13.9905
+2020-03-24 03:14:09,695 arch_epoch 053 acc 0.9334 loss -0.6944 entropy 14.0685
+2020-03-24 03:14:09,696 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:14:35,074 episode 000 acc 0.9549 avg_acc 0.9500 reward 0.0049 loss 0.2088 entropy 14.1076
+2020-03-24 03:15:01,457 episode 001 acc 0.9707 avg_acc 0.9500 reward 0.0207 loss 0.8706 entropy 14.1239
+2020-03-24 03:15:27,025 episode 002 acc 0.9461 avg_acc 0.9500 reward -0.0039 loss -0.1628 entropy 14.0619
+2020-03-24 03:15:52,391 episode 003 acc 0.9607 avg_acc 0.9500 reward 0.0107 loss 0.4417 entropy 14.0237
+2020-03-24 03:16:13,408 episode 004 acc 0.8201 avg_acc 0.9500 reward -0.1299 loss -5.5728 entropy 14.1773
+2020-03-24 03:16:36,631 episode 005 acc 0.9666 avg_acc 0.9500 reward 0.0166 loss 0.7027 entropy 14.1120
+2020-03-24 03:16:52,876 episode 006 acc 0.9379 avg_acc 0.9500 reward -0.0121 loss -0.5174 entropy 14.0943
+2020-03-24 03:17:21,241 episode 007 acc 0.9511 avg_acc 0.9500 reward 0.0011 loss 0.0459 entropy 14.1922
+2020-03-24 03:17:21,243 arch_epoch 054 acc 0.9385 loss -0.4979 entropy 14.1116
+2020-03-24 03:17:21,243 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:17:45,155 episode 000 acc 0.9696 avg_acc 0.9500 reward 0.0196 loss 0.8249 entropy 14.0246
+2020-03-24 03:18:13,383 episode 001 acc 0.9616 avg_acc 0.9500 reward 0.0116 loss 0.4775 entropy 14.0494
+2020-03-24 03:18:36,057 episode 002 acc 0.9685 avg_acc 0.9500 reward 0.0185 loss 0.7945 entropy 14.1168
+2020-03-24 03:18:53,246 episode 003 acc 0.9540 avg_acc 0.9500 reward 0.0040 loss 0.1710 entropy 14.0189
+2020-03-24 03:19:20,481 episode 004 acc 0.9744 avg_acc 0.9500 reward 0.0244 loss 0.9997 entropy 14.0660
+2020-03-24 03:19:44,469 episode 005 acc 0.9707 avg_acc 0.9500 reward 0.0207 loss 0.8587 entropy 14.0486
+2020-03-24 03:20:09,907 episode 006 acc 0.8871 avg_acc 0.9500 reward -0.0629 loss -2.6755 entropy 14.1446
+2020-03-24 03:20:34,573 episode 007 acc 0.9531 avg_acc 0.9500 reward 0.0031 loss 0.1290 entropy 14.0788
+2020-03-24 03:20:34,574 arch_epoch 055 acc 0.9549 loss 0.1975 entropy 14.0685
+2020-03-24 03:20:34,574 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:21:01,160 episode 000 acc 0.9547 avg_acc 0.9500 reward 0.0047 loss 0.1981 entropy 14.1429
+2020-03-24 03:21:26,456 episode 001 acc 0.9639 avg_acc 0.9500 reward 0.0139 loss 0.5718 entropy 13.9953
+2020-03-24 03:21:50,332 episode 002 acc 0.9268 avg_acc 0.9500 reward -0.0232 loss -0.9925 entropy 14.1246
+2020-03-24 03:22:17,996 episode 003 acc 0.9553 avg_acc 0.9500 reward 0.0053 loss 0.2232 entropy 14.1176
+2020-03-24 03:22:41,405 episode 004 acc 0.8719 avg_acc 0.9500 reward -0.0781 loss -3.3250 entropy 14.1101
+2020-03-24 03:23:05,226 episode 005 acc 0.9639 avg_acc 0.9500 reward 0.0139 loss 0.5885 entropy 14.1479
+2020-03-24 03:23:27,417 episode 006 acc 0.9544 avg_acc 0.9500 reward 0.0044 loss 0.1851 entropy 14.0789
+2020-03-24 03:23:50,511 episode 007 acc 0.9714 avg_acc 0.9500 reward 0.0214 loss 0.9059 entropy 14.1382
+2020-03-24 03:23:50,512 arch_epoch 056 acc 0.9453 loss -0.2056 entropy 14.1069
+2020-03-24 03:23:50,513 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:24:18,716 episode 000 acc 0.9538 avg_acc 0.9500 reward 0.0038 loss 0.1574 entropy 14.0400
+2020-03-24 03:24:42,236 episode 001 acc 0.9571 avg_acc 0.9500 reward 0.0071 loss 0.2941 entropy 13.9922
+2020-03-24 03:25:08,986 episode 002 acc 0.9618 avg_acc 0.9500 reward 0.0118 loss 0.4854 entropy 14.0455
+2020-03-24 03:25:35,256 episode 003 acc 0.9490 avg_acc 0.9500 reward -0.0010 loss -0.0410 entropy 14.1252
+2020-03-24 03:26:01,383 episode 004 acc 0.9605 avg_acc 0.9500 reward 0.0105 loss 0.4442 entropy 14.1432
+2020-03-24 03:26:23,581 episode 005 acc 0.9461 avg_acc 0.9500 reward -0.0039 loss -0.1651 entropy 14.0694
+2020-03-24 03:26:47,119 episode 006 acc 0.9310 avg_acc 0.9500 reward -0.0190 loss -0.7994 entropy 14.0775
+2020-03-24 03:27:06,590 episode 007 acc 0.9562 avg_acc 0.9500 reward 0.0062 loss 0.2648 entropy 14.0741
+2020-03-24 03:27:06,591 arch_epoch 057 acc 0.9519 loss 0.0800 entropy 14.0709
+2020-03-24 03:27:06,591 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:27:27,622 episode 000 acc 0.8185 avg_acc 0.9500 reward -0.1315 loss -5.6119 entropy 14.1090
+2020-03-24 03:27:49,842 episode 001 acc 0.9399 avg_acc 0.9500 reward -0.0101 loss -0.4325 entropy 14.0349
+2020-03-24 03:28:13,794 episode 002 acc 0.9633 avg_acc 0.9500 reward 0.0133 loss 0.5608 entropy 14.1196
+2020-03-24 03:28:39,261 episode 003 acc 0.9480 avg_acc 0.9500 reward -0.0020 loss -0.0828 entropy 14.0970
+2020-03-24 03:29:02,449 episode 004 acc 0.9413 avg_acc 0.9500 reward -0.0087 loss -0.3670 entropy 14.0054
+2020-03-24 03:29:23,797 episode 005 acc 0.9292 avg_acc 0.9500 reward -0.0208 loss -0.8942 entropy 14.1144
+2020-03-24 03:29:47,877 episode 006 acc 0.8542 avg_acc 0.9500 reward -0.0958 loss -4.0318 entropy 14.0518
+2020-03-24 03:30:12,400 episode 007 acc 0.9232 avg_acc 0.9500 reward -0.0268 loss -1.1413 entropy 14.1380
+2020-03-24 03:30:12,402 arch_epoch 058 acc 0.9147 loss -1.5001 entropy 14.0838
+2020-03-24 03:30:12,402 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:30:38,143 episode 000 acc 0.9443 avg_acc 0.9500 reward -0.0057 loss -0.2369 entropy 14.0201
+2020-03-24 03:31:04,291 episode 001 acc 0.9595 avg_acc 0.9500 reward 0.0095 loss 0.3990 entropy 14.1013
+2020-03-24 03:31:24,396 episode 002 acc 0.9352 avg_acc 0.9500 reward -0.0148 loss -0.6188 entropy 14.0692
+2020-03-24 03:31:50,981 episode 003 acc 0.9554 avg_acc 0.9500 reward 0.0054 loss 0.2287 entropy 14.0492
+2020-03-24 03:32:17,314 episode 004 acc 0.9516 avg_acc 0.9500 reward 0.0016 loss 0.0645 entropy 13.9778
+2020-03-24 03:32:47,508 episode 005 acc 0.9404 avg_acc 0.9500 reward -0.0096 loss -0.3971 entropy 14.1143
+2020-03-24 03:33:14,351 episode 006 acc 0.9446 avg_acc 0.9500 reward -0.0054 loss -0.2242 entropy 14.0363
+2020-03-24 03:33:33,078 episode 007 acc 0.9629 avg_acc 0.9500 reward 0.0129 loss 0.5398 entropy 14.0113
+2020-03-24 03:33:33,081 arch_epoch 059 acc 0.9492 loss -0.0306 entropy 14.0474
+2020-03-24 03:33:33,081 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:33:56,187 episode 000 acc 0.9580 avg_acc 0.9500 reward 0.0080 loss 0.3441 entropy 14.1266
+2020-03-24 03:34:19,077 episode 001 acc 0.9644 avg_acc 0.9500 reward 0.0144 loss 0.6009 entropy 14.0152
+2020-03-24 03:34:46,377 episode 002 acc 0.9335 avg_acc 0.9500 reward -0.0165 loss -0.6866 entropy 14.1120
+2020-03-24 03:35:10,402 episode 003 acc 0.9469 avg_acc 0.9500 reward -0.0031 loss -0.1321 entropy 14.0555
+2020-03-24 03:35:33,420 episode 004 acc 0.9539 avg_acc 0.9500 reward 0.0039 loss 0.1676 entropy 14.1287
+2020-03-24 03:35:56,417 episode 005 acc 0.9566 avg_acc 0.9500 reward 0.0066 loss 0.2779 entropy 14.0601
+2020-03-24 03:36:22,548 episode 006 acc 0.9611 avg_acc 0.9500 reward 0.0111 loss 0.4746 entropy 14.1784
+2020-03-24 03:36:45,902 episode 007 acc 0.9427 avg_acc 0.9500 reward -0.0073 loss -0.3110 entropy 14.1009
+2020-03-24 03:36:45,904 arch_epoch 060 acc 0.9521 loss 0.0919 entropy 14.0972
+2020-03-24 03:36:45,904 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:37:11,742 episode 000 acc 0.9590 avg_acc 0.9500 reward 0.0090 loss 0.3799 entropy 14.0862
+2020-03-24 03:37:33,478 episode 001 acc 0.9348 avg_acc 0.9500 reward -0.0152 loss -0.6466 entropy 14.1388
+2020-03-24 03:37:57,592 episode 002 acc 0.9350 avg_acc 0.9500 reward -0.0150 loss -0.6396 entropy 14.0676
+2020-03-24 03:38:21,538 episode 003 acc 0.9299 avg_acc 0.9500 reward -0.0201 loss -0.8664 entropy 14.2104
+2020-03-24 03:38:48,300 episode 004 acc 0.9720 avg_acc 0.9500 reward 0.0220 loss 0.9000 entropy 13.9841
+2020-03-24 03:39:10,779 episode 005 acc 0.9716 avg_acc 0.9500 reward 0.0216 loss 0.9060 entropy 13.9996
+2020-03-24 03:39:30,741 episode 006 acc 0.9306 avg_acc 0.9500 reward -0.0194 loss -0.8305 entropy 14.0872
+2020-03-24 03:39:54,176 episode 007 acc 0.9168 avg_acc 0.9500 reward -0.0332 loss -1.4021 entropy 14.0014
+2020-03-24 03:39:54,177 arch_epoch 061 acc 0.9437 loss -0.2749 entropy 14.0719
+2020-03-24 03:39:54,177 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:40:21,940 episode 000 acc 0.9432 avg_acc 0.9500 reward -0.0068 loss -0.2889 entropy 14.1456
+2020-03-24 03:40:44,729 episode 001 acc 0.9578 avg_acc 0.9500 reward 0.0078 loss 0.3284 entropy 14.0311
+2020-03-24 03:41:09,398 episode 002 acc 0.9650 avg_acc 0.9500 reward 0.0150 loss 0.6252 entropy 14.0617
+2020-03-24 03:41:33,463 episode 003 acc 0.9477 avg_acc 0.9500 reward -0.0023 loss -0.0963 entropy 14.0135
+2020-03-24 03:42:00,773 episode 004 acc 0.9412 avg_acc 0.9500 reward -0.0088 loss -0.3757 entropy 14.1241
+2020-03-24 03:42:28,409 episode 005 acc 0.9460 avg_acc 0.9500 reward -0.0040 loss -0.1663 entropy 14.0946
+2020-03-24 03:42:51,393 episode 006 acc 0.8249 avg_acc 0.9500 reward -0.1251 loss -5.2237 entropy 14.0114
+2020-03-24 03:43:12,072 episode 007 acc 0.9533 avg_acc 0.9500 reward 0.0033 loss 0.1402 entropy 14.0365
+2020-03-24 03:43:12,074 arch_epoch 062 acc 0.9349 loss -0.6321 entropy 14.0648
+2020-03-24 03:43:12,074 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:43:38,495 episode 000 acc 0.9475 avg_acc 0.9500 reward -0.0025 loss -0.1045 entropy 14.0090
+2020-03-24 03:43:59,976 episode 001 acc 0.9591 avg_acc 0.9500 reward 0.0091 loss 0.3807 entropy 14.0039
+2020-03-24 03:44:23,207 episode 002 acc 0.9539 avg_acc 0.9500 reward 0.0039 loss 0.1585 entropy 13.9267
+2020-03-24 03:44:48,354 episode 003 acc 0.9606 avg_acc 0.9500 reward 0.0106 loss 0.4463 entropy 14.0452
+2020-03-24 03:45:11,997 episode 004 acc 0.9250 avg_acc 0.9500 reward -0.0250 loss -1.0549 entropy 14.0254
+2020-03-24 03:45:36,984 episode 005 acc 0.9640 avg_acc 0.9500 reward 0.0140 loss 0.5761 entropy 13.9788
+2020-03-24 03:46:02,910 episode 006 acc 0.9291 avg_acc 0.9500 reward -0.0209 loss -0.8713 entropy 14.0216
+2020-03-24 03:46:29,009 episode 007 acc 0.9544 avg_acc 0.9500 reward 0.0044 loss 0.1827 entropy 14.0581
+2020-03-24 03:46:29,011 arch_epoch 063 acc 0.9492 loss -0.0358 entropy 14.0086
+2020-03-24 03:46:29,012 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:46:55,403 episode 000 acc 0.9656 avg_acc 0.9500 reward 0.0156 loss 0.6604 entropy 14.1448
+2020-03-24 03:47:19,769 episode 001 acc 0.9720 avg_acc 0.9500 reward 0.0220 loss 0.9006 entropy 13.9896
+2020-03-24 03:47:48,545 episode 002 acc 0.9269 avg_acc 0.9500 reward -0.0231 loss -0.9674 entropy 14.1021
+2020-03-24 03:48:07,697 episode 003 acc 0.9040 avg_acc 0.9500 reward -0.0460 loss -1.9421 entropy 14.1875
+2020-03-24 03:48:32,863 episode 004 acc 0.9421 avg_acc 0.9500 reward -0.0079 loss -0.3289 entropy 14.0964
+2020-03-24 03:48:58,905 episode 005 acc 0.9510 avg_acc 0.9500 reward 0.0010 loss 0.0433 entropy 14.0311
+2020-03-24 03:49:21,773 episode 006 acc 0.9526 avg_acc 0.9500 reward 0.0026 loss 0.1098 entropy 14.1082
+2020-03-24 03:49:43,084 episode 007 acc 0.9536 avg_acc 0.9500 reward 0.0036 loss 0.1495 entropy 13.9880
+2020-03-24 03:49:43,086 arch_epoch 064 acc 0.9460 loss -0.1719 entropy 14.0810
+2020-03-24 03:49:43,086 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:50:09,989 episode 000 acc 0.9697 avg_acc 0.9500 reward 0.0197 loss 0.8411 entropy 14.0576
+2020-03-24 03:50:33,363 episode 001 acc 0.8929 avg_acc 0.9500 reward -0.0571 loss -2.4643 entropy 14.1095
+2020-03-24 03:50:57,167 episode 002 acc 0.9288 avg_acc 0.9500 reward -0.0212 loss -0.8969 entropy 14.0836
+2020-03-24 03:51:22,285 episode 003 acc 0.9407 avg_acc 0.9500 reward -0.0093 loss -0.4020 entropy 14.1079
+2020-03-24 03:51:41,263 episode 004 acc 0.8798 avg_acc 0.9500 reward -0.0702 loss -3.0309 entropy 14.0588
+2020-03-24 03:52:08,416 episode 005 acc 0.9413 avg_acc 0.9500 reward -0.0087 loss -0.3638 entropy 14.1273
+2020-03-24 03:52:36,925 episode 006 acc 0.9628 avg_acc 0.9500 reward 0.0128 loss 0.5208 entropy 13.9735
+2020-03-24 03:53:02,928 episode 007 acc 0.9591 avg_acc 0.9500 reward 0.0091 loss 0.3806 entropy 14.0497
+2020-03-24 03:53:02,930 arch_epoch 065 acc 0.9344 loss -0.6769 entropy 14.0710
+2020-03-24 03:53:02,930 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:53:27,125 episode 000 acc 0.9647 avg_acc 0.9500 reward 0.0147 loss 0.6180 entropy 14.0482
+2020-03-24 03:53:52,988 episode 001 acc 0.9235 avg_acc 0.9500 reward -0.0265 loss -1.0978 entropy 14.0646
+2020-03-24 03:54:07,239 episode 002 acc 0.9307 avg_acc 0.9500 reward -0.0193 loss -0.8196 entropy 14.0311
+2020-03-24 03:54:27,903 episode 003 acc 0.8696 avg_acc 0.9500 reward -0.0804 loss -3.4706 entropy 14.1019
+2020-03-24 03:54:51,740 episode 004 acc 0.9285 avg_acc 0.9500 reward -0.0215 loss -0.9026 entropy 14.0489
+2020-03-24 03:55:21,519 episode 005 acc 0.9272 avg_acc 0.9500 reward -0.0228 loss -0.9737 entropy 14.1672
+2020-03-24 03:55:42,241 episode 006 acc 0.8708 avg_acc 0.9500 reward -0.0792 loss -3.4284 entropy 14.2253
+2020-03-24 03:56:08,495 episode 007 acc 0.9600 avg_acc 0.9500 reward 0.0100 loss 0.4133 entropy 14.0049
+2020-03-24 03:56:08,498 arch_epoch 066 acc 0.9219 loss -1.2077 entropy 14.0865
+2020-03-24 03:56:08,498 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:56:34,372 episode 000 acc 0.7722 avg_acc 0.9500 reward -0.1778 loss -7.3314 entropy 14.0762
+2020-03-24 03:57:02,903 episode 001 acc 0.9405 avg_acc 0.9500 reward -0.0095 loss -0.4021 entropy 14.1624
+2020-03-24 03:57:23,170 episode 002 acc 0.9556 avg_acc 0.9500 reward 0.0056 loss 0.2374 entropy 14.0692
+2020-03-24 03:57:43,694 episode 003 acc 0.9441 avg_acc 0.9500 reward -0.0059 loss -0.2470 entropy 13.9882
+2020-03-24 03:58:07,455 episode 004 acc 0.8023 avg_acc 0.9500 reward -0.1477 loss -6.1948 entropy 14.1460
+2020-03-24 03:58:31,618 episode 005 acc 0.9312 avg_acc 0.9500 reward -0.0188 loss -0.7843 entropy 14.0586
+2020-03-24 03:58:57,351 episode 006 acc 0.9670 avg_acc 0.9500 reward 0.0170 loss 0.7022 entropy 14.0162
+2020-03-24 03:59:24,520 episode 007 acc 0.9713 avg_acc 0.9500 reward 0.0213 loss 0.8912 entropy 14.0887
+2020-03-24 03:59:24,522 arch_epoch 067 acc 0.9105 loss -1.6411 entropy 14.0757
+2020-03-24 03:59:24,522 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 03:59:51,344 episode 000 acc 0.9637 avg_acc 0.9500 reward 0.0137 loss 0.5678 entropy 13.9822
+2020-03-24 04:00:22,203 episode 001 acc 0.9633 avg_acc 0.9500 reward 0.0133 loss 0.5446 entropy 14.0517
+2020-03-24 04:00:49,507 episode 002 acc 0.9638 avg_acc 0.9500 reward 0.0138 loss 0.5721 entropy 13.9772
+2020-03-24 04:01:14,026 episode 003 acc 0.9159 avg_acc 0.9500 reward -0.0341 loss -1.4668 entropy 14.1620
+2020-03-24 04:01:35,517 episode 004 acc 0.9674 avg_acc 0.9500 reward 0.0174 loss 0.7266 entropy 13.9939
+2020-03-24 04:01:54,473 episode 005 acc 0.8801 avg_acc 0.9500 reward -0.0699 loss -2.9404 entropy 13.9824
+2020-03-24 04:02:21,472 episode 006 acc 0.9697 avg_acc 0.9500 reward 0.0197 loss 0.8226 entropy 14.0887
+2020-03-24 04:02:41,731 episode 007 acc 0.9300 avg_acc 0.9500 reward -0.0200 loss -0.8720 entropy 14.1426
+2020-03-24 04:02:41,733 arch_epoch 068 acc 0.9442 loss -0.2557 entropy 14.0476
+2020-03-24 04:02:41,733 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:03:04,389 episode 000 acc 0.8953 avg_acc 0.9500 reward -0.0547 loss -2.3340 entropy 14.0628
+2020-03-24 04:03:29,153 episode 001 acc 0.9169 avg_acc 0.9500 reward -0.0331 loss -1.4136 entropy 14.0021
+2020-03-24 04:03:54,421 episode 002 acc 0.9635 avg_acc 0.9500 reward 0.0135 loss 0.5690 entropy 14.0955
+2020-03-24 04:04:10,832 episode 003 acc 0.9359 avg_acc 0.9500 reward -0.0141 loss -0.5981 entropy 13.9590
+2020-03-24 04:04:42,241 episode 004 acc 0.9629 avg_acc 0.9500 reward 0.0129 loss 0.5342 entropy 14.0797
+2020-03-24 04:05:04,515 episode 005 acc 0.9650 avg_acc 0.9500 reward 0.0150 loss 0.6411 entropy 14.0505
+2020-03-24 04:05:22,669 episode 006 acc 0.9219 avg_acc 0.9500 reward -0.0281 loss -1.1679 entropy 14.0918
+2020-03-24 04:05:50,016 episode 007 acc 0.9601 avg_acc 0.9500 reward 0.0101 loss 0.4232 entropy 14.1452
+2020-03-24 04:05:50,017 arch_epoch 069 acc 0.9402 loss -0.4183 entropy 14.0608
+2020-03-24 04:05:50,017 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:06:18,931 episode 000 acc 0.9561 avg_acc 0.9500 reward 0.0061 loss 0.2502 entropy 14.0476
+2020-03-24 04:06:45,442 episode 001 acc 0.9554 avg_acc 0.9500 reward 0.0054 loss 0.2224 entropy 13.9704
+2020-03-24 04:07:10,083 episode 002 acc 0.9367 avg_acc 0.9500 reward -0.0133 loss -0.5748 entropy 14.2171
+2020-03-24 04:07:40,863 episode 003 acc 0.8025 avg_acc 0.9500 reward -0.1475 loss -6.1090 entropy 14.0921
+2020-03-24 04:08:02,710 episode 004 acc 0.9436 avg_acc 0.9500 reward -0.0064 loss -0.2707 entropy 13.9802
+2020-03-24 04:08:23,401 episode 005 acc 0.9674 avg_acc 0.9500 reward 0.0174 loss 0.7300 entropy 14.0138
+2020-03-24 04:08:43,619 episode 006 acc 0.9505 avg_acc 0.9500 reward 0.0005 loss 0.0221 entropy 14.0915
+2020-03-24 04:09:09,978 episode 007 acc 0.8913 avg_acc 0.9500 reward -0.0587 loss -2.4641 entropy 14.0351
+2020-03-24 04:09:09,981 arch_epoch 070 acc 0.9254 loss -1.0242 entropy 14.0560
+2020-03-24 04:09:09,981 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:09:35,829 episode 000 acc 0.9398 avg_acc 0.9500 reward -0.0102 loss -0.4252 entropy 13.9662
+2020-03-24 04:09:52,021 episode 001 acc 0.7888 avg_acc 0.9500 reward -0.1612 loss -6.9410 entropy 14.1157
+2020-03-24 04:10:15,970 episode 002 acc 0.9249 avg_acc 0.9500 reward -0.0251 loss -1.0463 entropy 14.0160
+2020-03-24 04:10:43,383 episode 003 acc 0.9489 avg_acc 0.9500 reward -0.0011 loss -0.0463 entropy 14.0172
+2020-03-24 04:11:11,776 episode 004 acc 0.9742 avg_acc 0.9500 reward 0.0242 loss 0.9761 entropy 13.9448
+2020-03-24 04:11:42,810 episode 005 acc 0.9598 avg_acc 0.9500 reward 0.0098 loss 0.4006 entropy 14.0880
+2020-03-24 04:12:10,506 episode 006 acc 0.9625 avg_acc 0.9500 reward 0.0125 loss 0.5208 entropy 14.0987
+2020-03-24 04:12:33,075 episode 007 acc 0.9109 avg_acc 0.9500 reward -0.0391 loss -1.6413 entropy 13.9421
+2020-03-24 04:12:33,076 arch_epoch 071 acc 0.9262 loss -1.0253 entropy 14.0236
+2020-03-24 04:12:33,076 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:12:58,154 episode 000 acc 0.9450 avg_acc 0.9500 reward -0.0050 loss -0.2072 entropy 13.9859
+2020-03-24 04:13:20,811 episode 001 acc 0.8922 avg_acc 0.9500 reward -0.0578 loss -2.4245 entropy 14.0306
+2020-03-24 04:13:47,994 episode 002 acc 0.9127 avg_acc 0.9500 reward -0.0373 loss -1.5777 entropy 14.1916
+2020-03-24 04:14:13,526 episode 003 acc 0.9285 avg_acc 0.9500 reward -0.0215 loss -0.9054 entropy 14.0727
+2020-03-24 04:14:42,660 episode 004 acc 0.8701 avg_acc 0.9500 reward -0.0799 loss -3.2845 entropy 14.0450
+2020-03-24 04:15:08,341 episode 005 acc 0.9484 avg_acc 0.9500 reward -0.0016 loss -0.0659 entropy 14.0163
+2020-03-24 04:15:31,691 episode 006 acc 0.9675 avg_acc 0.9500 reward 0.0175 loss 0.7354 entropy 14.0056
+2020-03-24 04:15:58,461 episode 007 acc 0.9550 avg_acc 0.9500 reward 0.0050 loss 0.2085 entropy 13.9699
+2020-03-24 04:15:58,463 arch_epoch 072 acc 0.9274 loss -0.9402 entropy 14.0397
+2020-03-24 04:15:58,463 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:16:17,809 episode 000 acc 0.9507 avg_acc 0.9500 reward 0.0007 loss 0.0269 entropy 13.8492
+2020-03-24 04:16:38,956 episode 001 acc 0.9177 avg_acc 0.9500 reward -0.0323 loss -1.3649 entropy 14.0244
+2020-03-24 04:17:04,326 episode 002 acc 0.9492 avg_acc 0.9500 reward -0.0008 loss -0.0321 entropy 13.9324
+2020-03-24 04:17:26,716 episode 003 acc 0.9591 avg_acc 0.9500 reward 0.0091 loss 0.3899 entropy 14.1238
+2020-03-24 04:17:49,835 episode 004 acc 0.9611 avg_acc 0.9500 reward 0.0111 loss 0.4748 entropy 14.0453
+2020-03-24 04:18:15,668 episode 005 acc 0.9263 avg_acc 0.9500 reward -0.0237 loss -1.0049 entropy 14.0097
+2020-03-24 04:18:37,552 episode 006 acc 0.9237 avg_acc 0.9500 reward -0.0263 loss -1.0946 entropy 14.0215
+2020-03-24 04:18:58,070 episode 007 acc 0.9551 avg_acc 0.9500 reward 0.0051 loss 0.2210 entropy 14.1039
+2020-03-24 04:18:58,072 arch_epoch 073 acc 0.9429 loss -0.2980 entropy 14.0138
+2020-03-24 04:18:58,072 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:19:25,403 episode 000 acc 0.9118 avg_acc 0.9500 reward -0.0382 loss -1.6476 entropy 14.0912
+2020-03-24 04:19:48,130 episode 001 acc 0.9399 avg_acc 0.9500 reward -0.0101 loss -0.4447 entropy 14.2217
+2020-03-24 04:20:06,822 episode 002 acc 0.9334 avg_acc 0.9500 reward -0.0166 loss -0.7146 entropy 14.1073
+2020-03-24 04:20:28,198 episode 003 acc 0.9360 avg_acc 0.9500 reward -0.0140 loss -0.5861 entropy 14.0370
+2020-03-24 04:20:59,260 episode 004 acc 0.9434 avg_acc 0.9500 reward -0.0066 loss -0.2723 entropy 14.0098
+2020-03-24 04:21:24,620 episode 005 acc 0.9377 avg_acc 0.9500 reward -0.0123 loss -0.5259 entropy 14.0466
+2020-03-24 04:21:47,065 episode 006 acc 0.8474 avg_acc 0.9500 reward -0.1026 loss -4.2891 entropy 14.0953
+2020-03-24 04:22:17,559 episode 007 acc 0.9148 avg_acc 0.9500 reward -0.0352 loss -1.4931 entropy 14.1011
+2020-03-24 04:22:17,559 arch_epoch 074 acc 0.9205 loss -1.2467 entropy 14.0888
+2020-03-24 04:22:17,560 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:22:43,430 episode 000 acc 0.9541 avg_acc 0.9500 reward 0.0041 loss 0.1690 entropy 13.9623
+2020-03-24 04:23:09,160 episode 001 acc 0.9580 avg_acc 0.9500 reward 0.0080 loss 0.3306 entropy 14.0057
+2020-03-24 04:23:34,928 episode 002 acc 0.9602 avg_acc 0.9500 reward 0.0102 loss 0.4254 entropy 13.9976
+2020-03-24 04:23:55,916 episode 003 acc 0.9615 avg_acc 0.9500 reward 0.0115 loss 0.4892 entropy 14.0715
+2020-03-24 04:24:18,208 episode 004 acc 0.9600 avg_acc 0.9500 reward 0.0100 loss 0.4230 entropy 14.0064
+2020-03-24 04:24:42,748 episode 005 acc 0.9235 avg_acc 0.9500 reward -0.0265 loss -1.1039 entropy 14.0197
+2020-03-24 04:25:06,156 episode 006 acc 0.9622 avg_acc 0.9500 reward 0.0122 loss 0.5151 entropy 14.0168
+2020-03-24 04:25:27,872 episode 007 acc 0.9461 avg_acc 0.9500 reward -0.0039 loss -0.1649 entropy 14.1320
+2020-03-24 04:25:27,872 arch_epoch 075 acc 0.9532 loss 0.1354 entropy 14.0265
+2020-03-24 04:25:27,872 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:25:50,880 episode 000 acc 0.9546 avg_acc 0.9500 reward 0.0046 loss 0.1925 entropy 14.0176
+2020-03-24 04:26:14,010 episode 001 acc 0.9046 avg_acc 0.9500 reward -0.0454 loss -1.8950 entropy 14.0179
+2020-03-24 04:26:34,822 episode 002 acc 0.8902 avg_acc 0.9500 reward -0.0598 loss -2.5101 entropy 13.9552
+2020-03-24 04:27:04,261 episode 003 acc 0.9084 avg_acc 0.9500 reward -0.0416 loss -1.7642 entropy 14.1647
+2020-03-24 04:27:35,555 episode 004 acc 0.9381 avg_acc 0.9500 reward -0.0119 loss -0.4774 entropy 13.9168
+2020-03-24 04:27:53,580 episode 005 acc 0.9435 avg_acc 0.9500 reward -0.0065 loss -0.2768 entropy 13.9789
+2020-03-24 04:28:16,122 episode 006 acc 0.9629 avg_acc 0.9500 reward 0.0129 loss 0.5413 entropy 14.0058
+2020-03-24 04:28:42,052 episode 007 acc 0.9022 avg_acc 0.9500 reward -0.0478 loss -1.9474 entropy 13.9771
+2020-03-24 04:28:42,053 arch_epoch 076 acc 0.9256 loss -1.0171 entropy 14.0042
+2020-03-24 04:28:42,054 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:29:08,688 episode 000 acc 0.9152 avg_acc 0.9500 reward -0.0348 loss -1.5081 entropy 14.1702
+2020-03-24 04:29:28,698 episode 001 acc 0.9140 avg_acc 0.9500 reward -0.0360 loss -1.4923 entropy 14.0952
+2020-03-24 04:29:48,878 episode 002 acc 0.9374 avg_acc 0.9500 reward -0.0126 loss -0.5283 entropy 14.0165
+2020-03-24 04:30:10,801 episode 003 acc 0.9187 avg_acc 0.9500 reward -0.0313 loss -1.3028 entropy 13.9437
+2020-03-24 04:30:32,056 episode 004 acc 0.9376 avg_acc 0.9500 reward -0.0124 loss -0.5220 entropy 14.0591
+2020-03-24 04:30:57,000 episode 005 acc 0.9607 avg_acc 0.9500 reward 0.0107 loss 0.4533 entropy 14.0589
+2020-03-24 04:31:18,875 episode 006 acc 0.9439 avg_acc 0.9500 reward -0.0061 loss -0.2634 entropy 14.1002
+2020-03-24 04:31:46,899 episode 007 acc 0.9635 avg_acc 0.9500 reward 0.0135 loss 0.5587 entropy 14.0078
+2020-03-24 04:31:46,902 arch_epoch 077 acc 0.9364 loss -0.5756 entropy 14.0564
+2020-03-24 04:31:46,902 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:32:16,193 episode 000 acc 0.9590 avg_acc 0.9500 reward 0.0090 loss 0.3737 entropy 14.0800
+2020-03-24 04:32:44,151 episode 001 acc 0.9514 avg_acc 0.9500 reward 0.0014 loss 0.0582 entropy 14.0727
+2020-03-24 04:33:10,798 episode 002 acc 0.9394 avg_acc 0.9500 reward -0.0106 loss -0.4448 entropy 14.0739
+2020-03-24 04:33:39,241 episode 003 acc 0.9313 avg_acc 0.9500 reward -0.0187 loss -0.7926 entropy 14.0938
+2020-03-24 04:34:05,857 episode 004 acc 0.9667 avg_acc 0.9500 reward 0.0167 loss 0.7031 entropy 14.0606
+2020-03-24 04:34:30,130 episode 005 acc 0.9501 avg_acc 0.9500 reward 0.0001 loss 0.0040 entropy 13.8614
+2020-03-24 04:34:45,844 episode 006 acc 0.9481 avg_acc 0.9500 reward -0.0019 loss -0.0800 entropy 14.0164
+2020-03-24 04:35:13,486 episode 007 acc 0.9302 avg_acc 0.9500 reward -0.0198 loss -0.8393 entropy 13.9663
+2020-03-24 04:35:13,487 arch_epoch 078 acc 0.9470 loss -0.1272 entropy 14.0281
+2020-03-24 04:35:13,487 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:35:40,188 episode 000 acc 0.9674 avg_acc 0.9500 reward 0.0174 loss 0.7375 entropy 13.9753
+2020-03-24 04:36:04,916 episode 001 acc 0.9500 avg_acc 0.9500 reward -0.0000 loss -0.0003 entropy 13.9924
+2020-03-24 04:36:26,594 episode 002 acc 0.9477 avg_acc 0.9500 reward -0.0023 loss -0.0945 entropy 13.9584
+2020-03-24 04:36:54,014 episode 003 acc 0.7762 avg_acc 0.9500 reward -0.1738 loss -7.1449 entropy 14.0318
+2020-03-24 04:37:19,511 episode 004 acc 0.9410 avg_acc 0.9500 reward -0.0090 loss -0.3750 entropy 14.0759
+2020-03-24 04:37:42,514 episode 005 acc 0.9492 avg_acc 0.9500 reward -0.0008 loss -0.0355 entropy 13.9910
+2020-03-24 04:38:03,785 episode 006 acc 0.9352 avg_acc 0.9500 reward -0.0148 loss -0.6217 entropy 13.9877
+2020-03-24 04:38:27,384 episode 007 acc 0.9195 avg_acc 0.9500 reward -0.0305 loss -1.2855 entropy 14.0009
+2020-03-24 04:38:27,387 arch_epoch 079 acc 0.9233 loss -1.1025 entropy 14.0017
+2020-03-24 04:38:27,388 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:38:48,874 episode 000 acc 0.8501 avg_acc 0.9500 reward -0.0999 loss -4.1564 entropy 13.8707
+2020-03-24 04:39:13,267 episode 001 acc 0.9600 avg_acc 0.9500 reward 0.0100 loss 0.4145 entropy 13.9407
+2020-03-24 04:39:36,503 episode 002 acc 0.9637 avg_acc 0.9500 reward 0.0137 loss 0.5654 entropy 13.9641
+2020-03-24 04:40:02,285 episode 003 acc 0.8866 avg_acc 0.9500 reward -0.0634 loss -2.7105 entropy 14.1101
+2020-03-24 04:40:29,277 episode 004 acc 0.9575 avg_acc 0.9500 reward 0.0075 loss 0.3046 entropy 13.8931
+2020-03-24 04:40:50,562 episode 005 acc 0.9375 avg_acc 0.9500 reward -0.0125 loss -0.5341 entropy 13.9057
+2020-03-24 04:41:16,687 episode 006 acc 0.9589 avg_acc 0.9500 reward 0.0089 loss 0.3619 entropy 13.9724
+2020-03-24 04:41:35,886 episode 007 acc 0.9454 avg_acc 0.9500 reward -0.0046 loss -0.1967 entropy 13.9672
+2020-03-24 04:41:35,888 arch_epoch 080 acc 0.9325 loss -0.7439 entropy 13.9530
+2020-03-24 04:41:35,888 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:42:00,479 episode 000 acc 0.8810 avg_acc 0.9500 reward -0.0690 loss -2.8629 entropy 13.9553
+2020-03-24 04:42:23,660 episode 001 acc 0.9130 avg_acc 0.9500 reward -0.0370 loss -1.5099 entropy 13.9024
+2020-03-24 04:42:44,503 episode 002 acc 0.8913 avg_acc 0.9500 reward -0.0587 loss -2.5424 entropy 14.0910
+2020-03-24 04:43:11,378 episode 003 acc 0.9477 avg_acc 0.9500 reward -0.0023 loss -0.0970 entropy 14.0683
+2020-03-24 04:43:34,756 episode 004 acc 0.9579 avg_acc 0.9500 reward 0.0079 loss 0.3341 entropy 13.9979
+2020-03-24 04:43:57,670 episode 005 acc 0.9563 avg_acc 0.9500 reward 0.0063 loss 0.2655 entropy 13.9660
+2020-03-24 04:44:19,503 episode 006 acc 0.9441 avg_acc 0.9500 reward -0.0059 loss -0.2502 entropy 14.0245
+2020-03-24 04:44:44,739 episode 007 acc 0.9679 avg_acc 0.9500 reward 0.0179 loss 0.7255 entropy 13.9029
+2020-03-24 04:44:44,740 arch_epoch 081 acc 0.9324 loss -0.7422 entropy 13.9885
+2020-03-24 04:44:44,741 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:45:10,647 episode 000 acc 0.9565 avg_acc 0.9500 reward 0.0065 loss 0.2694 entropy 13.9895
+2020-03-24 04:45:28,874 episode 001 acc 0.8645 avg_acc 0.9500 reward -0.0855 loss -3.6521 entropy 14.0924
+2020-03-24 04:45:57,466 episode 002 acc 0.9687 avg_acc 0.9500 reward 0.0187 loss 0.7512 entropy 13.8947
+2020-03-24 04:46:18,623 episode 003 acc 0.9628 avg_acc 0.9500 reward 0.0128 loss 0.5317 entropy 13.8668
+2020-03-24 04:46:40,466 episode 004 acc 0.9290 avg_acc 0.9500 reward -0.0210 loss -0.9241 entropy 14.1444
+2020-03-24 04:47:02,684 episode 005 acc 0.8929 avg_acc 0.9500 reward -0.0571 loss -2.4420 entropy 14.0551
+2020-03-24 04:47:25,334 episode 006 acc 0.9432 avg_acc 0.9500 reward -0.0068 loss -0.2849 entropy 13.8770
+2020-03-24 04:47:52,444 episode 007 acc 0.9489 avg_acc 0.9500 reward -0.0011 loss -0.0472 entropy 14.1745
+2020-03-24 04:47:52,446 arch_epoch 082 acc 0.9333 loss -0.7248 entropy 14.0118
+2020-03-24 04:47:52,446 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:48:15,004 episode 000 acc 0.9479 avg_acc 0.9500 reward -0.0021 loss -0.0899 entropy 13.9677
+2020-03-24 04:48:34,897 episode 001 acc 0.9531 avg_acc 0.9500 reward 0.0031 loss 0.1292 entropy 13.9809
+2020-03-24 04:49:01,296 episode 002 acc 0.9527 avg_acc 0.9500 reward 0.0027 loss 0.1123 entropy 13.9927
+2020-03-24 04:49:23,633 episode 003 acc 0.9636 avg_acc 0.9500 reward 0.0136 loss 0.5696 entropy 14.0009
+2020-03-24 04:49:49,684 episode 004 acc 0.8102 avg_acc 0.9500 reward -0.1398 loss -5.9802 entropy 14.0876
+2020-03-24 04:50:16,891 episode 005 acc 0.8939 avg_acc 0.9500 reward -0.0561 loss -2.3828 entropy 14.1180
+2020-03-24 04:50:38,643 episode 006 acc 0.9516 avg_acc 0.9500 reward 0.0016 loss 0.0701 entropy 14.1598
+2020-03-24 04:51:04,145 episode 007 acc 0.9085 avg_acc 0.9500 reward -0.0415 loss -1.7507 entropy 13.9932
+2020-03-24 04:51:04,146 arch_epoch 083 acc 0.9227 loss -1.1653 entropy 14.0376
+2020-03-24 04:51:04,147 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:51:28,305 episode 000 acc 0.9302 avg_acc 0.9500 reward -0.0198 loss -0.8511 entropy 14.1016
+2020-03-24 04:51:51,912 episode 001 acc 0.6821 avg_acc 0.9500 reward -0.2679 loss -11.2952 entropy 14.0308
+2020-03-24 04:52:10,592 episode 002 acc 0.9167 avg_acc 0.9500 reward -0.0333 loss -1.4080 entropy 13.9239
+2020-03-24 04:52:28,077 episode 003 acc 0.8642 avg_acc 0.9500 reward -0.0858 loss -3.6980 entropy 13.9524
+2020-03-24 04:52:52,392 episode 004 acc 0.9622 avg_acc 0.9500 reward 0.0122 loss 0.5051 entropy 13.9346
+2020-03-24 04:53:20,929 episode 005 acc 0.9611 avg_acc 0.9500 reward 0.0111 loss 0.4564 entropy 13.9261
+2020-03-24 04:53:43,599 episode 006 acc 0.9596 avg_acc 0.9500 reward 0.0096 loss 0.4078 entropy 13.9910
+2020-03-24 04:54:11,337 episode 007 acc 0.9415 avg_acc 0.9500 reward -0.0085 loss -0.3583 entropy 14.0477
+2020-03-24 04:54:11,339 arch_epoch 084 acc 0.9022 loss -2.0302 entropy 13.9885
+2020-03-24 04:54:11,340 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:54:34,476 episode 000 acc 0.9233 avg_acc 0.9500 reward -0.0267 loss -1.1393 entropy 14.0314
+2020-03-24 04:54:57,957 episode 001 acc 0.9692 avg_acc 0.9500 reward 0.0192 loss 0.8044 entropy 13.9806
+2020-03-24 04:55:23,275 episode 002 acc 0.9372 avg_acc 0.9500 reward -0.0128 loss -0.5387 entropy 13.9859
+2020-03-24 04:55:43,538 episode 003 acc 0.9434 avg_acc 0.9500 reward -0.0066 loss -0.2838 entropy 14.1163
+2020-03-24 04:56:07,647 episode 004 acc 0.9508 avg_acc 0.9500 reward 0.0008 loss 0.0348 entropy 13.9890
+2020-03-24 04:56:36,553 episode 005 acc 0.9610 avg_acc 0.9500 reward 0.0110 loss 0.4660 entropy 14.1133
+2020-03-24 04:57:00,693 episode 006 acc 0.9711 avg_acc 0.9500 reward 0.0211 loss 0.8762 entropy 13.9109
+2020-03-24 04:57:25,308 episode 007 acc 0.9622 avg_acc 0.9500 reward 0.0122 loss 0.5074 entropy 14.0128
+2020-03-24 04:57:25,309 arch_epoch 085 acc 0.9523 loss 0.0909 entropy 14.0175
+2020-03-24 04:57:25,309 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 04:57:45,854 episode 000 acc 0.9507 avg_acc 0.9500 reward 0.0007 loss 0.0306 entropy 14.0611
+2020-03-24 04:58:09,636 episode 001 acc 0.9276 avg_acc 0.9500 reward -0.0224 loss -0.9515 entropy 14.0586
+2020-03-24 04:58:39,491 episode 002 acc 0.9664 avg_acc 0.9500 reward 0.0164 loss 0.6813 entropy 13.9832
+2020-03-24 04:59:07,402 episode 003 acc 0.9665 avg_acc 0.9500 reward 0.0165 loss 0.6631 entropy 13.8796
+2020-03-24 04:59:35,276 episode 004 acc 0.9182 avg_acc 0.9500 reward -0.0318 loss -1.3067 entropy 13.9360
+2020-03-24 04:59:56,572 episode 005 acc 0.9402 avg_acc 0.9500 reward -0.0098 loss -0.4145 entropy 14.0501
+2020-03-24 05:00:20,254 episode 006 acc 0.8566 avg_acc 0.9500 reward -0.0934 loss -3.8765 entropy 13.9243
+2020-03-24 05:00:45,115 episode 007 acc 0.9590 avg_acc 0.9500 reward 0.0090 loss 0.3805 entropy 14.1220
+2020-03-24 05:00:45,117 arch_epoch 086 acc 0.9357 loss -0.5992 entropy 14.0019
+2020-03-24 05:00:45,117 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:01:17,395 episode 000 acc 0.9557 avg_acc 0.9500 reward 0.0057 loss 0.2287 entropy 13.8827
+2020-03-24 05:01:38,318 episode 001 acc 0.9577 avg_acc 0.9500 reward 0.0077 loss 0.3231 entropy 13.9038
+2020-03-24 05:01:54,651 episode 002 acc 0.9472 avg_acc 0.9500 reward -0.0028 loss -0.1189 entropy 14.0404
+2020-03-24 05:02:16,969 episode 003 acc 0.9589 avg_acc 0.9500 reward 0.0089 loss 0.3794 entropy 14.0124
+2020-03-24 05:02:44,150 episode 004 acc 0.9488 avg_acc 0.9500 reward -0.0012 loss -0.0517 entropy 14.0402
+2020-03-24 05:03:10,122 episode 005 acc 0.9633 avg_acc 0.9500 reward 0.0133 loss 0.5662 entropy 14.0853
+2020-03-24 05:03:36,792 episode 006 acc 0.9637 avg_acc 0.9500 reward 0.0137 loss 0.5677 entropy 13.8383
+2020-03-24 05:04:01,652 episode 007 acc 0.9743 avg_acc 0.9500 reward 0.0243 loss 1.0334 entropy 14.0933
+2020-03-24 05:04:01,653 arch_epoch 087 acc 0.9587 loss 0.3660 entropy 13.9870
+2020-03-24 05:04:01,654 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:04:27,107 episode 000 acc 0.9618 avg_acc 0.9500 reward 0.0118 loss 0.4851 entropy 13.9340
+2020-03-24 05:04:51,757 episode 001 acc 0.8547 avg_acc 0.9500 reward -0.0953 loss -4.0144 entropy 14.0281
+2020-03-24 05:05:16,873 episode 002 acc 0.9289 avg_acc 0.9500 reward -0.0211 loss -0.8956 entropy 14.1212
+2020-03-24 05:05:42,926 episode 003 acc 0.9634 avg_acc 0.9500 reward 0.0134 loss 0.5585 entropy 13.9627
+2020-03-24 05:06:10,988 episode 004 acc 0.9394 avg_acc 0.9500 reward -0.0106 loss -0.4441 entropy 13.9841
+2020-03-24 05:06:36,114 episode 005 acc 0.9524 avg_acc 0.9500 reward 0.0024 loss 0.0975 entropy 13.9687
+2020-03-24 05:07:01,173 episode 006 acc 0.9524 avg_acc 0.9500 reward 0.0024 loss 0.0982 entropy 13.8996
+2020-03-24 05:07:23,810 episode 007 acc 0.9550 avg_acc 0.9500 reward 0.0050 loss 0.2074 entropy 13.8371
+2020-03-24 05:07:23,810 arch_epoch 088 acc 0.9385 loss -0.4884 entropy 13.9669
+2020-03-24 05:07:23,811 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:07:44,992 episode 000 acc 0.8765 avg_acc 0.9500 reward -0.0735 loss -3.0708 entropy 13.8982
+2020-03-24 05:08:09,425 episode 001 acc 0.9219 avg_acc 0.9500 reward -0.0281 loss -1.1530 entropy 13.9169
+2020-03-24 05:08:39,733 episode 002 acc 0.9613 avg_acc 0.9500 reward 0.0113 loss 0.4708 entropy 13.9474
+2020-03-24 05:09:01,912 episode 003 acc 0.9685 avg_acc 0.9500 reward 0.0185 loss 0.7622 entropy 13.9133
+2020-03-24 05:09:26,253 episode 004 acc 0.9445 avg_acc 0.9500 reward -0.0055 loss -0.2231 entropy 13.9203
+2020-03-24 05:09:43,272 episode 005 acc 0.9456 avg_acc 0.9500 reward -0.0044 loss -0.1787 entropy 13.7643
+2020-03-24 05:09:59,972 episode 006 acc 0.9415 avg_acc 0.9500 reward -0.0085 loss -0.3651 entropy 13.9512
+2020-03-24 05:10:22,895 episode 007 acc 0.9506 avg_acc 0.9500 reward 0.0006 loss 0.0242 entropy 13.9981
+2020-03-24 05:10:22,896 arch_epoch 089 acc 0.9388 loss -0.4667 entropy 13.9137
+2020-03-24 05:10:22,896 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:10:48,614 episode 000 acc 0.9564 avg_acc 0.9500 reward 0.0064 loss 0.2672 entropy 13.9497
+2020-03-24 05:11:10,872 episode 001 acc 0.9556 avg_acc 0.9500 reward 0.0056 loss 0.2295 entropy 14.0446
+2020-03-24 05:11:24,812 episode 002 acc 0.9543 avg_acc 0.9500 reward 0.0043 loss 0.1840 entropy 13.9978
+2020-03-24 05:11:38,252 episode 003 acc 0.9708 avg_acc 0.9500 reward 0.0208 loss 0.8806 entropy 13.9536
+2020-03-24 05:11:55,654 episode 004 acc 0.9329 avg_acc 0.9500 reward -0.0171 loss -0.7139 entropy 13.9545
+2020-03-24 05:12:13,769 episode 005 acc 0.9094 avg_acc 0.9500 reward -0.0406 loss -1.6829 entropy 14.0461
+2020-03-24 05:12:28,997 episode 006 acc 0.9362 avg_acc 0.9500 reward -0.0138 loss -0.5654 entropy 13.8482
+2020-03-24 05:12:44,193 episode 007 acc 0.9514 avg_acc 0.9500 reward 0.0014 loss 0.0589 entropy 14.0931
+2020-03-24 05:12:44,194 arch_epoch 090 acc 0.9459 loss -0.1678 entropy 13.9860
+2020-03-24 05:12:44,194 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:12:58,357 episode 000 acc 0.9552 avg_acc 0.9500 reward 0.0052 loss 0.2222 entropy 13.9104
+2020-03-24 05:13:16,847 episode 001 acc 0.9534 avg_acc 0.9500 reward 0.0034 loss 0.1433 entropy 14.1501
+2020-03-24 05:13:36,744 episode 002 acc 0.9693 avg_acc 0.9500 reward 0.0193 loss 0.7987 entropy 14.0402
+2020-03-24 05:13:52,101 episode 003 acc 0.9598 avg_acc 0.9500 reward 0.0098 loss 0.4127 entropy 13.9646
+2020-03-24 05:14:06,089 episode 004 acc 0.9585 avg_acc 0.9500 reward 0.0085 loss 0.3600 entropy 13.8577
+2020-03-24 05:14:19,943 episode 005 acc 0.8687 avg_acc 0.9500 reward -0.0813 loss -3.4522 entropy 13.8480
+2020-03-24 05:14:35,754 episode 006 acc 0.9492 avg_acc 0.9500 reward -0.0008 loss -0.0327 entropy 13.8926
+2020-03-24 05:14:48,030 episode 007 acc 0.9494 avg_acc 0.9500 reward -0.0006 loss -0.0242 entropy 13.8498
+2020-03-24 05:14:48,030 arch_epoch 091 acc 0.9455 loss -0.1965 entropy 13.9392
+2020-03-24 05:14:48,031 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:15:07,740 episode 000 acc 0.9582 avg_acc 0.9500 reward 0.0082 loss 0.3453 entropy 14.1658
+2020-03-24 05:15:23,767 episode 001 acc 0.9646 avg_acc 0.9500 reward 0.0146 loss 0.6086 entropy 13.9653
+2020-03-24 05:15:41,566 episode 002 acc 0.9688 avg_acc 0.9500 reward 0.0188 loss 0.7752 entropy 13.9620
+2020-03-24 05:15:55,279 episode 003 acc 0.7905 avg_acc 0.9500 reward -0.1595 loss -6.7800 entropy 13.9351
+2020-03-24 05:16:10,111 episode 004 acc 0.9128 avg_acc 0.9500 reward -0.0372 loss -1.5988 entropy 14.0655
+2020-03-24 05:16:25,692 episode 005 acc 0.9558 avg_acc 0.9500 reward 0.0058 loss 0.2414 entropy 13.8852
+2020-03-24 05:16:42,670 episode 006 acc 0.9525 avg_acc 0.9500 reward 0.0025 loss 0.1017 entropy 13.9619
+2020-03-24 05:17:01,530 episode 007 acc 0.9722 avg_acc 0.9500 reward 0.0222 loss 0.8937 entropy 13.9478
+2020-03-24 05:17:01,531 arch_epoch 092 acc 0.9344 loss -0.6766 entropy 13.9861
+2020-03-24 05:17:01,531 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:17:18,272 episode 000 acc 0.9718 avg_acc 0.9500 reward 0.0218 loss 0.9100 entropy 13.9714
+2020-03-24 05:17:34,329 episode 001 acc 0.9289 avg_acc 0.9500 reward -0.0211 loss -0.8919 entropy 13.9445
+2020-03-24 05:17:50,525 episode 002 acc 0.9283 avg_acc 0.9500 reward -0.0217 loss -0.9342 entropy 14.1597
+2020-03-24 05:18:07,715 episode 003 acc 0.9589 avg_acc 0.9500 reward 0.0089 loss 0.3636 entropy 13.8808
+2020-03-24 05:18:27,576 episode 004 acc 0.9430 avg_acc 0.9500 reward -0.0070 loss -0.2892 entropy 14.0302
+2020-03-24 05:18:44,625 episode 005 acc 0.9620 avg_acc 0.9500 reward 0.0120 loss 0.4984 entropy 13.9335
+2020-03-24 05:18:59,216 episode 006 acc 0.8933 avg_acc 0.9500 reward -0.0567 loss -2.4436 entropy 13.8941
+2020-03-24 05:19:15,073 episode 007 acc 0.9289 avg_acc 0.9500 reward -0.0211 loss -0.8901 entropy 14.0229
+2020-03-24 05:19:15,074 arch_epoch 093 acc 0.9394 loss -0.4596 entropy 13.9796
+2020-03-24 05:19:15,074 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:19:28,060 episode 000 acc 0.9332 avg_acc 0.9500 reward -0.0168 loss -0.7076 entropy 14.0089
+2020-03-24 05:19:45,193 episode 001 acc 0.9475 avg_acc 0.9500 reward -0.0025 loss -0.1026 entropy 13.9718
+2020-03-24 05:20:01,276 episode 002 acc 0.9579 avg_acc 0.9500 reward 0.0079 loss 0.3332 entropy 13.9252
+2020-03-24 05:20:17,183 episode 003 acc 0.9611 avg_acc 0.9500 reward 0.0111 loss 0.4599 entropy 13.7859
+2020-03-24 05:20:34,487 episode 004 acc 0.9388 avg_acc 0.9500 reward -0.0112 loss -0.4620 entropy 13.9651
+2020-03-24 05:20:50,974 episode 005 acc 0.9541 avg_acc 0.9500 reward 0.0041 loss 0.1723 entropy 13.9978
+2020-03-24 05:21:01,061 episode 006 acc 0.9437 avg_acc 0.9500 reward -0.0063 loss -0.2714 entropy 13.9957
+2020-03-24 05:21:17,895 episode 007 acc 0.9407 avg_acc 0.9500 reward -0.0093 loss -0.3810 entropy 13.8010
+2020-03-24 05:21:17,897 arch_epoch 094 acc 0.9471 loss -0.1199 entropy 13.9314
+2020-03-24 05:21:17,897 0.9746 Genotype(normal=[(0, 0, 'max_pool_3x3', 'identity', 'add'), (1, 1, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'sep_conv_3x3', 'identity', 'add'), (0, 4, 'identity', 'identity', 'concat')], normal_concat={2, 3, 5}, reduce=[(1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (1, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 3, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 2, 'sep_conv_3x3', 'identity', 'concat')], reduce_concat={4, 5})
+2020-03-24 05:21:37,437 episode 000 acc 0.9754 avg_acc 0.9500 reward 0.0254 loss 1.0309 entropy 13.9637
+2020-03-24 05:21:57,489 episode 001 acc 0.9347 avg_acc 0.9500 reward -0.0153 loss -0.6312 entropy 13.9542
+2020-03-24 05:22:12,931 episode 002 acc 0.8979 avg_acc 0.9500 reward -0.0521 loss -2.2321 entropy 14.0669
+2020-03-24 05:22:30,804 episode 003 acc 0.8749 avg_acc 0.9500 reward -0.0751 loss -3.0597 entropy 13.8964
+2020-03-24 05:22:48,828 episode 004 acc 0.8971 avg_acc 0.9500 reward -0.0529 loss -2.1897 entropy 13.9570
+2020-03-24 05:23:05,901 episode 005 acc 0.9703 avg_acc 0.9500 reward 0.0203 loss 0.8552 entropy 14.0717
+2020-03-24 05:23:24,011 episode 006 acc 0.9535 avg_acc 0.9500 reward 0.0035 loss 0.1461 entropy 14.0134
+2020-03-24 05:23:42,373 episode 007 acc 0.9599 avg_acc 0.9500 reward 0.0099 loss 0.4100 entropy 13.9557
+2020-03-24 05:23:42,374 arch_epoch 095 acc 0.9330 loss -0.7088 entropy 13.9849
+2020-03-24 05:23:42,374 0.9754 Genotype(normal=[(0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add')], normal_concat={3, 4, 5}, reduce=[(0, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 1, 'sep_conv_3x3', 'max_pool_3x3', 'concat')], reduce_concat={3, 4, 5})
+2020-03-24 05:24:00,012 episode 000 acc 0.9444 avg_acc 0.9500 reward -0.0056 loss -0.2320 entropy 13.9395
+2020-03-24 05:24:13,506 episode 001 acc 0.9597 avg_acc 0.9500 reward 0.0097 loss 0.3960 entropy 13.7023
+2020-03-24 05:24:32,434 episode 002 acc 0.9554 avg_acc 0.9500 reward 0.0054 loss 0.2273 entropy 14.0722
+2020-03-24 05:24:46,030 episode 003 acc 0.5811 avg_acc 0.9500 reward -0.3689 loss -15.7775 entropy 14.1476
+2020-03-24 05:25:01,419 episode 004 acc 0.8916 avg_acc 0.9500 reward -0.0584 loss -2.4248 entropy 14.0195
+2020-03-24 05:25:16,909 episode 005 acc 0.9605 avg_acc 0.9500 reward 0.0105 loss 0.4509 entropy 13.9825
+2020-03-24 05:25:31,782 episode 006 acc 0.9555 avg_acc 0.9500 reward 0.0055 loss 0.2253 entropy 13.7830
+2020-03-24 05:25:50,255 episode 007 acc 0.8474 avg_acc 0.9500 reward -0.1026 loss -4.2389 entropy 13.9333
+2020-03-24 05:25:50,256 arch_epoch 096 acc 0.8869 loss -2.6717 entropy 13.9475
+2020-03-24 05:25:50,257 0.9754 Genotype(normal=[(0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add')], normal_concat={3, 4, 5}, reduce=[(0, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 1, 'sep_conv_3x3', 'max_pool_3x3', 'concat')], reduce_concat={3, 4, 5})
+2020-03-24 05:26:06,972 episode 000 acc 0.9590 avg_acc 0.9500 reward 0.0090 loss 0.3753 entropy 13.9137
+2020-03-24 05:26:19,738 episode 001 acc 0.9661 avg_acc 0.9500 reward 0.0161 loss 0.6962 entropy 13.9447
+2020-03-24 05:26:36,477 episode 002 acc 0.9212 avg_acc 0.9500 reward -0.0288 loss -1.2106 entropy 13.9750
+2020-03-24 05:26:50,772 episode 003 acc 0.9214 avg_acc 0.9500 reward -0.0286 loss -1.1984 entropy 13.9267
+2020-03-24 05:27:08,472 episode 004 acc 0.9607 avg_acc 0.9500 reward 0.0107 loss 0.4382 entropy 13.9293
+2020-03-24 05:27:22,823 episode 005 acc 0.9549 avg_acc 0.9500 reward 0.0049 loss 0.2071 entropy 13.9906
+2020-03-24 05:27:40,952 episode 006 acc 0.9353 avg_acc 0.9500 reward -0.0147 loss -0.6018 entropy 13.9468
+2020-03-24 05:27:58,328 episode 007 acc 0.9185 avg_acc 0.9500 reward -0.0315 loss -1.3227 entropy 13.9914
+2020-03-24 05:27:58,329 arch_epoch 097 acc 0.9421 loss -0.3271 entropy 13.9523
+2020-03-24 05:27:58,329 0.9754 Genotype(normal=[(0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add')], normal_concat={3, 4, 5}, reduce=[(0, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 1, 'sep_conv_3x3', 'max_pool_3x3', 'concat')], reduce_concat={3, 4, 5})
+2020-03-24 05:28:12,016 episode 000 acc 0.9588 avg_acc 0.9500 reward 0.0088 loss 0.3854 entropy 13.9385
+2020-03-24 05:28:24,403 episode 001 acc 0.9460 avg_acc 0.9500 reward -0.0040 loss -0.1734 entropy 13.9769
+2020-03-24 05:28:39,912 episode 002 acc 0.9244 avg_acc 0.9500 reward -0.0256 loss -1.1084 entropy 14.0141
+2020-03-24 05:28:54,740 episode 003 acc 0.9712 avg_acc 0.9500 reward 0.0212 loss 0.8810 entropy 13.7516
+2020-03-24 05:29:08,399 episode 004 acc 0.9326 avg_acc 0.9500 reward -0.0174 loss -0.7429 entropy 13.8606
+2020-03-24 05:29:27,504 episode 005 acc 0.9705 avg_acc 0.9500 reward 0.0205 loss 0.8200 entropy 13.8682
+2020-03-24 05:29:46,324 episode 006 acc 0.9428 avg_acc 0.9500 reward -0.0072 loss -0.2982 entropy 13.9301
+2020-03-24 05:30:01,980 episode 007 acc 0.9014 avg_acc 0.9500 reward -0.0486 loss -2.0478 entropy 13.9839
+2020-03-24 05:30:01,982 arch_epoch 098 acc 0.9435 loss -0.2855 entropy 13.9155
+2020-03-24 05:30:01,982 0.9754 Genotype(normal=[(0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add')], normal_concat={3, 4, 5}, reduce=[(0, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 1, 'sep_conv_3x3', 'max_pool_3x3', 'concat')], reduce_concat={3, 4, 5})
+2020-03-24 05:30:20,258 episode 000 acc 0.9620 avg_acc 0.9500 reward 0.0120 loss 0.4921 entropy 14.0031
+2020-03-24 05:30:35,602 episode 001 acc 0.9560 avg_acc 0.9500 reward 0.0060 loss 0.2563 entropy 13.8794
+2020-03-24 05:30:44,903 episode 002 acc 0.9439 avg_acc 0.9500 reward -0.0061 loss -0.2553 entropy 13.8355
+2020-03-24 05:31:00,030 episode 003 acc 0.9683 avg_acc 0.9500 reward 0.0183 loss 0.7544 entropy 13.8260
+2020-03-24 05:31:16,011 episode 004 acc 0.9637 avg_acc 0.9500 reward 0.0137 loss 0.5451 entropy 13.6879
+2020-03-24 05:31:32,930 episode 005 acc 0.8713 avg_acc 0.9500 reward -0.0787 loss -3.2591 entropy 13.9236
+2020-03-24 05:31:46,741 episode 006 acc 0.9327 avg_acc 0.9500 reward -0.0173 loss -0.7439 entropy 13.9465
+2020-03-24 05:32:01,266 episode 007 acc 0.9570 avg_acc 0.9500 reward 0.0070 loss 0.2941 entropy 13.7990
+2020-03-24 05:32:01,267 arch_epoch 099 acc 0.9444 loss -0.2395 entropy 13.8626
+2020-03-24 05:32:01,267 0.9754 Genotype(normal=[(0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 2, 'sep_conv_3x3', 'max_pool_3x3', 'add'), (1, 1, 'max_pool_3x3', 'sep_conv_3x3', 'add'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add')], normal_concat={3, 4, 5}, reduce=[(0, 1, 'max_pool_3x3', 'max_pool_3x3', 'add'), (0, 1, 'max_pool_3x3', 'sep_conv_3x3', 'concat'), (0, 0, 'sep_conv_3x3', 'sep_conv_3x3', 'add'), (2, 1, 'sep_conv_3x3', 'max_pool_3x3', 'concat')], reduce_concat={3, 4, 5})
