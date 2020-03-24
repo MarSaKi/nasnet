@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def valid_compare(path1, path2):
+def valid_compare(path1, path2, outname):
     f1 = open(path1, 'r')
     f2 = open(path2, 'r')
     acc1 = []
@@ -24,9 +24,9 @@ def valid_compare(path1, path2):
 
     epochs = np.linspace(0, 99, 100)
     plt.figure()
-    plt.plot(epochs, acc1, label = 'fixed baseline', color = 'cyan')
-    plt.plot(epochs, acc2, label = 'dynamic baseline', color = 'orange')
+    plt.plot(epochs, acc1, label = 'batch size 128', color = 'cyan')
+    plt.plot(epochs, acc2, label = 'batch size 1024', color = 'orange')
     plt.legend(loc = 'best')
-    plt.savefig('fig/valid_compare.pdf')
+    plt.savefig('fig/{}'.format(outname))
 
-valid_compare('log/fix_0.95.txt', 'log/dynamic_b.txt')
+valid_compare('log/log.txt', 'log/dynamic_b.txt', 'dif_batch_size.pdf')

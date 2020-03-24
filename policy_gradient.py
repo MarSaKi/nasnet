@@ -78,7 +78,7 @@ class PolicyGradient(object):
                 list_actions_index.append(actions_index)
                 list_genotype.append(utils.parse_actions_index(actions_index))
 
-            pool = Pool(12)
+            pool = multiprocessing.Pool(12)
             list_valid_acc = pool.map(self.get_valid_acc, list_genotype)
             pool.close()
             pool.join()
