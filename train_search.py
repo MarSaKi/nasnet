@@ -25,7 +25,7 @@ parser.add_argument('--model_weight_decay', type=float, default=3e-4)
 parser.add_argument('--model_momentum', type=float, default=0.9)
 parser.add_argument('--init_channel', type=int, default=4)
 
-parser.add_argument('--arch_epochs', type=int, default=100)
+parser.add_argument('--arch_epochs', type=int, default=500)
 parser.add_argument('--arch_lr', type=float, default=3.5e-4)
 parser.add_argument('--episodes', type=int, default=8)
 parser.add_argument('--entropy_weight', type=float, default=1e-5)

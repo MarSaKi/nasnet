@@ -40,15 +40,15 @@ class PolicyGradient(object):
             acc = 0
             loss = 0
             entropy = 0
-            #avg_valid_acc = np.mean(self.valid_accs)
-            avg_valid_acc = self.init_baseline
+            avg_valid_acc = np.mean(self.valid_accs)
+            #avg_valid_acc = self.init_baseline
 
             # one thread
             for episode in range(self.episodes):
                 ps, log_ps, actions_index = self.controller.sample()
 
                 genotype = utils.parse_actions_index(actions_index)
-                #print(genotype)
+                print(genotype)
                 valid_acc = self.get_valid_acc(genotype)
                 if valid_acc > max_valid_acc:
                     max_valid_acc = valid_acc
