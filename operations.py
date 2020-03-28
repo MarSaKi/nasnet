@@ -62,7 +62,7 @@ class Noisy(nn.Module):
     super(Noisy, self).__init__()
 
   def forward(self, x):
-    noise = torch.randn(x.shape).cuda() * 0.1
+    noise = torch.randn(x.shape).to(x.device) * 0.1
     return x + noise
 
 class FactorizedReduceNoisy(nn.Module):
@@ -78,7 +78,7 @@ class FactorizedReduceNoisy(nn.Module):
   def forward(self, x):
     x = self.relu(x)
     out = torch.cat([self.conv_1(x), self.conv_2(x[:,:,1:,1:])], dim=1)
-    noise = torch.randn(out.shape).cuda() * 0.1
+    noise = torch.randn(out.shape).to(out.device) * 0.1
     out = self.bn(out + noise)
     return out
 

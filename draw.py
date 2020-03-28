@@ -29,4 +29,24 @@ def valid_compare(path1, path2, outname):
     plt.legend(loc = 'best')
     plt.savefig('fig/{}'.format(outname))
 
-valid_compare('log/log.txt', 'log/dynamic_b.txt', 'dif_batch_size.pdf')
+def plot_line(path,out):
+    f = open(path, 'r')
+    acc = []
+    for line in f:
+        if 'arch_epoch' in line and 'acc' in line:
+            print(line)
+            line = line.rstrip('\n').split(' ')
+            acc_idx = line.index('acc') + 1
+            tacc = float(line[acc_idx])
+            acc.append(tacc)
+    epochs = np.linspace(0,len(acc)-1,len(acc))
+    plt.figure()
+    plt.plot(epochs, acc, label = 'batch size 1024', color = 'orange')
+    plt.legend(loc = 'best')
+    plt.savefig(out)
+
+
+
+plot_line('log/log.txt', 'fig/tmp.pdf')
+
+#valid_compare('log/log.txt', 'log/dynamic_b.txt', 'dif_batch_size.pdf')

@@ -28,7 +28,8 @@ class PolicyGradient(object):
         logging.info('controller param size = {}MB'.format(utils.count_params(self.controller)))
         self.adam = optim.Adam(params=self.controller.parameters(), lr=self.arch_lr)
 
-        self.valid_accs = deque([self.init_baseline], maxlen=100)
+        self.baseline = None
+        self.baseline_weight_decay = self.args.baseline_weight_decay
 
     def solve_environment(self, train_queue, valid_queue):
         self.train_queue = train_queue
@@ -121,6 +122,14 @@ class PolicyGradient(object):
         #to maxium entropy and policy reward
         loss = policy_loss - self.entropy_weight * entropy
         return loss, entropy
+
+    def cal_reward(self, acc):
+        if self.baseline == None:
+            self.baseline = acc
+        else:
+            self.baseline = self.baseline_weight_decay * self.baseline + (1-self.baseline_weight_decay) * acc
+        reward = acc - self.baseline
+        return reward
 
     def get_valid_acc(self, genotype):
         criterion = nn.CrossEntropyLoss()

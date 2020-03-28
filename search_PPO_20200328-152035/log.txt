@@ -1,0 +1,2 @@
+2020-03-28 15:20:35,419 args = Namespace(algorithm='PPO', arch_epochs=300, arch_lr=0.00035, baseline_weight=0.95, batch_size=256, clip_epsilon=0.2, cutout=False, cutout_length=16, data='./mnist', embedding_size=32, entropy_weight=1e-05, episodes=5, gpu=0, init_channel=4, model_epochs=2, model_lr=0.025, model_lr_min=0.001, model_momentum=0.9, model_weight_decay=0.0003, ppo_epochs=20, seed=2, train_portion=0.9)
+2020-03-28 15:20:35,421 using cpu
