@@ -1,2 +1,4 @@
 mnist/MNIST/processed/
 mnist/MNIST/raw/
+NasNet复现报告.pdf
+__pycache__

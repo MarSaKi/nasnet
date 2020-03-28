@@ -1,18 +1,19 @@
 from controller import Controller
-from Worker import Worker
-from ProcessWorker import ProcessWorker, get_acc
+from Worker import Worker, get_acc
+import numpy as np
 import torch
 import torch.optim as optim
 import logging
 from multiprocessing import Process, Queue
-import time,random
+import multiprocessing
+multiprocessing.set_start_method('spawn', force=True)
 
-def consume(worker):
+def consume(worker, results_queue):
     get_acc(worker)
-    return worker
+    results_queue.put(worker)
 
 class PPO(object):
-    def __init__(self, args, train_queue, valid_queue, device):
+    def __init__(self, args, device):
         self.args = args
         self.device = device
 
@@ -30,51 +31,41 @@ class PPO(object):
         self.baseline = None
         self.baseline_weight = self.args.baseline_weight
 
-        self.train_queue = train_queue
-        self.valid_queue = valid_queue
-
         self.clip_epsilon = 0.2
 
     def multi_solve_environment(self):
+        workers_top20 = []
+
         for arch_epoch in range(self.arch_epochs):
-            workers_queue = Queue()
             results_queue = Queue()
+            processes = []
 
             for episode in range(self.episodes):
                 actions_p, actions_log_p, actions_index = self.controller.sample()
-                #print(actions_index)
-                if 0 < episode < self.episodes // 3:
-                    workers_queue.put(ProcessWorker(actions_p.cpu(), actions_log_p.cpu(), actions_index.cpu(), self.args, 'cuda:0'))
+                actions_p = actions_p.cpu().numpy().tolist()
+                actions_log_p = actions_log_p.cpu().numpy().tolist()
+                actions_index = actions_index.cpu().numpy().tolist()
+
+                if episode < self.episodes // 3:
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:0')
                 elif self.episodes // 3 <= episode < 2 * self.episodes // 3:
-                    workers_queue.put(ProcessWorker(actions_p.cpu(), actions_log_p.cpu(), actions_index.cpu(), self.args, 'cuda:1'))
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:1')
                 else:
-                    workers_queue.put(ProcessWorker(actions_p.cpu(), actions_log_p.cpu(), actions_index.cpu(), self.args, 'cuda:3'))
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:3')
 
-            #consumers = [Process(target=consume, args=(workers_queue, results_queue, self.train_queue, self.valid_queue)) for i in range(self.episodes)]
-            consumers = [Process(target=consume, args=(workers_queue, results_queue)) for i in range(self.episodes)]
-            [consumers[i].start() for i in range(self.episodes)]
-            [consumers[i].join() for i in range(self.episodes)]
-            for i, consumer in enumerate(consumers):
-                consumer.start()
-                print('process {} start'.format(i))
-            for i, consumer in enumerate(consumers):
-                consumer.join()
-                print('process {} finish'.format(i))
+                process = Process(target=consume, args=(worker, results_queue))
+                process.start()
+                processes.append(process)
 
-            worker = results_queue.get()
-            print(worker.genotype)
-            workers = [results_queue.get(True) for i in range(self.episodes)]
-            print(len(workers))
-            for episode in range(self.episodes):
-                worker = results_queue.get()
-                print(worker.genotype)
+            for process in processes:
+                process.join()
 
             workers = []
             for episode in range(self.episodes):
                 worker = results_queue.get()
-                worker.actions_p.to(self.device)
-            acc = 0
-            print(len(workers))
+                worker.actions_p = torch.Tensor(worker.actions_p).to(self.device)
+                worker.actions_index = torch.LongTensor(worker.actions_index).to(self.device)
+                workers.append(worker)
 
             for episode, worker in enumerate(workers):
                 if self.baseline == None:
@@ -82,11 +73,15 @@ class PPO(object):
                 else:
                     self.baseline = self.baseline * self.baseline_weight + worker.acc * (1 - self.baseline_weight)
 
-                acc += worker.acc
-                logging.info('episode {:0>3d} acc {:.4f} baseline {:.4f}'.format(episode, worker.acc, self.baseline))
-
-            acc /= self.episodes
-            logging.info('arch_epoch {:0>3d} acc {:.4f} '.format(arch_epoch, acc))
+            # sort worker retain top20
+            workers_total = workers_top20 + workers
+            workers_total.sort(key=lambda worker: worker.acc, reverse=True)
+            workers_top20 = workers_total[:20]
+            top1_acc = workers_top20[0].acc
+            top5_avg_acc = np.mean([worker.acc for worker in workers_top20[:5]])
+            top20_avg_acc = np.mean([worker.acc for worker in workers_top20])
+            logging.info('arch_epoch {:0>3d} top1_acc {:.4f} top5_avg_acc {:.4f} top20_avg_acc {:.4f} baseline {:.4f} '.format(
+                arch_epoch, top1_acc, top5_avg_acc, top20_avg_acc, self.baseline))
 
             for ppo_epoch in range(self.ppo_epochs):
                 loss = 0
