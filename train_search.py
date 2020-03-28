@@ -1,16 +1,14 @@
 from policy_gradient import PolicyGradient
 from PPO import PPO
-import utils
+from random_search import RandomSearch
 
 import numpy as np
 import torch.backends.cudnn as cudnn
 import torch
-import torchvision
 
 import argparse
 import logging
 import time
-import glob
 import os
 import sys
 
@@ -35,7 +33,7 @@ parser.add_argument('--episodes', type=int, default=20)
 parser.add_argument('--entropy_weight', type=float, default=1e-5)
 parser.add_argument('--baseline_weight', type=float, default=0.95)
 parser.add_argument('--embedding_size', type=int, default=32)
-parser.add_argument('--algorithm', type=str, choices=['PPO','PG'], default='PPO')
+parser.add_argument('--algorithm', type=str, choices=['PPO', 'PG', 'RS'], default='PPO')
 #PPO
 parser.add_argument('--ppo_epochs', type=int, default=10)
 parser.add_argument('--clip_epsilon', type=float, default=0.2)
@@ -69,8 +67,15 @@ def main():
         device = torch.device('cpu')
         logging.info('using cpu')
 
-    ppo = PPO(args, device)
-    ppo.multi_solve_environment()
+    if args.algorithm == 'PPO':
+        ppo = PPO(args, device)
+        ppo.multi_solve_environment()
+    elif args.algorithm == 'PG':
+        pg = PolicyGradient(args, device)
+        pg.multi_solve_environment()
+    else:
+        rs = RandomSearch(args)
+        rs.multi_solve_environment()
 
 if __name__ == '__main__':
     main()

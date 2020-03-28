@@ -1,33 +1,6 @@
-import torch
-import torch.nn as nn
-import utils
 import torch.nn.functional as F
 from torch.distributions import Categorical
 from operations import *
-'''import argparse
-
-parser = argparse.ArgumentParser('minst')
-parser.add_argument('--data', type=str, default='./mnist')
-parser.add_argument('--train_portion', type=float, default=0.9)
-parser.add_argument('--batch_size', type=int, default=1024)
-
-parser.add_argument('--model_epochs', type=int, default=2)
-parser.add_argument('--model_lr', type=float, default=0.025)
-parser.add_argument('--model_lr_min', type=float, default=0.001)
-parser.add_argument('--model_weight_decay', type=float, default=3e-4)
-parser.add_argument('--model_momentum', type=float, default=0.9)
-parser.add_argument('--init_channel', type=int, default=4)
-
-parser.add_argument('--arch_epochs', type=int, default=500)
-parser.add_argument('--arch_lr', type=float, default=3.5e-4)
-parser.add_argument('--episodes', type=int, default=8)
-parser.add_argument('--entropy_weight', type=float, default=1e-5)
-parser.add_argument('--baseline_weight_decay', type=float, default=0.95)
-parser.add_argument('--embedding_size', type=int, default=32)
-
-parser.add_argument('--gpu', type=int, default=0)
-parser.add_argument('--seed', type=int, default=2, help='random seed')
-args = parser.parse_args()'''
 
 class Controller(nn.Module):
     def __init__(self, args, hidden_size=100, steps=4, device='cpu'):
@@ -210,10 +183,3 @@ class Controller(nn.Module):
             decoder.bias.data.fill_(0)
         self.op_decoder.bias.data.fill_(0)
         self.comb_decoder.bias.data.fill_(0)
-
-'''controller = Controller(args)
-actions_p, actions_log_p, actions_index = controller.sample()
-actions_p_new, actions_log_p_new = controller.get_p(actions_index)
-actions_importance = actions_p_new / actions_p
-print(actions_importance[1].requires_grad, actions_importance[5].requires_grad)
-print(actions_importance)'''

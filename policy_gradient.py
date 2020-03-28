@@ -1,17 +1,16 @@
 from controller import Controller
+from Worker import Worker, get_acc
 import torch
-import torch.nn as nn
-import torch.nn.functional as F
-from torch.distributions import Categorical
 import torch.optim as optim
-import utils
-from model import Network
-import torchvision
 import numpy as np
-from torch.autograd import Variable
-from collections import deque
 import logging
-from multiprocessing import Pool
+from multiprocessing import Process, Queue
+import multiprocessing
+multiprocessing.set_start_method('spawn', force=True)
+
+def consume(worker, results_queue):
+    get_acc(worker)
+    results_queue.put(worker)
 
 class PolicyGradient(object):
     def __init__(self, args, device):
@@ -22,170 +21,81 @@ class PolicyGradient(object):
         self.arch_lr = args.arch_lr
         self.episodes = args.episodes
         self.entropy_weight = args.entropy_weight
-        self.init_baseline = args.init_baseline
 
         self.controller = Controller(args, device=device).to(device)
-        logging.info('controller param size = {}MB'.format(utils.count_params(self.controller)))
+
         self.adam = optim.Adam(params=self.controller.parameters(), lr=self.arch_lr)
 
         self.baseline = None
-        self.baseline_weight_decay = self.args.baseline_weight_decay
+        self.baseline_weight = self.args.baseline_weight
 
-    def solve_environment(self, train_queue, valid_queue):
-        self.train_queue = train_queue
-        self.valid_queue = valid_queue
-        max_valid_acc = 0
-        max_genotype = None
+    def multi_solve_environment(self):
+        workers_top20 = []
 
         for arch_epoch in range(self.arch_epochs):
-            acc = 0
+            results_queue = Queue()
+            processes = []
+
+            for episode in range(self.episodes):
+                actions_p, actions_log_p, actions_index = self.controller.sample()
+                actions_p = actions_p.cpu().numpy().tolist()
+                actions_log_p = actions_log_p.cpu().numpy().tolist()
+                actions_index = actions_index.cpu().numpy().tolist()
+
+                if episode < self.episodes // 3:
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:0')
+                elif self.episodes // 3 <= episode < 2 * self.episodes // 3:
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:1')
+                else:
+                    worker = Worker(actions_p, actions_log_p, actions_index, self.args, 'cuda:3')
+
+                process = Process(target=consume, args=(worker, results_queue))
+                process.start()
+                processes.append(process)
+
+            for process in processes:
+                process.join()
+
+            workers = []
+            for episode in range(self.episodes):
+                worker = results_queue.get()
+                #worker.actions_p = torch.Tensor(worker.actions_p).to(self.device)
+                worker.actions_index = torch.LongTensor(worker.actions_index).to(self.device)
+                workers.append(worker)
+
+            for episode, worker in enumerate(workers):
+                if self.baseline == None:
+                    self.baseline = worker.acc
+                else:
+                    self.baseline = self.baseline * self.baseline_weight + worker.acc * (1 - self.baseline_weight)
+
+            # sort worker retain top20
+            workers_total = workers_top20 + workers
+            workers_total.sort(key=lambda worker: worker.acc, reverse=True)
+            workers_top20 = workers_total[:20]
+            top1_acc = workers_top20[0].acc
+            top5_avg_acc = np.mean([worker.acc for worker in workers_top20[:5]])
+            top20_avg_acc = np.mean([worker.acc for worker in workers_top20])
+            logging.info(
+                'arch_epoch {:0>3d} top1_acc {:.4f} top5_avg_acc {:.4f} top20_avg_acc {:.4f} baseline {:.4f} '.format(
+                    arch_epoch, top1_acc, top5_avg_acc, top20_avg_acc, self.baseline))
+
             loss = 0
-            entropy = 0
-            avg_valid_acc = np.mean(self.valid_accs)
-            #avg_valid_acc = self.init_baseline
+            for worker in workers:
+                actions_p, actions_log_p = self.controller.get_p(worker.actions_index)
 
-            # one thread
-            for episode in range(self.episodes):
-                ps, log_ps, actions_index = self.controller.sample()
+                loss += self.cal_loss(actions_p, actions_log_p, worker, self.baseline)
 
-                genotype = utils.parse_actions_index(actions_index)
-                print(genotype)
-                valid_acc = self.get_valid_acc(genotype)
-                if valid_acc > max_valid_acc:
-                    max_valid_acc = valid_acc
-                    max_genotype = genotype
-
-                reward = valid_acc - avg_valid_acc
-                self.valid_accs.append(valid_acc)
-
-                episode_loss, episode_entropy = self.cal_loss(ps, log_ps, reward)
-                logging.info('episode {:0>3d} acc {:.4f} avg_acc {:.4f} reward {:.4f} loss {:.4f} entropy {:.4f}'.format(
-                    episode, valid_acc, avg_valid_acc, reward, float(episode_loss), float(episode_entropy)
-                ))
-
-                acc += valid_acc
-                loss += episode_loss
-                entropy += episode_entropy
-
-            # multi thread
-            '''list_ps = []
-            list_log_ps = []
-            list_actions_index = []
-            list_genotype = []
-            for episode in range(self.episodes):
-                ps, log_ps, actions_index = self.controller.sample()
-                list_ps.append(ps)
-                list_log_ps.append(log_ps)
-                list_actions_index.append(actions_index)
-                list_genotype.append(utils.parse_actions_index(actions_index))
-
-            pool = multiprocessing.Pool(12)
-            list_valid_acc = pool.map(self.get_valid_acc, list_genotype)
-            pool.close()
-            pool.join()
-
-            if max(list_valid_acc) > max_valid_acc:
-                max_valid_acc = max(list_valid_acc)
-                max_idx = list_valid_acc.index(max(list_valid_acc))
-                max_genotype = list_genotype[max_idx]
-
-            avg_valid_acc = np.mean(self.valid_accs)
-            for episode in range(self.episodes):
-                reward = list_valid_acc[episode] - avg_valid_acc
-                self.valid_accs.append(list_valid_acc[episode])
-
-                episode_loss, episode_entropy = self.cal_loss(list_ps[episode], list_log_ps[episode], reward)
-                logging.info(
-                    'episode {:0>3d} acc {:.4f} avg_acc {:.4f} reward {:.4f} loss {:.4f} entropy {:.4f}'.format(
-                        episode, list_valid_acc[episode], avg_valid_acc, reward, float(episode_loss), float(episode_entropy)
-                    ))
-
-                acc += list_valid_acc[episode]
-                loss += episode_loss
-                entropy += episode_entropy'''
-
-            acc /= self.episodes
-            loss /= self.episodes
-            entropy /= self.episodes
-            logging.info('arch_epoch {:0>3d} acc {:.4f} loss {:.4f} entropy {:.4f}'.format(
-                arch_epoch, acc, float(loss), float(entropy)))
-            logging.info('{:.4f} {}'.format(max_valid_acc, max_genotype))
+            loss /= len(workers)
 
             self.adam.zero_grad()
             loss.backward()
             self.adam.step()
 
-    def cal_loss(self, ps, log_ps, reward):
-        policy_loss = -1 * torch.sum(log_ps) * reward
-        entropy = -1 * torch.sum(ps * log_ps)
+    def cal_loss(self, actions_p, actions_log_p, worker, baseline):
+        reward = worker.acc - baseline
+        policy_loss = -1 * torch.sum(actions_log_p * reward)
+        entropy = -1 * torch.sum(actions_p * actions_log_p)
+        entropy_bonus = -1 * entropy * self.entropy_weight
 
-        #to maxium entropy and policy reward
-        loss = policy_loss - self.entropy_weight * entropy
-        return loss, entropy
-
-    def cal_reward(self, acc):
-        if self.baseline == None:
-            self.baseline = acc
-        else:
-            self.baseline = self.baseline_weight_decay * self.baseline + (1-self.baseline_weight_decay) * acc
-        reward = acc - self.baseline
-        return reward
-
-    def get_valid_acc(self, genotype):
-        criterion = nn.CrossEntropyLoss()
-        model = Network(genotype).to(self.device)
-
-        optimizer = torch.optim.SGD(model.parameters(),
-                                    self.args.model_lr,
-                                    momentum=self.args.model_momentum,
-                                    weight_decay=self.args.model_weight_decay)
-
-        for model_epoch in range(self.args.model_epochs):
-            train_loss, train_acc = train(model, self.train_queue, criterion, optimizer, self.device)
-            #print('train loss {:.4f} acc {:.4f}'.format(train_loss, train_acc))
-
-        valid_loss, valid_acc = infer(model, self.valid_queue, criterion, self.device)
-        #print('valid loss {:.4f} acc {:.4f}'.format(valid_loss, valid_acc))
-
-        return valid_acc
-
-def train(model, train_queue, creterion, optimizer, device):
-    avg_loss = 0
-    avg_acc = 0
-    batch_num = len(train_queue)
-
-    model.train()
-    for batch, (input, target) in enumerate(train_queue):
-        input = Variable(input, requires_grad=False).to(device)
-        target = Variable(target, requires_grad=False).to(device)
-
-        optimizer.zero_grad()
-        logits = model(input)
-        loss = creterion(logits, target)
-        loss.backward()
-        optimizer.step()
-
-        acc = utils.accuracy(logits.data, target.data)[0]
-        avg_loss += float(loss)
-        avg_acc += float(acc)
-
-    return avg_loss / batch_num, avg_acc / batch_num
-
-def infer(model, valid_queue, creterion, device):
-    avg_loss = 0
-    avg_acc = 0
-    batch_num = len(valid_queue)
-
-    model.eval()
-    for batch, (input, target) in enumerate(valid_queue):
-        with torch.no_grad():
-            input = Variable(input).to(device)
-            target = Variable(target).to(device)
-
-            logits = model(input)
-            loss = creterion(logits, target)
-        acc = utils.accuracy(logits.data, target.data)[0]
-        avg_loss += float(loss)
-        avg_acc += float(acc)
-
-    return avg_loss / batch_num, avg_acc / batch_num
+        return policy_loss + entropy_bonus
