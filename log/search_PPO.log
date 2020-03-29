@@ -1,0 +1,3289 @@
+nohup: ignoring input
+03/28 07:58:11 PM args = Namespace(algorithm='PPO', arch_epochs=300, arch_lr=0.00035, baseline_weight=0.95, batch_size=256, clip_epsilon=0.2, cutout=True, cutout_length=10, data='./mnist', embedding_size=32, entropy_weight=1e-05, episodes=20, gpu=0, init_channel=4, model_epochs=5, model_lr=0.001, model_lr_min=0.001, model_momentum=0.9, model_weight_decay=0.0003, ppo_epochs=10, seed=2, train_portion=0.9)
+03/28 07:58:14 PM using gpu : 0
+valid loss 0.6474 acc 0.7817
+valid loss 0.6512 acc 0.7852
+valid loss 0.4318 acc 0.8624
+valid loss 0.4130 acc 0.8740
+valid loss 0.6869 acc 0.8088
+valid loss 0.9419 acc 0.7133
+valid loss 0.3895 acc 0.8801
+valid loss 0.4258 acc 0.8781
+valid loss 0.6990 acc 0.7662
+valid loss 0.3656 acc 0.8942
+valid loss 0.4693 acc 0.8553
+valid loss 0.6917 acc 0.7821
+valid loss 0.3460 acc 0.8885
+valid loss 0.4252 acc 0.8616
+valid loss 0.6983 acc 0.8048
+valid loss 0.4228 acc 0.8631
+valid loss 0.5155 acc 0.8424
+valid loss 0.4013 acc 0.8876
+valid loss 0.6498 acc 0.7992
+valid loss 0.5090 acc 0.8387
+03/28 08:04:56 PM arch_epoch 000 top1_acc 0.8942 top5_avg_acc 0.8857 top20_avg_acc 0.8334 baseline 0.8168 
+03/28 08:04:56 PM ppo_epoch 000 loss -0.6637 
+03/28 08:04:57 PM ppo_epoch 001 loss -0.6651 
+03/28 08:04:59 PM ppo_epoch 002 loss -0.6665 
+03/28 08:05:00 PM ppo_epoch 003 loss -0.6680 
+03/28 08:05:01 PM ppo_epoch 004 loss -0.6694 
+03/28 08:05:02 PM ppo_epoch 005 loss -0.6708 
+03/28 08:05:04 PM ppo_epoch 006 loss -0.6723 
+03/28 08:05:05 PM ppo_epoch 007 loss -0.6737 
+03/28 08:05:06 PM ppo_epoch 008 loss -0.6752 
+03/28 08:05:07 PM ppo_epoch 009 loss -0.6767 
+valid loss 0.9472 acc 0.7257
+valid loss 0.4590 acc 0.8521
+valid loss 0.5645 acc 0.8235
+valid loss 0.3614 acc 0.8850
+valid loss 0.7787 acc 0.7621
+valid loss 0.8249 acc 0.7798
+valid loss 0.4871 acc 0.8463
+valid loss 0.5642 acc 0.8085
+valid loss 0.6313 acc 0.8326
+valid loss 0.7132 acc 0.7907
+valid loss 0.4480 acc 0.8616
+valid loss 0.5638 acc 0.8172
+valid loss 0.6449 acc 0.7855
+valid loss 1.0494 acc 0.7027
+valid loss 0.6162 acc 0.8127
+valid loss 0.5838 acc 0.8232
+valid loss 1.3347 acc 0.5702
+valid loss 0.6934 acc 0.7828
+valid loss 0.5072 acc 0.8411
+valid loss 0.7305 acc 0.7732
+03/28 08:11:40 PM arch_epoch 001 top1_acc 0.8942 top5_avg_acc 0.8871 top20_avg_acc 0.8596 baseline 0.7986 
+03/28 08:11:41 PM ppo_epoch 000 loss 0.1890 
+03/28 08:11:42 PM ppo_epoch 001 loss 0.1884 
+03/28 08:11:43 PM ppo_epoch 002 loss 0.1877 
+03/28 08:11:44 PM ppo_epoch 003 loss 0.1868 
+03/28 08:11:45 PM ppo_epoch 004 loss 0.1859 
+03/28 08:11:47 PM ppo_epoch 005 loss 0.1849 
+03/28 08:11:48 PM ppo_epoch 006 loss 0.1838 
+03/28 08:11:49 PM ppo_epoch 007 loss 0.1828 
+03/28 08:11:51 PM ppo_epoch 008 loss 0.1816 
+03/28 08:11:52 PM ppo_epoch 009 loss 0.1804 
+valid loss 0.5164 acc 0.8494
+valid loss 0.4322 acc 0.8660
+valid loss 0.3242 acc 0.8957
+valid loss 0.6223 acc 0.8252
+valid loss 0.6321 acc 0.8191
+valid loss 0.9496 acc 0.7192
+valid loss 0.6388 acc 0.7989
+valid loss 0.4049 acc 0.8714
+valid loss 0.6479 acc 0.7995
+valid loss 0.4391 acc 0.8449
+valid loss 0.7295 acc 0.7949
+valid loss 0.4676 acc 0.8405
+valid loss 0.8368 acc 0.7652
+valid loss 0.6373 acc 0.7995
+valid loss 0.5294 acc 0.8271
+valid loss 0.5061 acc 0.8239
+valid loss 0.4694 acc 0.8481
+valid loss 0.5134 acc 0.8311
+valid loss 0.5221 acc 0.8404
+valid loss 0.6380 acc 0.7950
+03/28 08:18:25 PM arch_epoch 002 top1_acc 0.8957 top5_avg_acc 0.8902 top20_avg_acc 0.8683 baseline 0.8131 
+03/28 08:18:26 PM ppo_epoch 000 loss -0.3866 
+03/28 08:18:27 PM ppo_epoch 001 loss -0.3868 
+03/28 08:18:28 PM ppo_epoch 002 loss -0.3870 
+03/28 08:18:29 PM ppo_epoch 003 loss -0.3872 
+03/28 08:18:30 PM ppo_epoch 004 loss -0.3875 
+03/28 08:18:31 PM ppo_epoch 005 loss -0.3878 
+03/28 08:18:33 PM ppo_epoch 006 loss -0.3882 
+03/28 08:18:34 PM ppo_epoch 007 loss -0.3886 
+03/28 08:18:35 PM ppo_epoch 008 loss -0.3891 
+03/28 08:18:36 PM ppo_epoch 009 loss -0.3896 
+valid loss 0.4302 acc 0.8741
+valid loss 0.4356 acc 0.8686
+valid loss 0.5630 acc 0.8204
+valid loss 0.5667 acc 0.8125
+valid loss 0.3792 acc 0.8801
+valid loss 0.4668 acc 0.8609
+valid loss 0.5650 acc 0.8173
+valid loss 0.9035 acc 0.7528
+valid loss 0.5785 acc 0.8348
+valid loss 0.4532 acc 0.8574
+valid loss 0.3528 acc 0.8923
+valid loss 0.4335 acc 0.8621
+valid loss 0.5088 acc 0.8384
+valid loss 0.6537 acc 0.7914
+valid loss 0.4861 acc 0.8305
+valid loss 0.4904 acc 0.8469
+valid loss 0.8133 acc 0.7261
+valid loss 0.5742 acc 0.8376
+valid loss 0.4871 acc 0.8478
+valid loss 1.2205 acc 0.6207
+03/28 08:24:55 PM arch_epoch 003 top1_acc 0.8957 top5_avg_acc 0.8917 top20_avg_acc 0.8754 baseline 0.8143 
+03/28 08:24:55 PM ppo_epoch 000 loss -0.3740 
+03/28 08:24:57 PM ppo_epoch 001 loss -0.3745 
+03/28 08:24:58 PM ppo_epoch 002 loss -0.3752 
+03/28 08:24:59 PM ppo_epoch 003 loss -0.3760 
+03/28 08:25:00 PM ppo_epoch 004 loss -0.3770 
+03/28 08:25:02 PM ppo_epoch 005 loss -0.3780 
+03/28 08:25:03 PM ppo_epoch 006 loss -0.3792 
+03/28 08:25:04 PM ppo_epoch 007 loss -0.3805 
+03/28 08:25:05 PM ppo_epoch 008 loss -0.3819 
+03/28 08:25:06 PM ppo_epoch 009 loss -0.3834 
+valid loss 0.5891 acc 0.8259
+valid loss 0.5209 acc 0.8323
+valid loss 0.5334 acc 0.8209
+valid loss 0.7384 acc 0.7778
+valid loss 0.8302 acc 0.7854
+valid loss 0.4806 acc 0.8413
+valid loss 0.5538 acc 0.8143
+valid loss 0.9388 acc 0.7297
+valid loss 0.7405 acc 0.7913
+valid loss 0.4191 acc 0.8717
+valid loss 0.6846 acc 0.7544
+valid loss 0.4196 acc 0.8667
+valid loss 0.3277 acc 0.8961
+valid loss 0.3974 acc 0.8785
+valid loss 0.4365 acc 0.8654
+valid loss 0.5402 acc 0.8349
+valid loss 0.5085 acc 0.8273
+valid loss 0.4272 acc 0.8649
+valid loss 0.5335 acc 0.8443
+valid loss 0.5139 acc 0.8386
+03/28 08:31:40 PM arch_epoch 004 top1_acc 0.8961 top5_avg_acc 0.8934 top20_avg_acc 0.8790 baseline 0.8263 
+03/28 08:31:41 PM ppo_epoch 000 loss -0.0698 
+03/28 08:31:42 PM ppo_epoch 001 loss -0.0700 
+03/28 08:31:44 PM ppo_epoch 002 loss -0.0704 
+03/28 08:31:45 PM ppo_epoch 003 loss -0.0708 
+03/28 08:31:46 PM ppo_epoch 004 loss -0.0714 
+03/28 08:31:47 PM ppo_epoch 005 loss -0.0720 
+03/28 08:31:48 PM ppo_epoch 006 loss -0.0728 
+03/28 08:31:50 PM ppo_epoch 007 loss -0.0736 
+03/28 08:31:51 PM ppo_epoch 008 loss -0.0745 
+03/28 08:31:52 PM ppo_epoch 009 loss -0.0755 
+valid loss 0.3892 acc 0.8824
+valid loss 0.4465 acc 0.8603
+valid loss 0.4269 acc 0.8658
+valid loss 0.4531 acc 0.8556
+valid loss 0.3244 acc 0.8991
+valid loss 0.6091 acc 0.8315
+valid loss 0.6675 acc 0.8062
+valid loss 0.7047 acc 0.7791
+valid loss 0.4619 acc 0.8648
+valid loss 0.3883 acc 0.8922
+valid loss 0.3726 acc 0.8890
+valid loss 0.4960 acc 0.8324
+valid loss 0.5114 acc 0.8332
+valid loss 0.5011 acc 0.8440
+valid loss 0.6912 acc 0.7900
+valid loss 0.5355 acc 0.8346
+valid loss 0.5219 acc 0.8637
+valid loss 0.3873 acc 0.8932
+valid loss 0.8476 acc 0.7531
+valid loss 0.5910 acc 0.8086
+03/28 08:38:33 PM arch_epoch 005 top1_acc 0.8991 top5_avg_acc 0.8956 top20_avg_acc 0.8852 baseline 0.8349 
+03/28 08:38:34 PM ppo_epoch 000 loss -0.3628 
+03/28 08:38:35 PM ppo_epoch 001 loss -0.3633 
+03/28 08:38:36 PM ppo_epoch 002 loss -0.3642 
+03/28 08:38:37 PM ppo_epoch 003 loss -0.3653 
+03/28 08:38:39 PM ppo_epoch 004 loss -0.3668 
+03/28 08:38:40 PM ppo_epoch 005 loss -0.3687 
+03/28 08:38:41 PM ppo_epoch 006 loss -0.3710 
+03/28 08:38:42 PM ppo_epoch 007 loss -0.3738 
+03/28 08:38:43 PM ppo_epoch 008 loss -0.3766 
+03/28 08:38:45 PM ppo_epoch 009 loss -0.3764 
+valid loss 0.4969 acc 0.8639
+valid loss 0.4610 acc 0.8582
+valid loss 0.3743 acc 0.8866
+valid loss 0.3805 acc 0.8740
+valid loss 0.7445 acc 0.7822
+valid loss 0.3908 acc 0.8725
+valid loss 0.4002 acc 0.8712
+valid loss 0.4207 acc 0.8682
+valid loss 0.3448 acc 0.8888
+valid loss 0.4675 acc 0.8632
+valid loss 0.4783 acc 0.8534
+valid loss 0.3120 acc 0.9057
+valid loss 0.5941 acc 0.8243
+valid loss 0.4053 acc 0.8734
+valid loss 0.3947 acc 0.8741
+valid loss 0.3286 acc 0.8917
+valid loss 0.6847 acc 0.7826
+valid loss 0.4170 acc 0.8777
+valid loss 0.4773 acc 0.8521
+valid loss 0.5445 acc 0.8320
+03/28 08:45:28 PM arch_epoch 006 top1_acc 0.9057 top5_avg_acc 0.8981 top20_avg_acc 0.8892 baseline 0.8499 
+03/28 08:45:29 PM ppo_epoch 000 loss -0.3952 
+03/28 08:45:30 PM ppo_epoch 001 loss -0.3960 
+03/28 08:45:31 PM ppo_epoch 002 loss -0.3972 
+03/28 08:45:32 PM ppo_epoch 003 loss -0.3987 
+03/28 08:45:33 PM ppo_epoch 004 loss -0.4006 
+03/28 08:45:35 PM ppo_epoch 005 loss -0.4027 
+03/28 08:45:36 PM ppo_epoch 006 loss -0.4045 
+03/28 08:45:37 PM ppo_epoch 007 loss -0.4059 
+03/28 08:45:38 PM ppo_epoch 008 loss -0.4072 
+03/28 08:45:39 PM ppo_epoch 009 loss -0.4083 
+valid loss 0.4818 acc 0.8616
+valid loss 0.4980 acc 0.8594
+valid loss 0.3194 acc 0.8978
+valid loss 0.3563 acc 0.8896
+valid loss 0.5645 acc 0.8145
+valid loss 0.4382 acc 0.8646
+valid loss 0.3947 acc 0.8836
+valid loss 0.3534 acc 0.8880
+valid loss 0.3887 acc 0.8759
+valid loss 0.6802 acc 0.8165
+valid loss 0.3740 acc 0.8807
+valid loss 0.7200 acc 0.7875
+valid loss 0.4065 acc 0.8730
+valid loss 0.5013 acc 0.8333
+valid loss 0.3329 acc 0.9018
+valid loss 0.4610 acc 0.8590
+valid loss 0.3629 acc 0.8870
+valid loss 0.3252 acc 0.8917
+valid loss 0.5555 acc 0.8308
+valid loss 0.4064 acc 0.8787
+03/28 08:53:08 PM arch_epoch 007 top1_acc 0.9057 top5_avg_acc 0.9001 top20_avg_acc 0.8928 baseline 0.8589 
+03/28 08:53:09 PM ppo_epoch 000 loss -0.1961 
+03/28 08:53:10 PM ppo_epoch 001 loss -0.1968 
+03/28 08:53:11 PM ppo_epoch 002 loss -0.1985 
+03/28 08:53:12 PM ppo_epoch 003 loss -0.2012 
+03/28 08:53:13 PM ppo_epoch 004 loss -0.2046 
+03/28 08:53:15 PM ppo_epoch 005 loss -0.2061 
+03/28 08:53:16 PM ppo_epoch 006 loss -0.2068 
+03/28 08:53:17 PM ppo_epoch 007 loss -0.2068 
+03/28 08:53:18 PM ppo_epoch 008 loss -0.2064 
+03/28 08:53:20 PM ppo_epoch 009 loss -0.2069 
+valid loss 0.3644 acc 0.8925
+valid loss 0.3906 acc 0.8774
+valid loss 0.4171 acc 0.8756
+valid loss 0.3666 acc 0.8855
+valid loss 0.3633 acc 0.8905
+valid loss 0.4839 acc 0.8447
+valid loss 0.4058 acc 0.8733
+valid loss 0.3036 acc 0.9060
+valid loss 0.3886 acc 0.8793
+valid loss 0.3965 acc 0.8687
+valid loss 0.4025 acc 0.8696
+valid loss 0.3888 acc 0.8778
+valid loss 0.3833 acc 0.8884
+valid loss 0.4040 acc 0.8792
+valid loss 0.3235 acc 0.9010
+valid loss 0.3149 acc 0.9010
+valid loss 0.4343 acc 0.8566
+valid loss 0.3395 acc 0.8995
+valid loss 0.3791 acc 0.8784
+valid loss 0.2821 acc 0.9140
+03/28 09:00:52 PM arch_epoch 008 top1_acc 0.9140 top5_avg_acc 0.9057 top20_avg_acc 0.8973 baseline 0.8752 
+03/28 09:00:53 PM ppo_epoch 000 loss -0.3094 
+03/28 09:00:54 PM ppo_epoch 001 loss -0.3093 
+03/28 09:00:55 PM ppo_epoch 002 loss -0.3093 
+03/28 09:00:56 PM ppo_epoch 003 loss -0.3095 
+03/28 09:00:58 PM ppo_epoch 004 loss -0.3098 
+03/28 09:00:59 PM ppo_epoch 005 loss -0.3103 
+03/28 09:01:00 PM ppo_epoch 006 loss -0.3108 
+03/28 09:01:01 PM ppo_epoch 007 loss -0.3114 
+03/28 09:01:03 PM ppo_epoch 008 loss -0.3121 
+03/28 09:01:04 PM ppo_epoch 009 loss -0.3129 
+valid loss 0.3893 acc 0.8785
+valid loss 0.2814 acc 0.9135
+valid loss 0.4888 acc 0.8467
+valid loss 0.3205 acc 0.9073
+valid loss 0.4370 acc 0.8590
+valid loss 0.4230 acc 0.8691
+valid loss 0.4960 acc 0.8333
+valid loss 0.3196 acc 0.9069
+valid loss 0.4105 acc 0.8730
+valid loss 0.3658 acc 0.8870
+valid loss 0.3737 acc 0.8926
+valid loss 0.3005 acc 0.9106
+valid loss 0.3120 acc 0.9024
+valid loss 0.3220 acc 0.8975
+valid loss 0.6349 acc 0.7982
+valid loss 0.3709 acc 0.8893
+valid loss 0.3249 acc 0.8983
+valid loss 0.5242 acc 0.8347
+valid loss 0.3039 acc 0.9057
+valid loss 0.3272 acc 0.8946
+03/28 09:08:25 PM arch_epoch 009 top1_acc 0.9140 top5_avg_acc 0.9105 top20_avg_acc 0.9027 baseline 0.8784 
+03/28 09:08:26 PM ppo_epoch 000 loss -0.0621 
+03/28 09:08:27 PM ppo_epoch 001 loss -0.0626 
+03/28 09:08:28 PM ppo_epoch 002 loss -0.0634 
+03/28 09:08:29 PM ppo_epoch 003 loss -0.0643 
+03/28 09:08:31 PM ppo_epoch 004 loss -0.0655 
+03/28 09:08:32 PM ppo_epoch 005 loss -0.0669 
+03/28 09:08:33 PM ppo_epoch 006 loss -0.0684 
+03/28 09:08:34 PM ppo_epoch 007 loss -0.0700 
+03/28 09:08:35 PM ppo_epoch 008 loss -0.0708 
+03/28 09:08:37 PM ppo_epoch 009 loss -0.0712 
+valid loss 0.6483 acc 0.8075
+valid loss 0.3675 acc 0.8877
+valid loss 0.3123 acc 0.9031
+valid loss 0.6372 acc 0.8055
+valid loss 0.3571 acc 0.8907
+valid loss 0.3740 acc 0.8893
+valid loss 0.4131 acc 0.8732
+valid loss 0.2873 acc 0.9134
+valid loss 0.3368 acc 0.9013
+valid loss 0.3754 acc 0.8819
+valid loss 0.3465 acc 0.8970
+valid loss 0.3088 acc 0.9019
+valid loss 0.3346 acc 0.8991
+valid loss 0.3884 acc 0.8800
+valid loss 0.3262 acc 0.8989
+valid loss 0.2909 acc 0.9139
+valid loss 0.4229 acc 0.8910
+valid loss 0.3324 acc 0.8971
+valid loss 0.3424 acc 0.8940
+valid loss 0.2872 acc 0.9112
+03/28 09:16:04 PM arch_epoch 010 top1_acc 0.9140 top5_avg_acc 0.9132 top20_avg_acc 0.9060 baseline 0.8864 
+03/28 09:16:04 PM ppo_epoch 000 loss -0.0191 
+03/28 09:16:05 PM ppo_epoch 001 loss -0.0208 
+03/28 09:16:07 PM ppo_epoch 002 loss -0.0233 
+03/28 09:16:08 PM ppo_epoch 003 loss -0.0264 
+03/28 09:16:09 PM ppo_epoch 004 loss -0.0300 
+03/28 09:16:10 PM ppo_epoch 005 loss -0.0341 
+03/28 09:16:11 PM ppo_epoch 006 loss -0.0367 
+03/28 09:16:13 PM ppo_epoch 007 loss -0.0376 
+03/28 09:16:14 PM ppo_epoch 008 loss -0.0383 
+03/28 09:16:15 PM ppo_epoch 009 loss -0.0380 
+valid loss 0.2899 acc 0.9109
+valid loss 0.3272 acc 0.8993
+valid loss 0.2579 acc 0.9188
+valid loss 0.2682 acc 0.9209
+valid loss 0.3230 acc 0.9078
+valid loss 0.2746 acc 0.9120
+valid loss 0.3241 acc 0.9005
+valid loss 0.3559 acc 0.8859
+valid loss 0.2900 acc 0.9066
+valid loss 0.3083 acc 0.9059
+valid loss 0.3475 acc 0.8959
+valid loss 0.3235 acc 0.8991
+valid loss 0.3668 acc 0.8917
+valid loss 0.2830 acc 0.9101
+valid loss 0.4972 acc 0.8352
+valid loss 0.3393 acc 0.8987
+valid loss 0.2934 acc 0.9131
+valid loss 0.2861 acc 0.9151
+valid loss 0.3382 acc 0.8943
+valid loss 0.3010 acc 0.9107
+03/28 09:24:09 PM arch_epoch 011 top1_acc 0.9209 top5_avg_acc 0.9165 top20_avg_acc 0.9114 baseline 0.8955 
+03/28 09:24:10 PM ppo_epoch 000 loss -0.2446 
+03/28 09:24:11 PM ppo_epoch 001 loss -0.2457 
+03/28 09:24:12 PM ppo_epoch 002 loss -0.2473 
+03/28 09:24:13 PM ppo_epoch 003 loss -0.2492 
+03/28 09:24:14 PM ppo_epoch 004 loss -0.2515 
+03/28 09:24:15 PM ppo_epoch 005 loss -0.2533 
+03/28 09:24:16 PM ppo_epoch 006 loss -0.2549 
+03/28 09:24:18 PM ppo_epoch 007 loss -0.2561 
+03/28 09:24:19 PM ppo_epoch 008 loss -0.2565 
+03/28 09:24:20 PM ppo_epoch 009 loss -0.2555 
+valid loss 0.3317 acc 0.8968
+valid loss 0.3203 acc 0.9020
+valid loss 0.3093 acc 0.9096
+valid loss 0.2789 acc 0.9059
+valid loss 0.3129 acc 0.9003
+valid loss 0.5549 acc 0.8556
+valid loss 0.3145 acc 0.9038
+valid loss 0.2545 acc 0.9213
+valid loss 0.3241 acc 0.9045
+valid loss 0.2750 acc 0.9111
+valid loss 0.3500 acc 0.8885
+valid loss 0.3081 acc 0.9055
+valid loss 0.3171 acc 0.8989
+valid loss 0.2754 acc 0.9160
+valid loss 0.3930 acc 0.8753
+valid loss 0.3186 acc 0.8970
+valid loss 0.3036 acc 0.9039
+valid loss 0.2922 acc 0.9069
+valid loss 0.2575 acc 0.9237
+valid loss 0.3039 acc 0.9017
+03/28 09:32:14 PM arch_epoch 012 top1_acc 0.9237 top5_avg_acc 0.9201 top20_avg_acc 0.9139 baseline 0.8997 
+03/28 09:32:15 PM ppo_epoch 000 loss -0.0673 
+03/28 09:32:16 PM ppo_epoch 001 loss -0.0674 
+03/28 09:32:18 PM ppo_epoch 002 loss -0.0676 
+03/28 09:32:19 PM ppo_epoch 003 loss -0.0680 
+03/28 09:32:20 PM ppo_epoch 004 loss -0.0686 
+03/28 09:32:21 PM ppo_epoch 005 loss -0.0692 
+03/28 09:32:22 PM ppo_epoch 006 loss -0.0700 
+03/28 09:32:23 PM ppo_epoch 007 loss -0.0708 
+03/28 09:32:24 PM ppo_epoch 008 loss -0.0715 
+03/28 09:32:25 PM ppo_epoch 009 loss -0.0718 
+valid loss 0.3767 acc 0.8800
+valid loss 0.3295 acc 0.8958
+valid loss 0.2961 acc 0.9118
+valid loss 0.3308 acc 0.9003
+valid loss 0.2892 acc 0.9090
+valid loss 0.3704 acc 0.8827
+valid loss 0.3544 acc 0.8911
+valid loss 0.3060 acc 0.9021
+valid loss 0.2880 acc 0.9102
+valid loss 0.3109 acc 0.8996
+valid loss 0.3527 acc 0.8933
+valid loss 0.3103 acc 0.9000
+valid loss 0.3860 acc 0.8782
+valid loss 0.3380 acc 0.8997
+valid loss 0.3190 acc 0.9054
+valid loss 0.4149 acc 0.8688
+valid loss 0.2658 acc 0.9177
+valid loss 0.3463 acc 0.8954
+valid loss 0.2777 acc 0.9124
+valid loss 0.3297 acc 0.8972
+03/28 09:40:22 PM arch_epoch 013 top1_acc 0.9237 top5_avg_acc 0.9205 top20_avg_acc 0.9146 baseline 0.8985 
+03/28 09:40:22 PM ppo_epoch 000 loss 0.0405 
+03/28 09:40:24 PM ppo_epoch 001 loss 0.0401 
+03/28 09:40:25 PM ppo_epoch 002 loss 0.0397 
+03/28 09:40:26 PM ppo_epoch 003 loss 0.0393 
+03/28 09:40:27 PM ppo_epoch 004 loss 0.0388 
+03/28 09:40:28 PM ppo_epoch 005 loss 0.0383 
+03/28 09:40:29 PM ppo_epoch 006 loss 0.0378 
+03/28 09:40:30 PM ppo_epoch 007 loss 0.0372 
+03/28 09:40:32 PM ppo_epoch 008 loss 0.0368 
+03/28 09:40:33 PM ppo_epoch 009 loss 0.0368 
+valid loss 0.2931 acc 0.9094
+valid loss 0.2934 acc 0.9086
+valid loss 0.2562 acc 0.9199
+valid loss 0.2861 acc 0.9086
+valid loss 0.2792 acc 0.9127
+valid loss 0.3372 acc 0.8937
+valid loss 0.3154 acc 0.9024
+valid loss 0.2432 acc 0.9247
+valid loss 0.2800 acc 0.9127
+valid loss 0.2771 acc 0.9096
+valid loss 0.2821 acc 0.9147
+valid loss 0.2617 acc 0.9155
+valid loss 0.2972 acc 0.9094
+valid loss 0.3360 acc 0.8931
+valid loss 0.2937 acc 0.9077
+valid loss 0.3313 acc 0.8983
+valid loss 0.3018 acc 0.9089
+valid loss 0.3007 acc 0.9055
+valid loss 0.3070 acc 0.9054
+valid loss 0.2795 acc 0.9154
+03/28 09:48:51 PM arch_epoch 014 top1_acc 0.9247 top5_avg_acc 0.9221 top20_avg_acc 0.9165 baseline 0.9049 
+03/28 09:48:52 PM ppo_epoch 000 loss -0.1570 
+03/28 09:48:53 PM ppo_epoch 001 loss -0.1571 
+03/28 09:48:54 PM ppo_epoch 002 loss -0.1572 
+03/28 09:48:55 PM ppo_epoch 003 loss -0.1575 
+03/28 09:48:56 PM ppo_epoch 004 loss -0.1578 
+03/28 09:48:57 PM ppo_epoch 005 loss -0.1583 
+03/28 09:48:59 PM ppo_epoch 006 loss -0.1587 
+03/28 09:49:00 PM ppo_epoch 007 loss -0.1593 
+03/28 09:49:01 PM ppo_epoch 008 loss -0.1599 
+03/28 09:49:02 PM ppo_epoch 009 loss -0.1605 
+valid loss 0.2685 acc 0.9230
+valid loss 0.2975 acc 0.9004
+valid loss 0.2709 acc 0.9162
+valid loss 0.2799 acc 0.9109
+valid loss 0.2816 acc 0.9178
+valid loss 0.3091 acc 0.9082
+valid loss 0.3050 acc 0.9070
+valid loss 0.2780 acc 0.9167
+valid loss 0.3648 acc 0.8787
+valid loss 0.2875 acc 0.9139
+valid loss 0.2610 acc 0.9208
+valid loss 0.2523 acc 0.9258
+valid loss 0.3112 acc 0.9014
+valid loss 0.3454 acc 0.8974
+valid loss 0.3024 acc 0.9029
+valid loss 0.3013 acc 0.9053
+valid loss 0.3570 acc 0.8883
+valid loss 0.2966 acc 0.9098
+valid loss 0.3693 acc 0.8878
+valid loss 0.2829 acc 0.9156
+03/28 09:57:51 PM arch_epoch 015 top1_acc 0.9258 top5_avg_acc 0.9237 top20_avg_acc 0.9187 baseline 0.9058 
+03/28 09:57:52 PM ppo_epoch 000 loss -0.0654 
+03/28 09:57:53 PM ppo_epoch 001 loss -0.0659 
+03/28 09:57:54 PM ppo_epoch 002 loss -0.0664 
+03/28 09:57:55 PM ppo_epoch 003 loss -0.0670 
+03/28 09:57:56 PM ppo_epoch 004 loss -0.0677 
+03/28 09:57:58 PM ppo_epoch 005 loss -0.0685 
+03/28 09:57:59 PM ppo_epoch 006 loss -0.0691 
+03/28 09:58:00 PM ppo_epoch 007 loss -0.0696 
+03/28 09:58:01 PM ppo_epoch 008 loss -0.0689 
+03/28 09:58:03 PM ppo_epoch 009 loss -0.0683 
+valid loss 0.3164 acc 0.9021
+valid loss 0.3432 acc 0.8937
+valid loss 0.3259 acc 0.8953
+valid loss 0.2262 acc 0.9272
+valid loss 0.2826 acc 0.9188
+valid loss 0.2886 acc 0.9129
+valid loss 0.2949 acc 0.9032
+valid loss 0.2759 acc 0.9167
+valid loss 0.2867 acc 0.9097
+valid loss 0.2812 acc 0.9112
+valid loss 0.3499 acc 0.8867
+valid loss 0.3139 acc 0.9000
+valid loss 0.2830 acc 0.9138
+valid loss 0.3106 acc 0.9007
+valid loss 0.3018 acc 0.9046
+valid loss 0.2796 acc 0.9138
+valid loss 0.2926 acc 0.9144
+valid loss 0.2421 acc 0.9279
+valid loss 0.2588 acc 0.9194
+valid loss 0.3009 acc 0.9077
+03/28 10:07:33 PM arch_epoch 016 top1_acc 0.9279 top5_avg_acc 0.9259 top20_avg_acc 0.9204 baseline 0.9084 
+03/28 10:07:34 PM ppo_epoch 000 loss -0.0242 
+03/28 10:07:35 PM ppo_epoch 001 loss -0.0245 
+03/28 10:07:36 PM ppo_epoch 002 loss -0.0250 
+03/28 10:07:37 PM ppo_epoch 003 loss -0.0256 
+03/28 10:07:39 PM ppo_epoch 004 loss -0.0264 
+03/28 10:07:40 PM ppo_epoch 005 loss -0.0273 
+03/28 10:07:41 PM ppo_epoch 006 loss -0.0283 
+03/28 10:07:42 PM ppo_epoch 007 loss -0.0293 
+03/28 10:07:43 PM ppo_epoch 008 loss -0.0303 
+03/28 10:07:44 PM ppo_epoch 009 loss -0.0311 
+valid loss 0.2605 acc 0.9210
+valid loss 0.3191 acc 0.8937
+valid loss 0.2836 acc 0.9143
+valid loss 0.2464 acc 0.9229
+valid loss 0.2924 acc 0.9103
+valid loss 0.2590 acc 0.9222
+valid loss 0.2769 acc 0.9126
+valid loss 0.3102 acc 0.9015
+valid loss 0.2823 acc 0.9120
+valid loss 0.2985 acc 0.9073
+valid loss 0.2808 acc 0.9122
+valid loss 0.3133 acc 0.8965
+valid loss 0.3048 acc 0.9030
+valid loss 0.2851 acc 0.9084
+valid loss 0.2566 acc 0.9236
+valid loss 0.2532 acc 0.9201
+valid loss 0.2788 acc 0.9143
+valid loss 0.2360 acc 0.9249
+valid loss 0.2536 acc 0.9219
+valid loss 0.2813 acc 0.9127
+03/28 10:17:13 PM arch_epoch 017 top1_acc 0.9279 top5_avg_acc 0.9261 top20_avg_acc 0.9224 baseline 0.9116 
+03/28 10:17:14 PM ppo_epoch 000 loss -0.0466 
+03/28 10:17:15 PM ppo_epoch 001 loss -0.0467 
+03/28 10:17:16 PM ppo_epoch 002 loss -0.0467 
+03/28 10:17:18 PM ppo_epoch 003 loss -0.0469 
+03/28 10:17:19 PM ppo_epoch 004 loss -0.0471 
+03/28 10:17:20 PM ppo_epoch 005 loss -0.0473 
+03/28 10:17:21 PM ppo_epoch 006 loss -0.0475 
+03/28 10:17:23 PM ppo_epoch 007 loss -0.0476 
+03/28 10:17:24 PM ppo_epoch 008 loss -0.0476 
+03/28 10:17:25 PM ppo_epoch 009 loss -0.0477 
+valid loss 0.2431 acc 0.9275
+valid loss 0.2743 acc 0.9103
+valid loss 0.2688 acc 0.9184
+valid loss 0.3111 acc 0.8992
+valid loss 0.2554 acc 0.9224
+valid loss 0.2642 acc 0.9224
+valid loss 0.2690 acc 0.9111
+valid loss 0.2597 acc 0.9175
+valid loss 0.2605 acc 0.9202
+valid loss 0.2777 acc 0.9061
+valid loss 0.2817 acc 0.9144
+valid loss 0.2744 acc 0.9127
+valid loss 0.2381 acc 0.9293
+valid loss 0.2345 acc 0.9278
+valid loss 0.2844 acc 0.9040
+valid loss 0.2808 acc 0.9130
+valid loss 0.2580 acc 0.9214
+valid loss 0.2474 acc 0.9241
+valid loss 0.2918 acc 0.9071
+valid loss 0.2975 acc 0.9020
+03/28 10:27:28 PM arch_epoch 018 top1_acc 0.9293 top5_avg_acc 0.9280 top20_avg_acc 0.9243 baseline 0.9139 
+03/28 10:27:29 PM ppo_epoch 000 loss -0.0669 
+03/28 10:27:30 PM ppo_epoch 001 loss -0.0669 
+03/28 10:27:32 PM ppo_epoch 002 loss -0.0671 
+03/28 10:27:33 PM ppo_epoch 003 loss -0.0672 
+03/28 10:27:34 PM ppo_epoch 004 loss -0.0674 
+03/28 10:27:35 PM ppo_epoch 005 loss -0.0676 
+03/28 10:27:36 PM ppo_epoch 006 loss -0.0679 
+03/28 10:27:37 PM ppo_epoch 007 loss -0.0681 
+03/28 10:27:39 PM ppo_epoch 008 loss -0.0684 
+03/28 10:27:40 PM ppo_epoch 009 loss -0.0687 
+valid loss 0.2935 acc 0.9077
+valid loss 0.3720 acc 0.8805
+valid loss 0.3010 acc 0.9028
+valid loss 0.2325 acc 0.9284
+valid loss 0.2615 acc 0.9161
+valid loss 0.3006 acc 0.9030
+valid loss 0.2730 acc 0.9156
+valid loss 0.2656 acc 0.9182
+valid loss 0.2978 acc 0.9060
+valid loss 0.2547 acc 0.9203
+valid loss 0.2534 acc 0.9162
+valid loss 0.2484 acc 0.9222
+valid loss 0.2751 acc 0.9142
+valid loss 0.3705 acc 0.8782
+valid loss 0.2991 acc 0.9061
+valid loss 0.3147 acc 0.9007
+valid loss 0.2659 acc 0.9225
+valid loss 0.2701 acc 0.9147
+valid loss 0.3408 acc 0.8890
+valid loss 0.2522 acc 0.9174
+03/28 10:37:26 PM arch_epoch 019 top1_acc 0.9293 top5_avg_acc 0.9282 top20_avg_acc 0.9247 baseline 0.9107 
+03/28 10:37:27 PM ppo_epoch 000 loss 0.0690 
+03/28 10:37:28 PM ppo_epoch 001 loss 0.0688 
+03/28 10:37:28 PM ppo_epoch 002 loss 0.0686 
+03/28 10:37:29 PM ppo_epoch 003 loss 0.0683 
+03/28 10:37:30 PM ppo_epoch 004 loss 0.0680 
+03/28 10:37:31 PM ppo_epoch 005 loss 0.0676 
+03/28 10:37:32 PM ppo_epoch 006 loss 0.0673 
+03/28 10:37:33 PM ppo_epoch 007 loss 0.0670 
+03/28 10:37:34 PM ppo_epoch 008 loss 0.0667 
+03/28 10:37:35 PM ppo_epoch 009 loss 0.0664 
+valid loss 0.2680 acc 0.9176
+valid loss 0.2835 acc 0.9118
+valid loss 0.2522 acc 0.9215
+valid loss 0.2852 acc 0.9159
+valid loss 0.2595 acc 0.9165
+valid loss 0.2708 acc 0.9210
+valid loss 0.2781 acc 0.9132
+valid loss 0.3280 acc 0.8973
+valid loss 0.2657 acc 0.9155
+valid loss 0.2794 acc 0.9101
+valid loss 0.2782 acc 0.9110
+valid loss 0.2837 acc 0.9106
+valid loss 0.2255 acc 0.9301
+valid loss 0.2651 acc 0.9147
+valid loss 0.2409 acc 0.9293
+valid loss 0.2518 acc 0.9233
+valid loss 0.2735 acc 0.9153
+valid loss 0.2468 acc 0.9230
+valid loss 0.2630 acc 0.9164
+valid loss 0.2348 acc 0.9274
+03/28 10:47:11 PM arch_epoch 020 top1_acc 0.9301 top5_avg_acc 0.9290 top20_avg_acc 0.9258 baseline 0.9153 
+03/28 10:47:11 PM ppo_epoch 000 loss -0.0703 
+03/28 10:47:13 PM ppo_epoch 001 loss -0.0703 
+03/28 10:47:14 PM ppo_epoch 002 loss -0.0704 
+03/28 10:47:15 PM ppo_epoch 003 loss -0.0705 
+03/28 10:47:16 PM ppo_epoch 004 loss -0.0706 
+03/28 10:47:17 PM ppo_epoch 005 loss -0.0707 
+03/28 10:47:18 PM ppo_epoch 006 loss -0.0708 
+03/28 10:47:19 PM ppo_epoch 007 loss -0.0710 
+03/28 10:47:20 PM ppo_epoch 008 loss -0.0712 
+03/28 10:47:21 PM ppo_epoch 009 loss -0.0713 
+valid loss 0.2666 acc 0.9147
+valid loss 0.2375 acc 0.9252
+valid loss 0.2390 acc 0.9263
+valid loss 0.2586 acc 0.9189
+valid loss 0.2368 acc 0.9275
+valid loss 0.2468 acc 0.9223
+valid loss 0.3296 acc 0.9013
+valid loss 0.2971 acc 0.9041
+valid loss 0.2313 acc 0.9238
+valid loss 0.3024 acc 0.9034
+valid loss 0.2744 acc 0.9111
+valid loss 0.2528 acc 0.9216
+valid loss 0.2484 acc 0.9238
+valid loss 0.3060 acc 0.8976
+valid loss 0.2754 acc 0.9129
+valid loss 0.3161 acc 0.8973
+valid loss 0.2678 acc 0.9124
+valid loss 0.2272 acc 0.9290
+valid loss 0.3067 acc 0.9009
+valid loss 0.2409 acc 0.9277
+03/28 10:57:07 PM arch_epoch 021 top1_acc 0.9301 top5_avg_acc 0.9292 top20_avg_acc 0.9269 baseline 0.9148 
+03/28 10:57:08 PM ppo_epoch 000 loss -0.0113 
+03/28 10:57:09 PM ppo_epoch 001 loss -0.0115 
+03/28 10:57:10 PM ppo_epoch 002 loss -0.0119 
+03/28 10:57:11 PM ppo_epoch 003 loss -0.0122 
+03/28 10:57:12 PM ppo_epoch 004 loss -0.0126 
+03/28 10:57:13 PM ppo_epoch 005 loss -0.0130 
+03/28 10:57:15 PM ppo_epoch 006 loss -0.0134 
+03/28 10:57:16 PM ppo_epoch 007 loss -0.0136 
+03/28 10:57:17 PM ppo_epoch 008 loss -0.0139 
+03/28 10:57:18 PM ppo_epoch 009 loss -0.0142 
+valid loss 0.2732 acc 0.9139
+valid loss 0.2762 acc 0.9107
+valid loss 0.3140 acc 0.9021
+valid loss 0.4059 acc 0.8651
+valid loss 0.2339 acc 0.9298
+valid loss 0.2601 acc 0.9223
+valid loss 0.2522 acc 0.9228
+valid loss 0.2419 acc 0.9236
+valid loss 0.2411 acc 0.9197
+valid loss 0.2743 acc 0.9110
+valid loss 0.2509 acc 0.9265
+valid loss 0.2601 acc 0.9155
+valid loss 0.2794 acc 0.9188
+valid loss 0.2602 acc 0.9176
+valid loss 0.2570 acc 0.9232
+valid loss 0.3896 acc 0.9040
+valid loss 0.3031 acc 0.9042
+valid loss 0.2465 acc 0.9238
+valid loss 0.2655 acc 0.9193
+valid loss 0.2672 acc 0.9161
+03/28 11:07:28 PM arch_epoch 022 top1_acc 0.9301 top5_avg_acc 0.9295 top20_avg_acc 0.9273 baseline 0.9151 
+03/28 11:07:28 PM ppo_epoch 000 loss 0.0237 
+03/28 11:07:29 PM ppo_epoch 001 loss 0.0236 
+03/28 11:07:31 PM ppo_epoch 002 loss 0.0233 
+03/28 11:07:32 PM ppo_epoch 003 loss 0.0229 
+03/28 11:07:33 PM ppo_epoch 004 loss 0.0223 
+03/28 11:07:34 PM ppo_epoch 005 loss 0.0216 
+03/28 11:07:35 PM ppo_epoch 006 loss 0.0209 
+03/28 11:07:37 PM ppo_epoch 007 loss 0.0205 
+03/28 11:07:38 PM ppo_epoch 008 loss 0.0203 
+03/28 11:07:39 PM ppo_epoch 009 loss 0.0200 
+valid loss 0.2829 acc 0.9083
+valid loss 0.2736 acc 0.9166
+valid loss 0.2793 acc 0.9149
+valid loss 0.2474 acc 0.9221
+valid loss 0.2864 acc 0.9152
+valid loss 0.2893 acc 0.9063
+valid loss 0.2638 acc 0.9196
+valid loss 0.2899 acc 0.9103
+valid loss 0.2423 acc 0.9230
+valid loss 0.2988 acc 0.9033
+valid loss 0.2792 acc 0.9109
+valid loss 0.2509 acc 0.9188
+valid loss 0.2463 acc 0.9228
+valid loss 0.2815 acc 0.9123
+valid loss 0.3475 acc 0.8840
+valid loss 0.2589 acc 0.9212
+valid loss 0.2485 acc 0.9236
+valid loss 0.3403 acc 0.8932
+valid loss 0.2458 acc 0.9198
+valid loss 0.2794 acc 0.9145
+03/28 11:17:16 PM arch_epoch 023 top1_acc 0.9301 top5_avg_acc 0.9295 top20_avg_acc 0.9273 baseline 0.9136 
+03/28 11:17:17 PM ppo_epoch 000 loss 0.0211 
+03/28 11:17:18 PM ppo_epoch 001 loss 0.0211 
+03/28 11:17:20 PM ppo_epoch 002 loss 0.0212 
+03/28 11:17:21 PM ppo_epoch 003 loss 0.0211 
+03/28 11:17:22 PM ppo_epoch 004 loss 0.0211 
+03/28 11:17:23 PM ppo_epoch 005 loss 0.0210 
+03/28 11:17:25 PM ppo_epoch 006 loss 0.0209 
+03/28 11:17:26 PM ppo_epoch 007 loss 0.0207 
+03/28 11:17:27 PM ppo_epoch 008 loss 0.0206 
+03/28 11:17:28 PM ppo_epoch 009 loss 0.0205 
+valid loss 0.2623 acc 0.9186
+valid loss 0.2728 acc 0.9148
+valid loss 0.3140 acc 0.9041
+valid loss 0.3211 acc 0.8991
+valid loss 0.2327 acc 0.9285
+valid loss 0.2350 acc 0.9258
+valid loss 0.2645 acc 0.9200
+valid loss 0.2576 acc 0.9171
+valid loss 0.2359 acc 0.9251
+valid loss 0.2457 acc 0.9232
+valid loss 0.2939 acc 0.9082
+valid loss 0.2850 acc 0.9089
+valid loss 0.3411 acc 0.8873
+valid loss 0.2471 acc 0.9213
+valid loss 0.3163 acc 0.8960
+valid loss 0.2495 acc 0.9208
+valid loss 0.2599 acc 0.9239
+valid loss 0.2619 acc 0.9127
+valid loss 0.2825 acc 0.9065
+valid loss 0.2617 acc 0.9212
+03/28 11:26:43 PM arch_epoch 024 top1_acc 0.9301 top5_avg_acc 0.9295 top20_avg_acc 0.9276 baseline 0.9138 
+03/28 11:26:43 PM ppo_epoch 000 loss -0.0143 
+03/28 11:26:45 PM ppo_epoch 001 loss -0.0144 
+03/28 11:26:46 PM ppo_epoch 002 loss -0.0145 
+03/28 11:26:47 PM ppo_epoch 003 loss -0.0148 
+03/28 11:26:48 PM ppo_epoch 004 loss -0.0150 
+03/28 11:26:49 PM ppo_epoch 005 loss -0.0153 
+03/28 11:26:50 PM ppo_epoch 006 loss -0.0157 
+03/28 11:26:51 PM ppo_epoch 007 loss -0.0161 
+03/28 11:26:52 PM ppo_epoch 008 loss -0.0164 
+03/28 11:26:53 PM ppo_epoch 009 loss -0.0165 
+valid loss 0.2790 acc 0.9146
+valid loss 0.2540 acc 0.9206
+valid loss 0.2455 acc 0.9240
+valid loss 0.2322 acc 0.9246
+valid loss 0.3073 acc 0.9010
+valid loss 0.2569 acc 0.9217
+valid loss 0.3040 acc 0.9059
+valid loss 0.2575 acc 0.9192
+valid loss 0.2643 acc 0.9179
+valid loss 0.2512 acc 0.9203
+valid loss 0.2457 acc 0.9249
+valid loss 0.2995 acc 0.9047
+valid loss 0.2293 acc 0.9324
+valid loss 0.2561 acc 0.9182
+valid loss 0.2604 acc 0.9194
+valid loss 0.2721 acc 0.9138
+valid loss 0.2790 acc 0.9118
+valid loss 0.2848 acc 0.9128
+valid loss 0.2785 acc 0.9136
+valid loss 0.2775 acc 0.9124
+03/28 11:36:25 PM arch_epoch 025 top1_acc 0.9324 top5_avg_acc 0.9302 top20_avg_acc 0.9280 baseline 0.9154 
+03/28 11:36:26 PM ppo_epoch 000 loss -0.0511 
+03/28 11:36:27 PM ppo_epoch 001 loss -0.0511 
+03/28 11:36:28 PM ppo_epoch 002 loss -0.0513 
+03/28 11:36:29 PM ppo_epoch 003 loss -0.0514 
+03/28 11:36:31 PM ppo_epoch 004 loss -0.0516 
+03/28 11:36:32 PM ppo_epoch 005 loss -0.0518 
+03/28 11:36:33 PM ppo_epoch 006 loss -0.0521 
+03/28 11:36:34 PM ppo_epoch 007 loss -0.0523 
+03/28 11:36:35 PM ppo_epoch 008 loss -0.0526 
+03/28 11:36:36 PM ppo_epoch 009 loss -0.0529 
+valid loss 0.2976 acc 0.9071
+valid loss 0.2963 acc 0.9073
+valid loss 0.2775 acc 0.9131
+valid loss 0.2313 acc 0.9236
+valid loss 0.3734 acc 0.8769
+valid loss 0.3601 acc 0.8769
+valid loss 0.3399 acc 0.8944
+valid loss 0.2710 acc 0.9147
+valid loss 0.2868 acc 0.9085
+valid loss 0.2919 acc 0.9068
+valid loss 0.2805 acc 0.9160
+valid loss 0.2560 acc 0.9216
+valid loss 0.2793 acc 0.9108
+valid loss 0.2447 acc 0.9231
+valid loss 0.2467 acc 0.9252
+valid loss 0.2436 acc 0.9267
+valid loss 0.3181 acc 0.9033
+valid loss 0.3145 acc 0.9012
+valid loss 0.2810 acc 0.9145
+valid loss 0.3000 acc 0.9056
+03/28 11:45:35 PM arch_epoch 026 top1_acc 0.9324 top5_avg_acc 0.9302 top20_avg_acc 0.9280 baseline 0.9119 
+03/28 11:45:36 PM ppo_epoch 000 loss 0.1202 
+03/28 11:45:37 PM ppo_epoch 001 loss 0.1201 
+03/28 11:45:38 PM ppo_epoch 002 loss 0.1197 
+03/28 11:45:40 PM ppo_epoch 003 loss 0.1193 
+03/28 11:45:41 PM ppo_epoch 004 loss 0.1187 
+03/28 11:45:42 PM ppo_epoch 005 loss 0.1180 
+03/28 11:45:43 PM ppo_epoch 006 loss 0.1172 
+03/28 11:45:45 PM ppo_epoch 007 loss 0.1165 
+03/28 11:45:46 PM ppo_epoch 008 loss 0.1160 
+03/28 11:45:47 PM ppo_epoch 009 loss 0.1155 
+valid loss 0.2731 acc 0.9170
+valid loss 0.2301 acc 0.9323
+valid loss 0.2991 acc 0.9081
+valid loss 0.3256 acc 0.8930
+valid loss 0.3394 acc 0.8925
+valid loss 0.2717 acc 0.9112
+valid loss 0.2518 acc 0.9242
+valid loss 0.2556 acc 0.9199
+valid loss 0.2231 acc 0.9318
+valid loss 0.2469 acc 0.9246
+valid loss 0.2795 acc 0.9084
+valid loss 0.2505 acc 0.9236
+valid loss 0.2455 acc 0.9255
+valid loss 0.2755 acc 0.9100
+valid loss 0.2478 acc 0.9242
+valid loss 0.2687 acc 0.9200
+valid loss 0.3186 acc 0.8953
+valid loss 0.2438 acc 0.9225
+valid loss 0.3058 acc 0.8996
+valid loss 0.2446 acc 0.9230
+03/28 11:54:55 PM arch_epoch 027 top1_acc 0.9324 top5_avg_acc 0.9313 top20_avg_acc 0.9287 baseline 0.9141 
+03/28 11:54:55 PM ppo_epoch 000 loss -0.0482 
+03/28 11:54:56 PM ppo_epoch 001 loss -0.0485 
+03/28 11:54:58 PM ppo_epoch 002 loss -0.0490 
+03/28 11:54:59 PM ppo_epoch 003 loss -0.0497 
+03/28 11:55:00 PM ppo_epoch 004 loss -0.0505 
+03/28 11:55:01 PM ppo_epoch 005 loss -0.0515 
+03/28 11:55:02 PM ppo_epoch 006 loss -0.0521 
+03/28 11:55:03 PM ppo_epoch 007 loss -0.0523 
+03/28 11:55:04 PM ppo_epoch 008 loss -0.0523 
+03/28 11:55:05 PM ppo_epoch 009 loss -0.0525 
+valid loss 0.2724 acc 0.9133
+valid loss 0.3057 acc 0.9059
+valid loss 0.2654 acc 0.9198
+valid loss 0.2556 acc 0.9240
+valid loss 0.2240 acc 0.9289
+valid loss 0.2813 acc 0.9172
+valid loss 0.2466 acc 0.9268
+valid loss 0.3012 acc 0.9062
+valid loss 0.2653 acc 0.9132
+valid loss 0.2481 acc 0.9239
+valid loss 0.2394 acc 0.9216
+valid loss 0.2590 acc 0.9195
+valid loss 0.2780 acc 0.9116
+valid loss 0.2555 acc 0.9197
+valid loss 0.2508 acc 0.9167
+valid loss 0.2947 acc 0.9065
+valid loss 0.2453 acc 0.9232
+valid loss 0.2461 acc 0.9244
+valid loss 0.2666 acc 0.9139
+valid loss 0.2325 acc 0.9305
+03/29 12:04:49 AM arch_epoch 028 top1_acc 0.9324 top5_avg_acc 0.9314 top20_avg_acc 0.9290 baseline 0.9171 
+03/29 12:04:50 AM ppo_epoch 000 loss -0.0512 
+03/29 12:04:51 AM ppo_epoch 001 loss -0.0514 
+03/29 12:04:52 AM ppo_epoch 002 loss -0.0515 
+03/29 12:04:53 AM ppo_epoch 003 loss -0.0516 
+03/29 12:04:54 AM ppo_epoch 004 loss -0.0518 
+03/29 12:04:56 AM ppo_epoch 005 loss -0.0519 
+03/29 12:04:57 AM ppo_epoch 006 loss -0.0520 
+03/29 12:04:58 AM ppo_epoch 007 loss -0.0521 
+03/29 12:04:59 AM ppo_epoch 008 loss -0.0521 
+03/29 12:05:01 AM ppo_epoch 009 loss -0.0521 
+valid loss 0.2361 acc 0.9213
+valid loss 0.2570 acc 0.9224
+valid loss 0.2816 acc 0.9112
+valid loss 0.3297 acc 0.8939
+valid loss 0.2253 acc 0.9300
+valid loss 0.3018 acc 0.9065
+valid loss 0.2564 acc 0.9204
+valid loss 0.3040 acc 0.9032
+valid loss 0.2731 acc 0.9109
+valid loss 0.3170 acc 0.8992
+valid loss 0.2293 acc 0.9296
+valid loss 0.2465 acc 0.9245
+valid loss 0.2503 acc 0.9244
+valid loss 0.2393 acc 0.9280
+valid loss 0.2436 acc 0.9247
+valid loss 0.4193 acc 0.8640
+valid loss 0.2753 acc 0.9136
+valid loss 0.2945 acc 0.9129
+valid loss 0.2096 acc 0.9376
+valid loss 0.2526 acc 0.9189
+03/29 12:13:50 AM arch_epoch 029 top1_acc 0.9376 top5_avg_acc 0.9329 top20_avg_acc 0.9298 baseline 0.9158 
+03/29 12:13:51 AM ppo_epoch 000 loss 0.0384 
+03/29 12:13:52 AM ppo_epoch 001 loss 0.0382 
+03/29 12:13:53 AM ppo_epoch 002 loss 0.0378 
+03/29 12:13:54 AM ppo_epoch 003 loss 0.0374 
+03/29 12:13:55 AM ppo_epoch 004 loss 0.0368 
+03/29 12:13:56 AM ppo_epoch 005 loss 0.0362 
+03/29 12:13:57 AM ppo_epoch 006 loss 0.0356 
+03/29 12:13:59 AM ppo_epoch 007 loss 0.0351 
+03/29 12:14:00 AM ppo_epoch 008 loss 0.0348 
+03/29 12:14:01 AM ppo_epoch 009 loss 0.0344 
+valid loss 0.2670 acc 0.9176
+valid loss 0.2371 acc 0.9288
+valid loss 0.2195 acc 0.9314
+valid loss 0.2537 acc 0.9228
+valid loss 0.2380 acc 0.9295
+valid loss 0.2735 acc 0.9137
+valid loss 0.2431 acc 0.9269
+valid loss 0.2773 acc 0.9105
+valid loss 0.2325 acc 0.9258
+valid loss 0.2624 acc 0.9178
+valid loss 0.2400 acc 0.9244
+valid loss 0.2351 acc 0.9265
+valid loss 0.2261 acc 0.9318
+valid loss 0.2410 acc 0.9246
+valid loss 0.2528 acc 0.9201
+valid loss 0.2367 acc 0.9280
+valid loss 0.2617 acc 0.9201
+valid loss 0.2854 acc 0.9098
+valid loss 0.2506 acc 0.9231
+valid loss 0.2394 acc 0.9264
+03/29 12:23:21 AM arch_epoch 030 top1_acc 0.9376 top5_avg_acc 0.9332 top20_avg_acc 0.9304 baseline 0.9203 
+03/29 12:23:22 AM ppo_epoch 000 loss -0.1075 
+03/29 12:23:23 AM ppo_epoch 001 loss -0.1076 
+03/29 12:23:24 AM ppo_epoch 002 loss -0.1076 
+03/29 12:23:25 AM ppo_epoch 003 loss -0.1077 
+03/29 12:23:27 AM ppo_epoch 004 loss -0.1078 
+03/29 12:23:28 AM ppo_epoch 005 loss -0.1079 
+03/29 12:23:29 AM ppo_epoch 006 loss -0.1080 
+03/29 12:23:30 AM ppo_epoch 007 loss -0.1082 
+03/29 12:23:31 AM ppo_epoch 008 loss -0.1083 
+03/29 12:23:33 AM ppo_epoch 009 loss -0.1084 
+valid loss 0.2522 acc 0.9228
+valid loss 0.2495 acc 0.9190
+valid loss 0.2743 acc 0.9100
+valid loss 0.2655 acc 0.9163
+valid loss 0.2349 acc 0.9241
+valid loss 0.2318 acc 0.9274
+valid loss 0.2448 acc 0.9253
+valid loss 0.2673 acc 0.9143
+valid loss 0.3451 acc 0.8896
+valid loss 0.2426 acc 0.9245
+valid loss 0.2881 acc 0.9026
+valid loss 0.2584 acc 0.9199
+valid loss 0.2756 acc 0.9104
+valid loss 0.2610 acc 0.9191
+valid loss 0.2299 acc 0.9267
+valid loss 0.2470 acc 0.9257
+valid loss 0.2327 acc 0.9292
+valid loss 0.2621 acc 0.9194
+valid loss 0.2280 acc 0.9263
+valid loss 0.2287 acc 0.9262
+03/29 12:33:55 AM arch_epoch 031 top1_acc 0.9376 top5_avg_acc 0.9332 top20_avg_acc 0.9304 baseline 0.9199 
+03/29 12:33:56 AM ppo_epoch 000 loss 0.0391 
+03/29 12:33:57 AM ppo_epoch 001 loss 0.0390 
+03/29 12:33:58 AM ppo_epoch 002 loss 0.0389 
+03/29 12:33:59 AM ppo_epoch 003 loss 0.0386 
+03/29 12:34:00 AM ppo_epoch 004 loss 0.0384 
+03/29 12:34:00 AM ppo_epoch 005 loss 0.0381 
+03/29 12:34:01 AM ppo_epoch 006 loss 0.0378 
+03/29 12:34:02 AM ppo_epoch 007 loss 0.0377 
+03/29 12:34:03 AM ppo_epoch 008 loss 0.0377 
+03/29 12:34:04 AM ppo_epoch 009 loss 0.0377 
+valid loss 0.2660 acc 0.9156
+valid loss 0.2555 acc 0.9207
+valid loss 0.2835 acc 0.9071
+valid loss 0.2507 acc 0.9227
+valid loss 0.2813 acc 0.9086
+valid loss 0.2643 acc 0.9140
+valid loss 0.2469 acc 0.9230
+valid loss 0.2508 acc 0.9150
+valid loss 0.2876 acc 0.9108
+valid loss 0.2802 acc 0.9131
+valid loss 0.2358 acc 0.9215
+valid loss 0.2240 acc 0.9322
+valid loss 0.2669 acc 0.9121
+valid loss 0.2640 acc 0.9164
+valid loss 0.2379 acc 0.9259
+valid loss 0.2337 acc 0.9184
+valid loss 0.2824 acc 0.9095
+valid loss 0.2414 acc 0.9258
+valid loss 0.2722 acc 0.9143
+valid loss 0.3011 acc 0.9030
+03/29 12:44:19 AM arch_epoch 032 top1_acc 0.9376 top5_avg_acc 0.9332 top20_avg_acc 0.9306 baseline 0.9177 
+03/29 12:44:20 AM ppo_epoch 000 loss 0.0467 
+03/29 12:44:21 AM ppo_epoch 001 loss 0.0467 
+03/29 12:44:22 AM ppo_epoch 002 loss 0.0466 
+03/29 12:44:23 AM ppo_epoch 003 loss 0.0466 
+03/29 12:44:25 AM ppo_epoch 004 loss 0.0465 
+03/29 12:44:26 AM ppo_epoch 005 loss 0.0464 
+03/29 12:44:27 AM ppo_epoch 006 loss 0.0462 
+03/29 12:44:28 AM ppo_epoch 007 loss 0.0461 
+03/29 12:44:30 AM ppo_epoch 008 loss 0.0460 
+03/29 12:44:31 AM ppo_epoch 009 loss 0.0459 
+valid loss 0.2521 acc 0.9232
+valid loss 0.2518 acc 0.9217
+valid loss 0.2605 acc 0.9239
+valid loss 0.2322 acc 0.9260
+valid loss 0.2582 acc 0.9182
+valid loss 0.2394 acc 0.9258
+valid loss 0.2446 acc 0.9226
+valid loss 0.2672 acc 0.9062
+valid loss 0.2740 acc 0.9086
+valid loss 0.2490 acc 0.9201
+valid loss 0.2478 acc 0.9217
+valid loss 0.2408 acc 0.9239
+valid loss 0.2557 acc 0.9210
+valid loss 0.2437 acc 0.9203
+valid loss 0.2682 acc 0.9190
+valid loss 0.2275 acc 0.9288
+valid loss 0.2410 acc 0.9233
+valid loss 0.2183 acc 0.9353
+valid loss 0.2317 acc 0.9271
+valid loss 0.2616 acc 0.9172
+03/29 12:55:07 AM arch_epoch 033 top1_acc 0.9376 top5_avg_acc 0.9339 top20_avg_acc 0.9309 baseline 0.9205 
+03/29 12:55:08 AM ppo_epoch 000 loss -0.0473 
+03/29 12:55:09 AM ppo_epoch 001 loss -0.0473 
+03/29 12:55:10 AM ppo_epoch 002 loss -0.0473 
+03/29 12:55:11 AM ppo_epoch 003 loss -0.0474 
+03/29 12:55:12 AM ppo_epoch 004 loss -0.0474 
+03/29 12:55:13 AM ppo_epoch 005 loss -0.0475 
+03/29 12:55:14 AM ppo_epoch 006 loss -0.0476 
+03/29 12:55:15 AM ppo_epoch 007 loss -0.0477 
+03/29 12:55:16 AM ppo_epoch 008 loss -0.0477 
+03/29 12:55:18 AM ppo_epoch 009 loss -0.0478 
+valid loss 0.2280 acc 0.9304
+valid loss 0.2132 acc 0.9339
+valid loss 0.2494 acc 0.9204
+valid loss 0.2547 acc 0.9154
+valid loss 0.2845 acc 0.9088
+valid loss 0.2716 acc 0.9127
+valid loss 0.2442 acc 0.9231
+valid loss 0.2374 acc 0.9268
+valid loss 0.2808 acc 0.9095
+valid loss 0.2402 acc 0.9218
+valid loss 0.2416 acc 0.9285
+valid loss 0.2435 acc 0.9244
+valid loss 0.2350 acc 0.9272
+valid loss 0.2308 acc 0.9254
+valid loss 0.2676 acc 0.9124
+valid loss 0.2982 acc 0.8986
+valid loss 0.2489 acc 0.9241
+valid loss 0.2340 acc 0.9232
+valid loss 0.2253 acc 0.9286
+valid loss 0.2302 acc 0.9280
+03/29 01:05:36 AM arch_epoch 034 top1_acc 0.9376 top5_avg_acc 0.9343 top20_avg_acc 0.9313 baseline 0.9210 
+03/29 01:05:37 AM ppo_epoch 000 loss -0.0074 
+03/29 01:05:38 AM ppo_epoch 001 loss -0.0074 
+03/29 01:05:39 AM ppo_epoch 002 loss -0.0075 
+03/29 01:05:40 AM ppo_epoch 003 loss -0.0075 
+03/29 01:05:41 AM ppo_epoch 004 loss -0.0075 
+03/29 01:05:42 AM ppo_epoch 005 loss -0.0076 
+03/29 01:05:44 AM ppo_epoch 006 loss -0.0077 
+03/29 01:05:45 AM ppo_epoch 007 loss -0.0077 
+03/29 01:05:46 AM ppo_epoch 008 loss -0.0078 
+03/29 01:05:47 AM ppo_epoch 009 loss -0.0079 
+valid loss 0.2629 acc 0.9190
+valid loss 0.2464 acc 0.9233
+valid loss 0.2406 acc 0.9232
+valid loss 0.2435 acc 0.9281
+valid loss 0.2444 acc 0.9243
+valid loss 0.2538 acc 0.9205
+valid loss 0.3223 acc 0.8936
+valid loss 0.2442 acc 0.9244
+valid loss 0.2418 acc 0.9268
+valid loss 0.2695 acc 0.9106
+valid loss 0.2793 acc 0.9129
+valid loss 0.2782 acc 0.9108
+valid loss 0.2833 acc 0.9111
+valid loss 0.2428 acc 0.9290
+valid loss 0.2711 acc 0.9085
+valid loss 0.2426 acc 0.9203
+valid loss 0.2472 acc 0.9205
+valid loss 0.2200 acc 0.9336
+valid loss 0.2976 acc 0.9000
+valid loss 0.2241 acc 0.9340
+03/29 01:16:06 AM arch_epoch 035 top1_acc 0.9376 top5_avg_acc 0.9349 top20_avg_acc 0.9317 baseline 0.9195 
+03/29 01:16:06 AM ppo_epoch 000 loss 0.0330 
+03/29 01:16:07 AM ppo_epoch 001 loss 0.0329 
+03/29 01:16:08 AM ppo_epoch 002 loss 0.0329 
+03/29 01:16:10 AM ppo_epoch 003 loss 0.0328 
+03/29 01:16:11 AM ppo_epoch 004 loss 0.0327 
+03/29 01:16:12 AM ppo_epoch 005 loss 0.0326 
+03/29 01:16:13 AM ppo_epoch 006 loss 0.0324 
+03/29 01:16:14 AM ppo_epoch 007 loss 0.0323 
+03/29 01:16:15 AM ppo_epoch 008 loss 0.0321 
+03/29 01:16:16 AM ppo_epoch 009 loss 0.0319 
+valid loss 0.2345 acc 0.9261
+valid loss 0.2328 acc 0.9278
+valid loss 0.2601 acc 0.9170
+valid loss 0.2500 acc 0.9234
+valid loss 0.2415 acc 0.9282
+valid loss 0.2372 acc 0.9231
+valid loss 0.2525 acc 0.9228
+valid loss 0.2668 acc 0.9144
+valid loss 0.2577 acc 0.9201
+valid loss 0.2311 acc 0.9263
+valid loss 0.2691 acc 0.9161
+valid loss 0.2610 acc 0.9252
+valid loss 0.2407 acc 0.9227
+valid loss 0.2357 acc 0.9253
+valid loss 0.2544 acc 0.9202
+valid loss 0.2857 acc 0.9096
+valid loss 0.2604 acc 0.9203
+valid loss 0.2666 acc 0.9131
+valid loss 0.2196 acc 0.9297
+valid loss 0.2542 acc 0.9186
+03/29 01:26:48 AM arch_epoch 036 top1_acc 0.9376 top5_avg_acc 0.9349 top20_avg_acc 0.9318 baseline 0.9205 
+03/29 01:26:49 AM ppo_epoch 000 loss -0.0395 
+03/29 01:26:50 AM ppo_epoch 001 loss -0.0395 
+03/29 01:26:51 AM ppo_epoch 002 loss -0.0396 
+03/29 01:26:52 AM ppo_epoch 003 loss -0.0397 
+03/29 01:26:54 AM ppo_epoch 004 loss -0.0398 
+03/29 01:26:55 AM ppo_epoch 005 loss -0.0398 
+03/29 01:26:56 AM ppo_epoch 006 loss -0.0399 
+03/29 01:26:57 AM ppo_epoch 007 loss -0.0400 
+03/29 01:26:58 AM ppo_epoch 008 loss -0.0401 
+03/29 01:27:00 AM ppo_epoch 009 loss -0.0402 
+valid loss 0.2836 acc 0.9105
+valid loss 0.2469 acc 0.9228
+valid loss 0.2848 acc 0.9124
+valid loss 0.2642 acc 0.9172
+valid loss 0.2310 acc 0.9280
+valid loss 0.2454 acc 0.9210
+valid loss 0.2859 acc 0.9080
+valid loss 0.2871 acc 0.9045
+valid loss 0.2280 acc 0.9310
+valid loss 0.2506 acc 0.9195
+valid loss 0.3320 acc 0.8908
+valid loss 0.2557 acc 0.9182
+valid loss 0.2301 acc 0.9306
+valid loss 0.2329 acc 0.9292
+valid loss 0.2777 acc 0.9135
+valid loss 0.2601 acc 0.9188
+valid loss 0.2305 acc 0.9253
+valid loss 0.2849 acc 0.9092
+valid loss 0.2639 acc 0.9164
+valid loss 0.2428 acc 0.9271
+03/29 01:37:44 AM arch_epoch 037 top1_acc 0.9376 top5_avg_acc 0.9349 top20_avg_acc 0.9319 baseline 0.9190 
+03/29 01:37:45 AM ppo_epoch 000 loss 0.0509 
+03/29 01:37:46 AM ppo_epoch 001 loss 0.0508 
+03/29 01:37:47 AM ppo_epoch 002 loss 0.0507 
+03/29 01:37:48 AM ppo_epoch 003 loss 0.0505 
+03/29 01:37:50 AM ppo_epoch 004 loss 0.0503 
+03/29 01:37:51 AM ppo_epoch 005 loss 0.0501 
+03/29 01:37:52 AM ppo_epoch 006 loss 0.0498 
+03/29 01:37:53 AM ppo_epoch 007 loss 0.0495 
+03/29 01:37:55 AM ppo_epoch 008 loss 0.0492 
+03/29 01:37:56 AM ppo_epoch 009 loss 0.0490 
+valid loss 0.2202 acc 0.9331
+valid loss 0.2464 acc 0.9192
+valid loss 0.2481 acc 0.9209
+valid loss 0.2731 acc 0.9136
+valid loss 0.2558 acc 0.9179
+valid loss 0.2375 acc 0.9298
+valid loss 0.2261 acc 0.9297
+valid loss 0.2647 acc 0.9128
+valid loss 0.2346 acc 0.9254
+valid loss 0.2326 acc 0.9296
+valid loss 0.2484 acc 0.9225
+valid loss 0.2377 acc 0.9241
+valid loss 0.2469 acc 0.9214
+valid loss 0.2189 acc 0.9310
+valid loss 0.2865 acc 0.9098
+valid loss 0.2416 acc 0.9259
+valid loss 0.2257 acc 0.9272
+valid loss 0.2639 acc 0.9199
+valid loss 0.2858 acc 0.9092
+valid loss 0.2155 acc 0.9364
+03/29 01:48:49 AM arch_epoch 038 top1_acc 0.9376 top5_avg_acc 0.9354 top20_avg_acc 0.9325 baseline 0.9215 
+03/29 01:48:50 AM ppo_epoch 000 loss -0.0566 
+03/29 01:48:51 AM ppo_epoch 001 loss -0.0567 
+03/29 01:48:52 AM ppo_epoch 002 loss -0.0568 
+03/29 01:48:53 AM ppo_epoch 003 loss -0.0569 
+03/29 01:48:54 AM ppo_epoch 004 loss -0.0571 
+03/29 01:48:56 AM ppo_epoch 005 loss -0.0572 
+03/29 01:48:57 AM ppo_epoch 006 loss -0.0574 
+03/29 01:48:58 AM ppo_epoch 007 loss -0.0575 
+03/29 01:48:59 AM ppo_epoch 008 loss -0.0576 
+03/29 01:49:01 AM ppo_epoch 009 loss -0.0577 
+valid loss 0.2618 acc 0.9189
+valid loss 0.3417 acc 0.8797
+valid loss 0.2654 acc 0.9152
+valid loss 0.2387 acc 0.9251
+valid loss 0.2554 acc 0.9166
+valid loss 0.2373 acc 0.9228
+valid loss 0.2586 acc 0.9166
+valid loss 0.2607 acc 0.9143
+valid loss 0.2368 acc 0.9248
+valid loss 0.2515 acc 0.9197
+valid loss 0.2617 acc 0.9158
+valid loss 0.2652 acc 0.9146
+valid loss 0.2365 acc 0.9244
+valid loss 0.2222 acc 0.9333
+valid loss 0.2555 acc 0.9207
+valid loss 0.2335 acc 0.9265
+valid loss 0.2278 acc 0.9283
+valid loss 0.3392 acc 0.8889
+valid loss 0.2482 acc 0.9206
+valid loss 0.2368 acc 0.9255
+03/29 01:59:20 AM arch_epoch 039 top1_acc 0.9376 top5_avg_acc 0.9354 top20_avg_acc 0.9326 baseline 0.9195 
+03/29 01:59:20 AM ppo_epoch 000 loss 0.0753 
+03/29 01:59:21 AM ppo_epoch 001 loss 0.0752 
+03/29 01:59:23 AM ppo_epoch 002 loss 0.0750 
+03/29 01:59:24 AM ppo_epoch 003 loss 0.0747 
+03/29 01:59:25 AM ppo_epoch 004 loss 0.0744 
+03/29 01:59:26 AM ppo_epoch 005 loss 0.0740 
+03/29 01:59:28 AM ppo_epoch 006 loss 0.0737 
+03/29 01:59:29 AM ppo_epoch 007 loss 0.0734 
+03/29 01:59:30 AM ppo_epoch 008 loss 0.0732 
+03/29 01:59:32 AM ppo_epoch 009 loss 0.0730 
+valid loss 0.2342 acc 0.9255
+valid loss 0.2480 acc 0.9218
+valid loss 0.2261 acc 0.9301
+valid loss 0.2247 acc 0.9281
+valid loss 0.2512 acc 0.9207
+valid loss 0.2358 acc 0.9256
+valid loss 0.2375 acc 0.9247
+valid loss 0.2357 acc 0.9314
+valid loss 0.2674 acc 0.9156
+valid loss 0.2474 acc 0.9244
+valid loss 0.2303 acc 0.9279
+valid loss 0.2496 acc 0.9189
+valid loss 0.2433 acc 0.9218
+valid loss 0.2679 acc 0.9142
+valid loss 0.2412 acc 0.9236
+valid loss 0.2385 acc 0.9267
+valid loss 0.2259 acc 0.9311
+valid loss 0.2548 acc 0.9173
+valid loss 0.2544 acc 0.9192
+valid loss 0.2642 acc 0.9168
+03/29 02:10:06 AM arch_epoch 040 top1_acc 0.9376 top5_avg_acc 0.9354 top20_avg_acc 0.9327 baseline 0.9216 
+03/29 02:10:06 AM ppo_epoch 000 loss -0.0682 
+03/29 02:10:08 AM ppo_epoch 001 loss -0.0682 
+03/29 02:10:09 AM ppo_epoch 002 loss -0.0683 
+03/29 02:10:10 AM ppo_epoch 003 loss -0.0684 
+03/29 02:10:11 AM ppo_epoch 004 loss -0.0685 
+03/29 02:10:12 AM ppo_epoch 005 loss -0.0686 
+03/29 02:10:13 AM ppo_epoch 006 loss -0.0687 
+03/29 02:10:15 AM ppo_epoch 007 loss -0.0688 
+03/29 02:10:16 AM ppo_epoch 008 loss -0.0688 
+03/29 02:10:17 AM ppo_epoch 009 loss -0.0688 
+valid loss 0.2475 acc 0.9219
+valid loss 0.2397 acc 0.9185
+valid loss 0.2319 acc 0.9270
+valid loss 0.2790 acc 0.9099
+valid loss 0.2820 acc 0.9113
+valid loss 0.2277 acc 0.9303
+valid loss 0.2786 acc 0.9111
+valid loss 0.2491 acc 0.9224
+valid loss 0.2004 acc 0.9396
+valid loss 0.2203 acc 0.9313
+valid loss 0.2906 acc 0.9060
+valid loss 0.2361 acc 0.9216
+valid loss 0.2589 acc 0.9207
+valid loss 0.2669 acc 0.9152
+valid loss 0.2795 acc 0.9084
+valid loss 0.2151 acc 0.9318
+valid loss 0.2345 acc 0.9272
+valid loss 0.2406 acc 0.9238
+valid loss 0.2667 acc 0.9134
+valid loss 0.2355 acc 0.9229
+03/29 02:20:24 AM arch_epoch 041 top1_acc 0.9396 top5_avg_acc 0.9366 top20_avg_acc 0.9333 baseline 0.9211 
+03/29 02:20:24 AM ppo_epoch 000 loss 0.0144 
+03/29 02:20:26 AM ppo_epoch 001 loss 0.0144 
+03/29 02:20:27 AM ppo_epoch 002 loss 0.0143 
+03/29 02:20:28 AM ppo_epoch 003 loss 0.0141 
+03/29 02:20:30 AM ppo_epoch 004 loss 0.0139 
+03/29 02:20:31 AM ppo_epoch 005 loss 0.0136 
+03/29 02:20:32 AM ppo_epoch 006 loss 0.0134 
+03/29 02:20:34 AM ppo_epoch 007 loss 0.0132 
+03/29 02:20:35 AM ppo_epoch 008 loss 0.0129 
+03/29 02:20:36 AM ppo_epoch 009 loss 0.0127 
+valid loss 0.2354 acc 0.9261
+valid loss 0.2766 acc 0.9136
+valid loss 0.2299 acc 0.9271
+valid loss 0.2977 acc 0.9061
+valid loss 0.2244 acc 0.9298
+valid loss 0.2738 acc 0.9150
+valid loss 0.2493 acc 0.9213
+valid loss 0.2612 acc 0.9198
+valid loss 0.2502 acc 0.9231
+valid loss 0.2413 acc 0.9256
+valid loss 0.2430 acc 0.9203
+valid loss 0.2466 acc 0.9212
+valid loss 0.2531 acc 0.9158
+valid loss 0.2166 acc 0.9323
+valid loss 0.2556 acc 0.9143
+valid loss 0.2559 acc 0.9178
+valid loss 0.2114 acc 0.9329
+valid loss 0.2612 acc 0.9147
+valid loss 0.2487 acc 0.9169
+valid loss 0.2340 acc 0.9244
+03/29 02:31:12 AM arch_epoch 042 top1_acc 0.9396 top5_avg_acc 0.9366 top20_avg_acc 0.9334 baseline 0.9210 
+03/29 02:31:13 AM ppo_epoch 000 loss 0.0055 
+03/29 02:31:14 AM ppo_epoch 001 loss 0.0055 
+03/29 02:31:15 AM ppo_epoch 002 loss 0.0054 
+03/29 02:31:16 AM ppo_epoch 003 loss 0.0054 
+03/29 02:31:18 AM ppo_epoch 004 loss 0.0053 
+03/29 02:31:19 AM ppo_epoch 005 loss 0.0052 
+03/29 02:31:20 AM ppo_epoch 006 loss 0.0052 
+03/29 02:31:21 AM ppo_epoch 007 loss 0.0051 
+03/29 02:31:22 AM ppo_epoch 008 loss 0.0051 
+03/29 02:31:23 AM ppo_epoch 009 loss 0.0050 
+valid loss 0.2539 acc 0.9185
+valid loss 0.2367 acc 0.9271
+valid loss 0.2302 acc 0.9253
+valid loss 0.2407 acc 0.9227
+valid loss 0.2244 acc 0.9305
+valid loss 0.2869 acc 0.9049
+valid loss 0.2463 acc 0.9222
+valid loss 0.2453 acc 0.9213
+valid loss 0.2398 acc 0.9225
+valid loss 0.2503 acc 0.9179
+valid loss 0.2322 acc 0.9247
+valid loss 0.2512 acc 0.9219
+valid loss 0.2477 acc 0.9231
+valid loss 0.2725 acc 0.9145
+valid loss 0.2700 acc 0.9122
+valid loss 0.2081 acc 0.9373
+valid loss 0.2580 acc 0.9163
+valid loss 0.2293 acc 0.9259
+valid loss 0.2111 acc 0.9377
+valid loss 0.2175 acc 0.9318
+03/29 02:42:34 AM arch_epoch 043 top1_acc 0.9396 top5_avg_acc 0.9377 top20_avg_acc 0.9341 baseline 0.9227 
+03/29 02:42:35 AM ppo_epoch 000 loss -0.0093 
+03/29 02:42:36 AM ppo_epoch 001 loss -0.0093 
+03/29 02:42:37 AM ppo_epoch 002 loss -0.0093 
+03/29 02:42:38 AM ppo_epoch 003 loss -0.0094 
+03/29 02:42:39 AM ppo_epoch 004 loss -0.0095 
+03/29 02:42:40 AM ppo_epoch 005 loss -0.0096 
+03/29 02:42:42 AM ppo_epoch 006 loss -0.0098 
+03/29 02:42:43 AM ppo_epoch 007 loss -0.0099 
+03/29 02:42:44 AM ppo_epoch 008 loss -0.0100 
+03/29 02:42:45 AM ppo_epoch 009 loss -0.0101 
+valid loss 0.2514 acc 0.9230
+valid loss 0.2223 acc 0.9313
+valid loss 0.2180 acc 0.9319
+valid loss 0.2462 acc 0.9240
+valid loss 0.3020 acc 0.9011
+valid loss 0.2343 acc 0.9246
+valid loss 0.2307 acc 0.9295
+valid loss 0.2177 acc 0.9294
+valid loss 0.2569 acc 0.9169
+valid loss 0.2410 acc 0.9232
+valid loss 0.2468 acc 0.9210
+valid loss 0.2271 acc 0.9250
+valid loss 0.2753 acc 0.9170
+valid loss 0.2733 acc 0.9123
+valid loss 0.2343 acc 0.9259
+valid loss 0.2902 acc 0.9064
+valid loss 0.2987 acc 0.9070
+valid loss 0.2478 acc 0.9229
+valid loss 0.2577 acc 0.9138
+valid loss 0.2441 acc 0.9239
+03/29 02:53:50 AM arch_epoch 044 top1_acc 0.9396 top5_avg_acc 0.9377 top20_avg_acc 0.9341 baseline 0.9207 
+03/29 02:53:50 AM ppo_epoch 000 loss 0.0088 
+03/29 02:53:52 AM ppo_epoch 001 loss 0.0087 
+03/29 02:53:53 AM ppo_epoch 002 loss 0.0087 
+03/29 02:53:54 AM ppo_epoch 003 loss 0.0087 
+03/29 02:53:55 AM ppo_epoch 004 loss 0.0086 
+03/29 02:53:56 AM ppo_epoch 005 loss 0.0085 
+03/29 02:53:57 AM ppo_epoch 006 loss 0.0084 
+03/29 02:53:58 AM ppo_epoch 007 loss 0.0082 
+03/29 02:53:59 AM ppo_epoch 008 loss 0.0081 
+03/29 02:54:01 AM ppo_epoch 009 loss 0.0080 
+valid loss 0.2674 acc 0.9150
+valid loss 0.2249 acc 0.9322
+valid loss 0.2110 acc 0.9327
+valid loss 0.2381 acc 0.9259
+valid loss 0.2639 acc 0.9146
+valid loss 0.2569 acc 0.9202
+valid loss 0.2143 acc 0.9338
+valid loss 0.2241 acc 0.9285
+valid loss 0.2245 acc 0.9308
+valid loss 0.2827 acc 0.9098
+valid loss 0.2790 acc 0.9085
+valid loss 0.2602 acc 0.9169
+valid loss 0.2304 acc 0.9252
+valid loss 0.2682 acc 0.9132
+valid loss 0.2178 acc 0.9312
+valid loss 0.2283 acc 0.9276
+valid loss 0.2475 acc 0.9205
+valid loss 0.2311 acc 0.9293
+valid loss 0.2368 acc 0.9268
+valid loss 0.2234 acc 0.9332
+03/29 03:04:47 AM arch_epoch 045 top1_acc 0.9396 top5_avg_acc 0.9377 top20_avg_acc 0.9343 baseline 0.9229 
+03/29 03:04:48 AM ppo_epoch 000 loss -0.0357 
+03/29 03:04:49 AM ppo_epoch 001 loss -0.0356 
+03/29 03:04:50 AM ppo_epoch 002 loss -0.0356 
+03/29 03:04:51 AM ppo_epoch 003 loss -0.0357 
+03/29 03:04:52 AM ppo_epoch 004 loss -0.0358 
+03/29 03:04:53 AM ppo_epoch 005 loss -0.0359 
+03/29 03:04:54 AM ppo_epoch 006 loss -0.0361 
+03/29 03:04:55 AM ppo_epoch 007 loss -0.0363 
+03/29 03:04:56 AM ppo_epoch 008 loss -0.0365 
+03/29 03:04:57 AM ppo_epoch 009 loss -0.0367 
+valid loss 0.2299 acc 0.9268
+valid loss 0.2128 acc 0.9359
+valid loss 0.2298 acc 0.9283
+valid loss 0.2339 acc 0.9243
+valid loss 0.2507 acc 0.9239
+valid loss 0.2180 acc 0.9328
+valid loss 0.2260 acc 0.9313
+valid loss 0.2615 acc 0.9207
+valid loss 0.3652 acc 0.8934
+valid loss 0.2273 acc 0.9301
+valid loss 0.2464 acc 0.9189
+valid loss 0.2352 acc 0.9254
+valid loss 0.2302 acc 0.9258
+valid loss 0.2178 acc 0.9289
+valid loss 0.2216 acc 0.9331
+valid loss 0.2436 acc 0.9232
+valid loss 0.2429 acc 0.9263
+valid loss 0.2433 acc 0.9231
+valid loss 0.2223 acc 0.9313
+valid loss 0.2330 acc 0.9241
+03/29 03:15:16 AM arch_epoch 046 top1_acc 0.9396 top5_avg_acc 0.9377 top20_avg_acc 0.9345 baseline 0.9245 
+03/29 03:15:16 AM ppo_epoch 000 loss -0.0354 
+03/29 03:15:17 AM ppo_epoch 001 loss -0.0356 
+03/29 03:15:19 AM ppo_epoch 002 loss -0.0357 
+03/29 03:15:20 AM ppo_epoch 003 loss -0.0359 
+03/29 03:15:21 AM ppo_epoch 004 loss -0.0361 
+03/29 03:15:22 AM ppo_epoch 005 loss -0.0364 
+03/29 03:15:24 AM ppo_epoch 006 loss -0.0365 
+03/29 03:15:25 AM ppo_epoch 007 loss -0.0366 
+03/29 03:15:26 AM ppo_epoch 008 loss -0.0367 
+03/29 03:15:28 AM ppo_epoch 009 loss -0.0367 
+valid loss 0.2058 acc 0.9374
+valid loss 0.2360 acc 0.9260
+valid loss 0.2249 acc 0.9245
+valid loss 0.2394 acc 0.9263
+valid loss 0.2498 acc 0.9249
+valid loss 0.2233 acc 0.9314
+valid loss 0.2571 acc 0.9181
+valid loss 0.2364 acc 0.9280
+valid loss 0.2339 acc 0.9274
+valid loss 0.2254 acc 0.9293
+valid loss 0.2222 acc 0.9276
+valid loss 0.2940 acc 0.9035
+valid loss 0.2926 acc 0.9097
+valid loss 0.2284 acc 0.9297
+valid loss 0.2451 acc 0.9282
+valid loss 0.2338 acc 0.9304
+valid loss 0.2531 acc 0.9189
+valid loss 0.2499 acc 0.9202
+valid loss 0.2328 acc 0.9268
+valid loss 0.2499 acc 0.9227
+03/29 03:26:37 AM arch_epoch 047 top1_acc 0.9396 top5_avg_acc 0.9379 top20_avg_acc 0.9348 baseline 0.9242 
+03/29 03:26:38 AM ppo_epoch 000 loss -0.0145 
+03/29 03:26:39 AM ppo_epoch 001 loss -0.0146 
+03/29 03:26:40 AM ppo_epoch 002 loss -0.0148 
+03/29 03:26:42 AM ppo_epoch 003 loss -0.0149 
+03/29 03:26:43 AM ppo_epoch 004 loss -0.0151 
+03/29 03:26:44 AM ppo_epoch 005 loss -0.0153 
+03/29 03:26:45 AM ppo_epoch 006 loss -0.0154 
+03/29 03:26:47 AM ppo_epoch 007 loss -0.0155 
+03/29 03:26:47 AM ppo_epoch 008 loss -0.0156 
+03/29 03:26:48 AM ppo_epoch 009 loss -0.0156 
+valid loss 0.2584 acc 0.9176
+valid loss 0.2716 acc 0.9102
+valid loss 0.2330 acc 0.9251
+valid loss 0.2418 acc 0.9255
+valid loss 0.2414 acc 0.9250
+valid loss 0.2314 acc 0.9255
+valid loss 0.2607 acc 0.9152
+valid loss 0.2303 acc 0.9273
+valid loss 0.2372 acc 0.9217
+valid loss 0.2352 acc 0.9310
+valid loss 0.2410 acc 0.9247
+valid loss 0.2179 acc 0.9332
+valid loss 0.2548 acc 0.9152
+valid loss 0.2476 acc 0.9231
+valid loss 0.2385 acc 0.9232
+valid loss 0.2451 acc 0.9217
+valid loss 0.2387 acc 0.9210
+valid loss 0.2469 acc 0.9228
+valid loss 0.2594 acc 0.9175
+valid loss 0.2348 acc 0.9274
+03/29 03:37:40 AM arch_epoch 048 top1_acc 0.9396 top5_avg_acc 0.9379 top20_avg_acc 0.9348 baseline 0.9233 
+03/29 03:37:41 AM ppo_epoch 000 loss 0.0254 
+03/29 03:37:42 AM ppo_epoch 001 loss 0.0254 
+03/29 03:37:43 AM ppo_epoch 002 loss 0.0253 
+03/29 03:37:45 AM ppo_epoch 003 loss 0.0252 
+03/29 03:37:46 AM ppo_epoch 004 loss 0.0251 
+03/29 03:37:47 AM ppo_epoch 005 loss 0.0250 
+03/29 03:37:48 AM ppo_epoch 006 loss 0.0249 
+03/29 03:37:49 AM ppo_epoch 007 loss 0.0248 
+03/29 03:37:50 AM ppo_epoch 008 loss 0.0247 
+03/29 03:37:51 AM ppo_epoch 009 loss 0.0246 
+valid loss 0.2042 acc 0.9355
+valid loss 0.2326 acc 0.9243
+valid loss 0.2766 acc 0.9085
+valid loss 0.2978 acc 0.8989
+valid loss 0.2656 acc 0.9152
+valid loss 0.2172 acc 0.9328
+valid loss 0.2625 acc 0.9165
+valid loss 0.2561 acc 0.9227
+valid loss 0.2286 acc 0.9292
+valid loss 0.2480 acc 0.9223
+valid loss 0.2535 acc 0.9229
+valid loss 0.2503 acc 0.9202
+valid loss 0.2314 acc 0.9239
+valid loss 0.2223 acc 0.9301
+valid loss 0.2493 acc 0.9209
+valid loss 0.2630 acc 0.9161
+valid loss 0.2483 acc 0.9207
+valid loss 0.2611 acc 0.9117
+valid loss 0.2387 acc 0.9245
+valid loss 0.2242 acc 0.9312
+03/29 03:48:55 AM arch_epoch 049 top1_acc 0.9396 top5_avg_acc 0.9379 top20_avg_acc 0.9350 baseline 0.9223 
+03/29 03:48:56 AM ppo_epoch 000 loss 0.0357 
+03/29 03:48:57 AM ppo_epoch 001 loss 0.0357 
+03/29 03:48:58 AM ppo_epoch 002 loss 0.0356 
+03/29 03:48:59 AM ppo_epoch 003 loss 0.0355 
+03/29 03:49:01 AM ppo_epoch 004 loss 0.0354 
+03/29 03:49:02 AM ppo_epoch 005 loss 0.0353 
+03/29 03:49:03 AM ppo_epoch 006 loss 0.0353 
+03/29 03:49:04 AM ppo_epoch 007 loss 0.0352 
+03/29 03:49:06 AM ppo_epoch 008 loss 0.0352 
+03/29 03:49:07 AM ppo_epoch 009 loss 0.0351 
+valid loss 0.2568 acc 0.9197
+valid loss 0.3271 acc 0.8951
+valid loss 0.2474 acc 0.9247
+valid loss 0.2540 acc 0.9215
+valid loss 0.2340 acc 0.9249
+valid loss 0.2617 acc 0.9190
+valid loss 0.2429 acc 0.9236
+valid loss 0.2392 acc 0.9269
+valid loss 0.2587 acc 0.9146
+valid loss 0.2114 acc 0.9379
+valid loss 0.2317 acc 0.9219
+valid loss 0.2332 acc 0.9250
+valid loss 0.2431 acc 0.9272
+valid loss 0.2332 acc 0.9280
+valid loss 0.2418 acc 0.9203
+valid loss 0.2522 acc 0.9223
+valid loss 0.3093 acc 0.8988
+valid loss 0.2333 acc 0.9225
+valid loss 0.2511 acc 0.9177
+valid loss 0.2234 acc 0.9317
+03/29 04:00:21 AM arch_epoch 050 top1_acc 0.9396 top5_avg_acc 0.9380 top20_avg_acc 0.9352 baseline 0.9218 
+03/29 04:00:22 AM ppo_epoch 000 loss 0.0238 
+03/29 04:00:23 AM ppo_epoch 001 loss 0.0239 
+03/29 04:00:24 AM ppo_epoch 002 loss 0.0239 
+03/29 04:00:25 AM ppo_epoch 003 loss 0.0239 
+03/29 04:00:26 AM ppo_epoch 004 loss 0.0239 
+03/29 04:00:27 AM ppo_epoch 005 loss 0.0238 
+03/29 04:00:28 AM ppo_epoch 006 loss 0.0238 
+03/29 04:00:30 AM ppo_epoch 007 loss 0.0238 
+03/29 04:00:31 AM ppo_epoch 008 loss 0.0237 
+03/29 04:00:32 AM ppo_epoch 009 loss 0.0237 
+valid loss 0.2345 acc 0.9264
+valid loss 0.2477 acc 0.9249
+valid loss 0.2624 acc 0.9197
+valid loss 0.2101 acc 0.9363
+valid loss 0.2331 acc 0.9242
+valid loss 0.2153 acc 0.9314
+valid loss 0.2845 acc 0.9141
+valid loss 0.2507 acc 0.9244
+valid loss 0.2611 acc 0.9154
+valid loss 0.2346 acc 0.9270
+valid loss 0.2831 acc 0.9110
+valid loss 0.2417 acc 0.9232
+valid loss 0.2197 acc 0.9350
+valid loss 0.2186 acc 0.9301
+valid loss 0.2062 acc 0.9364
+valid loss 0.2204 acc 0.9272
+valid loss 0.2370 acc 0.9247
+valid loss 0.3000 acc 0.9050
+valid loss 0.2312 acc 0.9316
+valid loss 0.2850 acc 0.9088
+03/29 04:10:45 AM arch_epoch 051 top1_acc 0.9396 top5_avg_acc 0.9380 top20_avg_acc 0.9357 baseline 0.9228 
+03/29 04:10:45 AM ppo_epoch 000 loss -0.0423 
+03/29 04:10:47 AM ppo_epoch 001 loss -0.0423 
+03/29 04:10:48 AM ppo_epoch 002 loss -0.0423 
+03/29 04:10:49 AM ppo_epoch 003 loss -0.0424 
+03/29 04:10:50 AM ppo_epoch 004 loss -0.0425 
+03/29 04:10:51 AM ppo_epoch 005 loss -0.0426 
+03/29 04:10:52 AM ppo_epoch 006 loss -0.0427 
+03/29 04:10:53 AM ppo_epoch 007 loss -0.0429 
+03/29 04:10:54 AM ppo_epoch 008 loss -0.0429 
+03/29 04:10:55 AM ppo_epoch 009 loss -0.0430 
+valid loss 0.2595 acc 0.9152
+valid loss 0.2332 acc 0.9301
+valid loss 0.2567 acc 0.9193
+valid loss 0.2587 acc 0.9185
+valid loss 0.2464 acc 0.9230
+valid loss 0.2611 acc 0.9191
+valid loss 0.2472 acc 0.9219
+valid loss 0.2289 acc 0.9272
+valid loss 0.2433 acc 0.9228
+valid loss 0.2692 acc 0.9156
+valid loss 0.2258 acc 0.9291
+valid loss 0.2381 acc 0.9241
+valid loss 0.2545 acc 0.9178
+valid loss 0.2323 acc 0.9257
+valid loss 0.2327 acc 0.9290
+valid loss 0.2188 acc 0.9336
+valid loss 0.2369 acc 0.9283
+valid loss 0.2480 acc 0.9233
+valid loss 0.2419 acc 0.9206
+valid loss 0.2569 acc 0.9149
+03/29 04:22:07 AM arch_epoch 052 top1_acc 0.9396 top5_avg_acc 0.9380 top20_avg_acc 0.9357 baseline 0.9230 
+03/29 04:22:08 AM ppo_epoch 000 loss 0.0029 
+03/29 04:22:09 AM ppo_epoch 001 loss 0.0029 
+03/29 04:22:11 AM ppo_epoch 002 loss 0.0028 
+03/29 04:22:12 AM ppo_epoch 003 loss 0.0028 
+03/29 04:22:13 AM ppo_epoch 004 loss 0.0028 
+03/29 04:22:14 AM ppo_epoch 005 loss 0.0028 
+03/29 04:22:15 AM ppo_epoch 006 loss 0.0027 
+03/29 04:22:17 AM ppo_epoch 007 loss 0.0027 
+03/29 04:22:18 AM ppo_epoch 008 loss 0.0027 
+03/29 04:22:19 AM ppo_epoch 009 loss 0.0027 
+valid loss 0.2235 acc 0.9275
+valid loss 0.3077 acc 0.9021
+valid loss 0.2390 acc 0.9245
+valid loss 0.2304 acc 0.9292
+valid loss 0.2179 acc 0.9295
+valid loss 0.2305 acc 0.9262
+valid loss 0.2665 acc 0.9137
+valid loss 0.2700 acc 0.9156
+valid loss 0.2610 acc 0.9170
+valid loss 0.2135 acc 0.9290
+valid loss 0.2438 acc 0.9217
+valid loss 0.2309 acc 0.9306
+valid loss 0.2332 acc 0.9243
+valid loss 0.2128 acc 0.9345
+valid loss 0.2666 acc 0.9150
+valid loss 0.2172 acc 0.9318
+valid loss 0.2394 acc 0.9243
+valid loss 0.2266 acc 0.9304
+valid loss 0.2229 acc 0.9302
+valid loss 0.2450 acc 0.9218
+03/29 04:32:46 AM arch_epoch 053 top1_acc 0.9396 top5_avg_acc 0.9380 top20_avg_acc 0.9357 baseline 0.9241 
+03/29 04:32:47 AM ppo_epoch 000 loss 0.0041 
+03/29 04:32:48 AM ppo_epoch 001 loss 0.0040 
+03/29 04:32:49 AM ppo_epoch 002 loss 0.0038 
+03/29 04:32:51 AM ppo_epoch 003 loss 0.0037 
+03/29 04:32:52 AM ppo_epoch 004 loss 0.0035 
+03/29 04:32:53 AM ppo_epoch 005 loss 0.0035 
+03/29 04:32:54 AM ppo_epoch 006 loss 0.0034 
+03/29 04:32:55 AM ppo_epoch 007 loss 0.0034 
+03/29 04:32:57 AM ppo_epoch 008 loss 0.0033 
+03/29 04:32:58 AM ppo_epoch 009 loss 0.0033 
+valid loss 0.2220 acc 0.9299
+valid loss 0.2455 acc 0.9253
+valid loss 0.2358 acc 0.9302
+valid loss 0.2344 acc 0.9266
+valid loss 0.2538 acc 0.9195
+valid loss 0.2354 acc 0.9245
+valid loss 0.2550 acc 0.9209
+valid loss 0.2672 acc 0.9157
+valid loss 0.2422 acc 0.9238
+valid loss 0.2338 acc 0.9219
+valid loss 0.2352 acc 0.9299
+valid loss 0.2078 acc 0.9375
+valid loss 0.2342 acc 0.9255
+valid loss 0.2546 acc 0.9214
+valid loss 0.2154 acc 0.9348
+valid loss 0.2225 acc 0.9284
+valid loss 0.2214 acc 0.9282
+valid loss 0.2420 acc 0.9242
+valid loss 0.2102 acc 0.9369
+valid loss 0.2364 acc 0.9271
+03/29 04:43:56 AM arch_epoch 054 top1_acc 0.9396 top5_avg_acc 0.9381 top20_avg_acc 0.9362 baseline 0.9260 
+03/29 04:43:57 AM ppo_epoch 000 loss -0.0233 
+03/29 04:43:58 AM ppo_epoch 001 loss -0.0234 
+03/29 04:43:59 AM ppo_epoch 002 loss -0.0234 
+03/29 04:44:00 AM ppo_epoch 003 loss -0.0234 
+03/29 04:44:01 AM ppo_epoch 004 loss -0.0235 
+03/29 04:44:02 AM ppo_epoch 005 loss -0.0235 
+03/29 04:44:03 AM ppo_epoch 006 loss -0.0235 
+03/29 04:44:04 AM ppo_epoch 007 loss -0.0236 
+03/29 04:44:05 AM ppo_epoch 008 loss -0.0236 
+03/29 04:44:06 AM ppo_epoch 009 loss -0.0237 
+valid loss 0.2463 acc 0.9257
+valid loss 0.2538 acc 0.9179
+valid loss 0.2074 acc 0.9362
+valid loss 0.2533 acc 0.9173
+valid loss 0.2151 acc 0.9286
+valid loss 0.2421 acc 0.9242
+valid loss 0.2464 acc 0.9211
+valid loss 0.2520 acc 0.9186
+valid loss 0.2311 acc 0.9279
+valid loss 0.3574 acc 0.8807
+valid loss 0.2506 acc 0.9238
+valid loss 0.2424 acc 0.9214
+valid loss 0.2681 acc 0.9096
+valid loss 0.2292 acc 0.9272
+valid loss 0.2372 acc 0.9302
+valid loss 0.2355 acc 0.9271
+valid loss 0.2016 acc 0.9385
+valid loss 0.2129 acc 0.9341
+valid loss 0.2666 acc 0.9166
+valid loss 0.1963 acc 0.9400
+03/29 04:55:09 AM arch_epoch 055 top1_acc 0.9400 top5_avg_acc 0.9387 top20_avg_acc 0.9368 baseline 0.9249 
+03/29 04:55:09 AM ppo_epoch 000 loss 0.0611 
+03/29 04:55:11 AM ppo_epoch 001 loss 0.0609 
+03/29 04:55:12 AM ppo_epoch 002 loss 0.0606 
+03/29 04:55:13 AM ppo_epoch 003 loss 0.0603 
+03/29 04:55:14 AM ppo_epoch 004 loss 0.0600 
+03/29 04:55:16 AM ppo_epoch 005 loss 0.0598 
+03/29 04:55:17 AM ppo_epoch 006 loss 0.0597 
+03/29 04:55:18 AM ppo_epoch 007 loss 0.0596 
+03/29 04:55:19 AM ppo_epoch 008 loss 0.0596 
+03/29 04:55:20 AM ppo_epoch 009 loss 0.0595 
+valid loss 0.2686 acc 0.9192
+valid loss 0.2427 acc 0.9230
+valid loss 0.2370 acc 0.9233
+valid loss 0.2184 acc 0.9334
+valid loss 0.2151 acc 0.9351
+valid loss 0.3014 acc 0.9030
+valid loss 0.2405 acc 0.9238
+valid loss 0.2900 acc 0.9036
+valid loss 0.2764 acc 0.9123
+valid loss 0.2730 acc 0.9126
+valid loss 0.2146 acc 0.9306
+valid loss 0.2541 acc 0.9151
+valid loss 0.2674 acc 0.9159
+valid loss 0.2919 acc 0.9068
+valid loss 0.2191 acc 0.9350
+valid loss 0.2347 acc 0.9268
+valid loss 0.2384 acc 0.9273
+valid loss 0.2610 acc 0.9189
+valid loss 0.2684 acc 0.9121
+valid loss 0.2217 acc 0.9281
+03/29 05:06:13 AM arch_epoch 056 top1_acc 0.9400 top5_avg_acc 0.9387 top20_avg_acc 0.9369 baseline 0.9220 
+03/29 05:06:13 AM ppo_epoch 000 loss 0.0678 
+03/29 05:06:14 AM ppo_epoch 001 loss 0.0678 
+03/29 05:06:15 AM ppo_epoch 002 loss 0.0678 
+03/29 05:06:17 AM ppo_epoch 003 loss 0.0678 
+03/29 05:06:18 AM ppo_epoch 004 loss 0.0677 
+03/29 05:06:19 AM ppo_epoch 005 loss 0.0677 
+03/29 05:06:20 AM ppo_epoch 006 loss 0.0676 
+03/29 05:06:21 AM ppo_epoch 007 loss 0.0676 
+03/29 05:06:22 AM ppo_epoch 008 loss 0.0675 
+03/29 05:06:24 AM ppo_epoch 009 loss 0.0674 
+valid loss 0.2214 acc 0.9321
+valid loss 0.2491 acc 0.9190
+valid loss 0.2363 acc 0.9273
+valid loss 0.2337 acc 0.9263
+valid loss 0.2354 acc 0.9245
+valid loss 0.2657 acc 0.9123
+valid loss 0.2435 acc 0.9266
+valid loss 0.2346 acc 0.9243
+valid loss 0.2167 acc 0.9301
+valid loss 0.2293 acc 0.9290
+valid loss 0.2390 acc 0.9215
+valid loss 0.2341 acc 0.9188
+valid loss 0.2362 acc 0.9265
+valid loss 0.2373 acc 0.9270
+valid loss 0.2227 acc 0.9331
+valid loss 0.2407 acc 0.9233
+valid loss 0.2383 acc 0.9227
+valid loss 0.2755 acc 0.9145
+valid loss 0.2497 acc 0.9238
+valid loss 0.2254 acc 0.9272
+03/29 05:17:37 AM arch_epoch 057 top1_acc 0.9400 top5_avg_acc 0.9387 top20_avg_acc 0.9369 baseline 0.9235 
+03/29 05:17:38 AM ppo_epoch 000 loss -0.0392 
+03/29 05:17:39 AM ppo_epoch 001 loss -0.0392 
+03/29 05:17:40 AM ppo_epoch 002 loss -0.0393 
+03/29 05:17:41 AM ppo_epoch 003 loss -0.0393 
+03/29 05:17:42 AM ppo_epoch 004 loss -0.0394 
+03/29 05:17:43 AM ppo_epoch 005 loss -0.0394 
+03/29 05:17:44 AM ppo_epoch 006 loss -0.0394 
+03/29 05:17:45 AM ppo_epoch 007 loss -0.0395 
+03/29 05:17:47 AM ppo_epoch 008 loss -0.0395 
+03/29 05:17:48 AM ppo_epoch 009 loss -0.0395 
+valid loss 0.2274 acc 0.9295
+valid loss 0.2280 acc 0.9261
+valid loss 0.2608 acc 0.9167
+valid loss 0.2433 acc 0.9189
+valid loss 0.2466 acc 0.9253
+valid loss 0.2319 acc 0.9287
+valid loss 0.2513 acc 0.9204
+valid loss 0.2465 acc 0.9228
+valid loss 0.2373 acc 0.9215
+valid loss 0.2254 acc 0.9289
+valid loss 0.2445 acc 0.9230
+valid loss 0.2533 acc 0.9176
+valid loss 0.2788 acc 0.9096
+valid loss 0.2926 acc 0.9082
+valid loss 0.2280 acc 0.9306
+valid loss 0.2436 acc 0.9230
+valid loss 0.2329 acc 0.9238
+valid loss 0.2814 acc 0.9106
+valid loss 0.2207 acc 0.9272
+valid loss 0.2758 acc 0.9098
+03/29 05:29:29 AM arch_epoch 058 top1_acc 0.9400 top5_avg_acc 0.9387 top20_avg_acc 0.9369 baseline 0.9215 
+03/29 05:29:30 AM ppo_epoch 000 loss 0.0162 
+03/29 05:29:31 AM ppo_epoch 001 loss 0.0162 
+03/29 05:29:32 AM ppo_epoch 002 loss 0.0162 
+03/29 05:29:33 AM ppo_epoch 003 loss 0.0161 
+03/29 05:29:34 AM ppo_epoch 004 loss 0.0161 
+03/29 05:29:35 AM ppo_epoch 005 loss 0.0160 
+03/29 05:29:37 AM ppo_epoch 006 loss 0.0160 
+03/29 05:29:38 AM ppo_epoch 007 loss 0.0159 
+03/29 05:29:39 AM ppo_epoch 008 loss 0.0158 
+03/29 05:29:40 AM ppo_epoch 009 loss 0.0157 
+valid loss 0.2342 acc 0.9264
+valid loss 0.2271 acc 0.9274
+valid loss 0.1991 acc 0.9401
+valid loss 0.2163 acc 0.9361
+valid loss 0.2583 acc 0.9201
+valid loss 0.2637 acc 0.9169
+valid loss 0.2496 acc 0.9189
+valid loss 0.2499 acc 0.9187
+valid loss 0.2419 acc 0.9234
+valid loss 0.2509 acc 0.9228
+valid loss 0.2218 acc 0.9304
+valid loss 0.2350 acc 0.9278
+valid loss 0.2351 acc 0.9289
+valid loss 0.2241 acc 0.9288
+valid loss 0.2651 acc 0.9217
+valid loss 0.2430 acc 0.9228
+valid loss 0.2241 acc 0.9279
+valid loss 0.2958 acc 0.9065
+valid loss 0.2232 acc 0.9290
+valid loss 0.2363 acc 0.9200
+03/29 05:40:40 AM arch_epoch 059 top1_acc 0.9401 top5_avg_acc 0.9392 top20_avg_acc 0.9372 baseline 0.9232 
+03/29 05:40:40 AM ppo_epoch 000 loss -0.0617 
+03/29 05:40:42 AM ppo_epoch 001 loss -0.0617 
+03/29 05:40:43 AM ppo_epoch 002 loss -0.0617 
+03/29 05:40:44 AM ppo_epoch 003 loss -0.0617 
+03/29 05:40:45 AM ppo_epoch 004 loss -0.0618 
+03/29 05:40:46 AM ppo_epoch 005 loss -0.0618 
+03/29 05:40:47 AM ppo_epoch 006 loss -0.0619 
+03/29 05:40:49 AM ppo_epoch 007 loss -0.0620 
+03/29 05:40:50 AM ppo_epoch 008 loss -0.0621 
+03/29 05:40:51 AM ppo_epoch 009 loss -0.0621 
+valid loss 0.2472 acc 0.9214
+valid loss 0.2350 acc 0.9222
+valid loss 0.2250 acc 0.9285
+valid loss 0.2487 acc 0.9210
+valid loss 0.2331 acc 0.9270
+valid loss 0.2407 acc 0.9267
+valid loss 0.2415 acc 0.9263
+valid loss 0.2568 acc 0.9196
+valid loss 0.2243 acc 0.9299
+valid loss 0.2504 acc 0.9226
+valid loss 0.2680 acc 0.9118
+valid loss 0.2160 acc 0.9338
+valid loss 0.2424 acc 0.9249
+valid loss 0.2518 acc 0.9188
+valid loss 0.2317 acc 0.9285
+valid loss 0.2510 acc 0.9204
+valid loss 0.2277 acc 0.9290
+valid loss 0.2160 acc 0.9354
+valid loss 0.2644 acc 0.9183
+valid loss 0.2515 acc 0.9209
+03/29 05:51:41 AM arch_epoch 060 top1_acc 0.9401 top5_avg_acc 0.9392 top20_avg_acc 0.9372 baseline 0.9240 
+03/29 05:51:41 AM ppo_epoch 000 loss -0.0153 
+03/29 05:51:42 AM ppo_epoch 001 loss -0.0153 
+03/29 05:51:43 AM ppo_epoch 002 loss -0.0153 
+03/29 05:51:44 AM ppo_epoch 003 loss -0.0153 
+03/29 05:51:46 AM ppo_epoch 004 loss -0.0154 
+03/29 05:51:47 AM ppo_epoch 005 loss -0.0154 
+03/29 05:51:48 AM ppo_epoch 006 loss -0.0155 
+03/29 05:51:49 AM ppo_epoch 007 loss -0.0156 
+03/29 05:51:51 AM ppo_epoch 008 loss -0.0157 
+03/29 05:51:52 AM ppo_epoch 009 loss -0.0158 
+valid loss 0.2228 acc 0.9315
+valid loss 0.2401 acc 0.9209
+valid loss 0.2344 acc 0.9254
+valid loss 0.2377 acc 0.9282
+valid loss 0.2266 acc 0.9260
+valid loss 0.2395 acc 0.9234
+valid loss 0.2450 acc 0.9211
+valid loss 0.2201 acc 0.9297
+valid loss 0.2549 acc 0.9135
+valid loss 0.2271 acc 0.9293
+valid loss 0.2386 acc 0.9236
+valid loss 0.2419 acc 0.9262
+valid loss 0.2513 acc 0.9203
+valid loss 0.2421 acc 0.9240
+valid loss 0.2426 acc 0.9217
+valid loss 0.2365 acc 0.9266
+valid loss 0.2428 acc 0.9215
+valid loss 0.2290 acc 0.9274
+valid loss 0.2230 acc 0.9265
+valid loss 0.2361 acc 0.9262
+03/29 06:03:14 AM arch_epoch 061 top1_acc 0.9401 top5_avg_acc 0.9392 top20_avg_acc 0.9372 baseline 0.9244 
+03/29 06:03:15 AM ppo_epoch 000 loss -0.0109 
+03/29 06:03:16 AM ppo_epoch 001 loss -0.0109 
+03/29 06:03:17 AM ppo_epoch 002 loss -0.0109 
+03/29 06:03:18 AM ppo_epoch 003 loss -0.0109 
+03/29 06:03:19 AM ppo_epoch 004 loss -0.0109 
+03/29 06:03:20 AM ppo_epoch 005 loss -0.0109 
+03/29 06:03:21 AM ppo_epoch 006 loss -0.0110 
+03/29 06:03:22 AM ppo_epoch 007 loss -0.0110 
+03/29 06:03:24 AM ppo_epoch 008 loss -0.0110 
+03/29 06:03:25 AM ppo_epoch 009 loss -0.0110 
+valid loss 0.2618 acc 0.9176
+valid loss 0.2358 acc 0.9254
+valid loss 0.2251 acc 0.9322
+valid loss 0.2271 acc 0.9310
+valid loss 0.2122 acc 0.9318
+valid loss 0.2265 acc 0.9306
+valid loss 0.2312 acc 0.9290
+valid loss 0.2762 acc 0.9106
+valid loss 0.2294 acc 0.9233
+valid loss 0.2416 acc 0.9248
+valid loss 0.2331 acc 0.9299
+valid loss 0.2248 acc 0.9291
+valid loss 0.2388 acc 0.9206
+valid loss 0.2295 acc 0.9284
+valid loss 0.2658 acc 0.9135
+valid loss 0.2324 acc 0.9273
+valid loss 0.2502 acc 0.9212
+valid loss 0.2411 acc 0.9240
+valid loss 0.2262 acc 0.9285
+valid loss 0.2464 acc 0.9211
+03/29 06:13:58 AM arch_epoch 062 top1_acc 0.9401 top5_avg_acc 0.9392 top20_avg_acc 0.9372 baseline 0.9246 
+03/29 06:13:59 AM ppo_epoch 000 loss -0.0176 
+03/29 06:14:00 AM ppo_epoch 001 loss -0.0176 
+03/29 06:14:01 AM ppo_epoch 002 loss -0.0177 
+03/29 06:14:02 AM ppo_epoch 003 loss -0.0177 
+03/29 06:14:04 AM ppo_epoch 004 loss -0.0177 
+03/29 06:14:05 AM ppo_epoch 005 loss -0.0177 
+03/29 06:14:06 AM ppo_epoch 006 loss -0.0178 
+03/29 06:14:07 AM ppo_epoch 007 loss -0.0178 
+03/29 06:14:08 AM ppo_epoch 008 loss -0.0179 
+03/29 06:14:09 AM ppo_epoch 009 loss -0.0179 
+valid loss 0.2195 acc 0.9312
+valid loss 0.2156 acc 0.9357
+valid loss 0.2256 acc 0.9282
+valid loss 0.2227 acc 0.9281
+valid loss 0.2843 acc 0.9050
+valid loss 0.2837 acc 0.9113
+valid loss 0.2617 acc 0.9158
+valid loss 0.2159 acc 0.9329
+valid loss 0.2163 acc 0.9305
+valid loss 0.1979 acc 0.9382
+valid loss 0.2509 acc 0.9221
+valid loss 0.2187 acc 0.9297
+valid loss 0.2532 acc 0.9195
+valid loss 0.2508 acc 0.9218
+valid loss 0.2715 acc 0.9091
+valid loss 0.2349 acc 0.9266
+valid loss 0.2237 acc 0.9296
+valid loss 0.2227 acc 0.9304
+valid loss 0.2281 acc 0.9312
+valid loss 0.2340 acc 0.9239
+03/29 06:24:56 AM arch_epoch 063 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9374 baseline 0.9249 
+03/29 06:24:57 AM ppo_epoch 000 loss -0.0049 
+03/29 06:24:58 AM ppo_epoch 001 loss -0.0049 
+03/29 06:24:59 AM ppo_epoch 002 loss -0.0049 
+03/29 06:25:00 AM ppo_epoch 003 loss -0.0050 
+03/29 06:25:01 AM ppo_epoch 004 loss -0.0050 
+03/29 06:25:02 AM ppo_epoch 005 loss -0.0051 
+03/29 06:25:03 AM ppo_epoch 006 loss -0.0052 
+03/29 06:25:04 AM ppo_epoch 007 loss -0.0054 
+03/29 06:25:05 AM ppo_epoch 008 loss -0.0055 
+03/29 06:25:06 AM ppo_epoch 009 loss -0.0056 
+valid loss 0.2527 acc 0.9203
+valid loss 0.2126 acc 0.9374
+valid loss 0.2101 acc 0.9354
+valid loss 0.2546 acc 0.9205
+valid loss 0.2419 acc 0.9203
+valid loss 0.2314 acc 0.9284
+valid loss 0.2877 acc 0.9101
+valid loss 0.2225 acc 0.9308
+valid loss 0.2181 acc 0.9321
+valid loss 0.2091 acc 0.9353
+valid loss 0.2239 acc 0.9299
+valid loss 0.2470 acc 0.9228
+valid loss 0.2817 acc 0.9064
+valid loss 0.2224 acc 0.9291
+valid loss 0.2215 acc 0.9355
+valid loss 0.2343 acc 0.9263
+valid loss 0.2490 acc 0.9190
+valid loss 0.2591 acc 0.9196
+valid loss 0.2549 acc 0.9162
+valid loss 0.2285 acc 0.9294
+03/29 06:36:01 AM arch_epoch 064 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9248 
+03/29 06:36:02 AM ppo_epoch 000 loss -0.0157 
+03/29 06:36:03 AM ppo_epoch 001 loss -0.0157 
+03/29 06:36:04 AM ppo_epoch 002 loss -0.0158 
+03/29 06:36:05 AM ppo_epoch 003 loss -0.0158 
+03/29 06:36:06 AM ppo_epoch 004 loss -0.0158 
+03/29 06:36:07 AM ppo_epoch 005 loss -0.0159 
+03/29 06:36:08 AM ppo_epoch 006 loss -0.0159 
+03/29 06:36:09 AM ppo_epoch 007 loss -0.0159 
+03/29 06:36:10 AM ppo_epoch 008 loss -0.0160 
+03/29 06:36:11 AM ppo_epoch 009 loss -0.0160 
+valid loss 0.2345 acc 0.9278
+valid loss 0.2325 acc 0.9318
+valid loss 0.2476 acc 0.9235
+valid loss 0.2937 acc 0.9080
+valid loss 0.2689 acc 0.9168
+valid loss 0.2189 acc 0.9341
+valid loss 0.2214 acc 0.9296
+valid loss 0.2852 acc 0.9077
+valid loss 0.2286 acc 0.9287
+valid loss 0.2382 acc 0.9260
+valid loss 0.2613 acc 0.9162
+valid loss 0.2363 acc 0.9244
+valid loss 0.2778 acc 0.9147
+valid loss 0.2159 acc 0.9320
+valid loss 0.3225 acc 0.8909
+valid loss 0.2109 acc 0.9313
+valid loss 0.2661 acc 0.9125
+valid loss 0.2410 acc 0.9233
+valid loss 0.2559 acc 0.9202
+valid loss 0.2200 acc 0.9301
+03/29 06:47:32 AM arch_epoch 065 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9225 
+03/29 06:47:32 AM ppo_epoch 000 loss 0.0406 
+03/29 06:47:33 AM ppo_epoch 001 loss 0.0406 
+03/29 06:47:35 AM ppo_epoch 002 loss 0.0405 
+03/29 06:47:36 AM ppo_epoch 003 loss 0.0404 
+03/29 06:47:37 AM ppo_epoch 004 loss 0.0404 
+03/29 06:47:38 AM ppo_epoch 005 loss 0.0403 
+03/29 06:47:39 AM ppo_epoch 006 loss 0.0401 
+03/29 06:47:40 AM ppo_epoch 007 loss 0.0401 
+03/29 06:47:41 AM ppo_epoch 008 loss 0.0400 
+03/29 06:47:43 AM ppo_epoch 009 loss 0.0400 
+valid loss 0.2393 acc 0.9245
+valid loss 0.2540 acc 0.9217
+valid loss 0.2376 acc 0.9269
+valid loss 0.2294 acc 0.9340
+valid loss 0.2376 acc 0.9279
+valid loss 0.3042 acc 0.9038
+valid loss 0.2497 acc 0.9264
+valid loss 0.2491 acc 0.9218
+valid loss 0.2651 acc 0.9149
+valid loss 0.2326 acc 0.9304
+valid loss 0.2415 acc 0.9241
+valid loss 0.2335 acc 0.9265
+valid loss 0.3148 acc 0.9013
+valid loss 0.2093 acc 0.9362
+valid loss 0.2398 acc 0.9235
+valid loss 0.2404 acc 0.9237
+valid loss 0.2528 acc 0.9229
+valid loss 0.2337 acc 0.9249
+valid loss 0.2159 acc 0.9339
+valid loss 0.2218 acc 0.9265
+03/29 06:58:57 AM arch_epoch 066 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9235 
+03/29 06:58:58 AM ppo_epoch 000 loss -0.0101 
+03/29 06:58:59 AM ppo_epoch 001 loss -0.0101 
+03/29 06:59:00 AM ppo_epoch 002 loss -0.0101 
+03/29 06:59:02 AM ppo_epoch 003 loss -0.0101 
+03/29 06:59:03 AM ppo_epoch 004 loss -0.0102 
+03/29 06:59:04 AM ppo_epoch 005 loss -0.0103 
+03/29 06:59:05 AM ppo_epoch 006 loss -0.0103 
+03/29 06:59:06 AM ppo_epoch 007 loss -0.0104 
+03/29 06:59:07 AM ppo_epoch 008 loss -0.0105 
+03/29 06:59:08 AM ppo_epoch 009 loss -0.0105 
+valid loss 0.2207 acc 0.9325
+valid loss 0.2942 acc 0.9066
+valid loss 0.2354 acc 0.9214
+valid loss 0.2301 acc 0.9309
+valid loss 0.2306 acc 0.9277
+valid loss 0.2304 acc 0.9305
+valid loss 0.2620 acc 0.9161
+valid loss 0.2236 acc 0.9315
+valid loss 0.2379 acc 0.9224
+valid loss 0.2746 acc 0.9140
+valid loss 0.2237 acc 0.9309
+valid loss 0.2390 acc 0.9256
+valid loss 0.2495 acc 0.9199
+valid loss 0.2375 acc 0.9272
+valid loss 0.2228 acc 0.9294
+valid loss 0.2160 acc 0.9322
+valid loss 0.2230 acc 0.9284
+valid loss 0.2446 acc 0.9258
+valid loss 0.2469 acc 0.9237
+valid loss 0.2183 acc 0.9351
+03/29 07:09:56 AM arch_epoch 067 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9253 
+03/29 07:09:56 AM ppo_epoch 000 loss -0.0140 
+03/29 07:09:57 AM ppo_epoch 001 loss -0.0140 
+03/29 07:09:58 AM ppo_epoch 002 loss -0.0140 
+03/29 07:09:59 AM ppo_epoch 003 loss -0.0141 
+03/29 07:10:00 AM ppo_epoch 004 loss -0.0142 
+03/29 07:10:01 AM ppo_epoch 005 loss -0.0142 
+03/29 07:10:02 AM ppo_epoch 006 loss -0.0143 
+03/29 07:10:03 AM ppo_epoch 007 loss -0.0144 
+03/29 07:10:04 AM ppo_epoch 008 loss -0.0145 
+03/29 07:10:05 AM ppo_epoch 009 loss -0.0146 
+valid loss 0.2541 acc 0.9179
+valid loss 0.2265 acc 0.9315
+valid loss 0.2223 acc 0.9295
+valid loss 0.2991 acc 0.8960
+valid loss 0.2198 acc 0.9298
+valid loss 0.2605 acc 0.9228
+valid loss 0.2236 acc 0.9277
+valid loss 0.2093 acc 0.9336
+valid loss 0.2315 acc 0.9241
+valid loss 0.2332 acc 0.9261
+valid loss 0.2358 acc 0.9242
+valid loss 0.2838 acc 0.9118
+valid loss 0.2646 acc 0.9145
+valid loss 0.2197 acc 0.9343
+valid loss 0.2116 acc 0.9359
+valid loss 0.2400 acc 0.9223
+valid loss 0.2346 acc 0.9244
+valid loss 0.2339 acc 0.9276
+valid loss 0.2193 acc 0.9298
+valid loss 0.2538 acc 0.9192
+03/29 07:21:07 AM arch_epoch 068 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9248 
+03/29 07:21:08 AM ppo_epoch 000 loss 0.0244 
+03/29 07:21:08 AM ppo_epoch 001 loss 0.0242 
+03/29 07:21:09 AM ppo_epoch 002 loss 0.0241 
+03/29 07:21:10 AM ppo_epoch 003 loss 0.0239 
+03/29 07:21:11 AM ppo_epoch 004 loss 0.0236 
+03/29 07:21:12 AM ppo_epoch 005 loss 0.0234 
+03/29 07:21:13 AM ppo_epoch 006 loss 0.0233 
+03/29 07:21:15 AM ppo_epoch 007 loss 0.0232 
+03/29 07:21:16 AM ppo_epoch 008 loss 0.0232 
+03/29 07:21:17 AM ppo_epoch 009 loss 0.0231 
+valid loss 0.2801 acc 0.9115
+valid loss 0.2482 acc 0.9220
+valid loss 0.2424 acc 0.9257
+valid loss 0.2412 acc 0.9209
+valid loss 0.2373 acc 0.9278
+valid loss 0.2201 acc 0.9287
+valid loss 0.2262 acc 0.9253
+valid loss 0.2046 acc 0.9368
+valid loss 0.2204 acc 0.9328
+valid loss 0.2272 acc 0.9266
+valid loss 0.2418 acc 0.9212
+valid loss 0.2446 acc 0.9206
+valid loss 0.2151 acc 0.9348
+valid loss 0.2136 acc 0.9338
+valid loss 0.3010 acc 0.9112
+valid loss 0.2353 acc 0.9243
+valid loss 0.2683 acc 0.9177
+valid loss 0.2528 acc 0.9207
+valid loss 0.2229 acc 0.9299
+valid loss 0.2172 acc 0.9290
+03/29 07:32:39 AM arch_epoch 069 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9250 
+03/29 07:32:39 AM ppo_epoch 000 loss -0.0011 
+03/29 07:32:41 AM ppo_epoch 001 loss -0.0011 
+03/29 07:32:42 AM ppo_epoch 002 loss -0.0011 
+03/29 07:32:43 AM ppo_epoch 003 loss -0.0011 
+03/29 07:32:44 AM ppo_epoch 004 loss -0.0011 
+03/29 07:32:45 AM ppo_epoch 005 loss -0.0012 
+03/29 07:32:46 AM ppo_epoch 006 loss -0.0013 
+03/29 07:32:48 AM ppo_epoch 007 loss -0.0013 
+03/29 07:32:49 AM ppo_epoch 008 loss -0.0014 
+03/29 07:32:50 AM ppo_epoch 009 loss -0.0014 
+valid loss 0.2249 acc 0.9294
+valid loss 0.2302 acc 0.9258
+valid loss 0.2297 acc 0.9268
+valid loss 0.3111 acc 0.8926
+valid loss 0.2264 acc 0.9268
+valid loss 0.2520 acc 0.9173
+valid loss 0.2113 acc 0.9305
+valid loss 0.2314 acc 0.9270
+valid loss 0.2412 acc 0.9209
+valid loss 0.2501 acc 0.9188
+valid loss 0.2360 acc 0.9278
+valid loss 0.2287 acc 0.9275
+valid loss 0.2362 acc 0.9280
+valid loss 0.2536 acc 0.9218
+valid loss 0.2583 acc 0.9195
+valid loss 0.2201 acc 0.9305
+valid loss 0.2355 acc 0.9239
+valid loss 0.2326 acc 0.9281
+valid loss 0.2325 acc 0.9287
+valid loss 0.2153 acc 0.9315
+03/29 07:44:10 AM arch_epoch 070 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9249 
+03/29 07:44:11 AM ppo_epoch 000 loss 0.0315 
+03/29 07:44:12 AM ppo_epoch 001 loss 0.0315 
+03/29 07:44:13 AM ppo_epoch 002 loss 0.0314 
+03/29 07:44:14 AM ppo_epoch 003 loss 0.0314 
+03/29 07:44:15 AM ppo_epoch 004 loss 0.0314 
+03/29 07:44:16 AM ppo_epoch 005 loss 0.0313 
+03/29 07:44:18 AM ppo_epoch 006 loss 0.0312 
+03/29 07:44:19 AM ppo_epoch 007 loss 0.0312 
+03/29 07:44:20 AM ppo_epoch 008 loss 0.0312 
+03/29 07:44:21 AM ppo_epoch 009 loss 0.0311 
+valid loss 0.2418 acc 0.9255
+valid loss 0.2295 acc 0.9307
+valid loss 0.2536 acc 0.9251
+valid loss 0.2268 acc 0.9295
+valid loss 0.2379 acc 0.9273
+valid loss 0.2233 acc 0.9283
+valid loss 0.2342 acc 0.9289
+valid loss 0.2321 acc 0.9268
+valid loss 0.2321 acc 0.9308
+valid loss 0.2490 acc 0.9179
+valid loss 0.2789 acc 0.9095
+valid loss 0.2266 acc 0.9302
+valid loss 0.2307 acc 0.9287
+valid loss 0.2494 acc 0.9232
+valid loss 0.3000 acc 0.9014
+valid loss 0.2234 acc 0.9310
+valid loss 0.2677 acc 0.9148
+valid loss 0.2512 acc 0.9181
+valid loss 0.2456 acc 0.9212
+valid loss 0.2197 acc 0.9332
+03/29 07:55:40 AM arch_epoch 071 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9240 
+03/29 07:55:41 AM ppo_epoch 000 loss -0.0044 
+03/29 07:55:42 AM ppo_epoch 001 loss -0.0045 
+03/29 07:55:43 AM ppo_epoch 002 loss -0.0046 
+03/29 07:55:44 AM ppo_epoch 003 loss -0.0047 
+03/29 07:55:45 AM ppo_epoch 004 loss -0.0048 
+03/29 07:55:46 AM ppo_epoch 005 loss -0.0049 
+03/29 07:55:48 AM ppo_epoch 006 loss -0.0049 
+03/29 07:55:49 AM ppo_epoch 007 loss -0.0049 
+03/29 07:55:49 AM ppo_epoch 008 loss -0.0049 
+03/29 07:55:50 AM ppo_epoch 009 loss -0.0049 
+valid loss 0.2667 acc 0.9156
+valid loss 0.2526 acc 0.9236
+valid loss 0.2186 acc 0.9301
+valid loss 0.2374 acc 0.9258
+valid loss 0.2375 acc 0.9245
+valid loss 0.2443 acc 0.9154
+valid loss 0.2443 acc 0.9240
+valid loss 0.2269 acc 0.9277
+valid loss 0.2306 acc 0.9262
+valid loss 0.2856 acc 0.9052
+valid loss 0.2619 acc 0.9169
+valid loss 0.2266 acc 0.9294
+valid loss 0.2543 acc 0.9208
+valid loss 0.2749 acc 0.9119
+valid loss 0.2454 acc 0.9205
+valid loss 0.2668 acc 0.9138
+valid loss 0.2415 acc 0.9216
+valid loss 0.2095 acc 0.9348
+valid loss 0.2251 acc 0.9280
+valid loss 0.2585 acc 0.9176
+03/29 08:07:01 AM arch_epoch 072 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9225 
+03/29 08:07:02 AM ppo_epoch 000 loss 0.0333 
+03/29 08:07:03 AM ppo_epoch 001 loss 0.0334 
+03/29 08:07:04 AM ppo_epoch 002 loss 0.0334 
+03/29 08:07:06 AM ppo_epoch 003 loss 0.0333 
+03/29 08:07:07 AM ppo_epoch 004 loss 0.0333 
+03/29 08:07:08 AM ppo_epoch 005 loss 0.0333 
+03/29 08:07:09 AM ppo_epoch 006 loss 0.0332 
+03/29 08:07:11 AM ppo_epoch 007 loss 0.0331 
+03/29 08:07:12 AM ppo_epoch 008 loss 0.0331 
+03/29 08:07:13 AM ppo_epoch 009 loss 0.0330 
+valid loss 0.2126 acc 0.9314
+valid loss 0.2378 acc 0.9254
+valid loss 0.2199 acc 0.9319
+valid loss 0.2593 acc 0.9181
+valid loss 0.2424 acc 0.9246
+valid loss 0.2470 acc 0.9224
+valid loss 0.2323 acc 0.9260
+valid loss 0.2281 acc 0.9277
+valid loss 0.2646 acc 0.9174
+valid loss 0.2710 acc 0.9119
+valid loss 0.2388 acc 0.9239
+valid loss 0.2371 acc 0.9235
+valid loss 0.2459 acc 0.9211
+valid loss 0.2422 acc 0.9233
+valid loss 0.2332 acc 0.9289
+valid loss 0.2411 acc 0.9258
+valid loss 0.2658 acc 0.9199
+valid loss 0.2216 acc 0.9329
+valid loss 0.1996 acc 0.9365
+valid loss 0.2585 acc 0.9142
+03/29 08:17:22 AM arch_epoch 073 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9375 baseline 0.9237 
+03/29 08:17:23 AM ppo_epoch 000 loss -0.0262 
+03/29 08:17:24 AM ppo_epoch 001 loss -0.0262 
+03/29 08:17:25 AM ppo_epoch 002 loss -0.0262 
+03/29 08:17:26 AM ppo_epoch 003 loss -0.0263 
+03/29 08:17:28 AM ppo_epoch 004 loss -0.0263 
+03/29 08:17:29 AM ppo_epoch 005 loss -0.0264 
+03/29 08:17:30 AM ppo_epoch 006 loss -0.0264 
+03/29 08:17:31 AM ppo_epoch 007 loss -0.0265 
+03/29 08:17:32 AM ppo_epoch 008 loss -0.0266 
+03/29 08:17:34 AM ppo_epoch 009 loss -0.0266 
+valid loss 0.2608 acc 0.9160
+valid loss 0.2496 acc 0.9223
+valid loss 0.2231 acc 0.9325
+valid loss 0.2613 acc 0.9175
+valid loss 0.2870 acc 0.9081
+valid loss 0.2338 acc 0.9291
+valid loss 0.2407 acc 0.9225
+valid loss 0.2170 acc 0.9335
+valid loss 0.2824 acc 0.9103
+valid loss 0.2123 acc 0.9375
+valid loss 0.2834 acc 0.9119
+valid loss 0.2231 acc 0.9266
+valid loss 0.2298 acc 0.9309
+valid loss 0.2039 acc 0.9325
+valid loss 0.2442 acc 0.9274
+valid loss 0.2189 acc 0.9305
+valid loss 0.2669 acc 0.9123
+valid loss 0.2179 acc 0.9363
+valid loss 0.2456 acc 0.9238
+valid loss 0.2402 acc 0.9195
+03/29 08:28:04 AM arch_epoch 074 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9376 baseline 0.9242 
+03/29 08:28:04 AM ppo_epoch 000 loss 0.0058 
+03/29 08:28:05 AM ppo_epoch 001 loss 0.0058 
+03/29 08:28:06 AM ppo_epoch 002 loss 0.0057 
+03/29 08:28:07 AM ppo_epoch 003 loss 0.0056 
+03/29 08:28:08 AM ppo_epoch 004 loss 0.0055 
+03/29 08:28:09 AM ppo_epoch 005 loss 0.0053 
+03/29 08:28:10 AM ppo_epoch 006 loss 0.0051 
+03/29 08:28:11 AM ppo_epoch 007 loss 0.0050 
+03/29 08:28:12 AM ppo_epoch 008 loss 0.0048 
+03/29 08:28:13 AM ppo_epoch 009 loss 0.0047 
+valid loss 0.2388 acc 0.9253
+valid loss 0.2685 acc 0.9160
+valid loss 0.2680 acc 0.9164
+valid loss 0.2399 acc 0.9257
+valid loss 0.2176 acc 0.9279
+valid loss 0.2532 acc 0.9176
+valid loss 0.2502 acc 0.9199
+valid loss 0.2349 acc 0.9269
+valid loss 0.2242 acc 0.9294
+valid loss 0.3091 acc 0.8934
+valid loss 0.2269 acc 0.9315
+valid loss 0.2200 acc 0.9300
+valid loss 0.2282 acc 0.9284
+valid loss 0.2485 acc 0.9199
+valid loss 0.2516 acc 0.9187
+valid loss 0.2540 acc 0.9215
+valid loss 0.2532 acc 0.9188
+valid loss 0.2385 acc 0.9221
+valid loss 0.2416 acc 0.9224
+valid loss 0.2649 acc 0.9145
+03/29 08:39:27 AM arch_epoch 075 top1_acc 0.9401 top5_avg_acc 0.9393 top20_avg_acc 0.9376 baseline 0.9222 
+03/29 08:39:27 AM ppo_epoch 000 loss 0.0366 
+03/29 08:39:28 AM ppo_epoch 001 loss 0.0364 
+03/29 08:39:30 AM ppo_epoch 002 loss 0.0362 
+03/29 08:39:31 AM ppo_epoch 003 loss 0.0359 
+03/29 08:39:32 AM ppo_epoch 004 loss 0.0357 
+03/29 08:39:33 AM ppo_epoch 005 loss 0.0356 
+03/29 08:39:34 AM ppo_epoch 006 loss 0.0356 
+03/29 08:39:35 AM ppo_epoch 007 loss 0.0357 
+03/29 08:39:36 AM ppo_epoch 008 loss 0.0357 
+03/29 08:39:37 AM ppo_epoch 009 loss 0.0357 
+valid loss 0.2852 acc 0.9090
+valid loss 0.1965 acc 0.9390
+valid loss 0.2323 acc 0.9291
+valid loss 0.2429 acc 0.9208
+valid loss 0.2647 acc 0.9145
+valid loss 0.2550 acc 0.9132
+valid loss 0.2309 acc 0.9268
+valid loss 0.2347 acc 0.9267
+valid loss 0.2309 acc 0.9274
+valid loss 0.2606 acc 0.9138
+valid loss 0.2151 acc 0.9304
+valid loss 0.2095 acc 0.9358
+valid loss 0.2199 acc 0.9287
+valid loss 0.2094 acc 0.9381
+valid loss 0.2480 acc 0.9200
+valid loss 0.2312 acc 0.9269
+valid loss 0.2723 acc 0.9107
+valid loss 0.2166 acc 0.9296
+valid loss 0.2265 acc 0.9289
+valid loss 0.2013 acc 0.9386
+03/29 08:50:39 AM arch_epoch 076 top1_acc 0.9401 top5_avg_acc 0.9395 top20_avg_acc 0.9379 baseline 0.9248 
+03/29 08:50:39 AM ppo_epoch 000 loss -0.0258 
+03/29 08:50:41 AM ppo_epoch 001 loss -0.0259 
+03/29 08:50:42 AM ppo_epoch 002 loss -0.0261 
+03/29 08:50:43 AM ppo_epoch 003 loss -0.0262 
+03/29 08:50:44 AM ppo_epoch 004 loss -0.0264 
+03/29 08:50:45 AM ppo_epoch 005 loss -0.0266 
+03/29 08:50:46 AM ppo_epoch 006 loss -0.0268 
+03/29 08:50:48 AM ppo_epoch 007 loss -0.0268 
+03/29 08:50:49 AM ppo_epoch 008 loss -0.0269 
+03/29 08:50:50 AM ppo_epoch 009 loss -0.0269 
+valid loss 0.2373 acc 0.9229
+valid loss 0.2176 acc 0.9333
+valid loss 0.2627 acc 0.9158
+valid loss 0.2339 acc 0.9269
+valid loss 0.2165 acc 0.9317
+valid loss 0.2679 acc 0.9151
+valid loss 0.2242 acc 0.9284
+valid loss 0.2239 acc 0.9275
+valid loss 0.2544 acc 0.9234
+valid loss 0.2264 acc 0.9305
+valid loss 0.2260 acc 0.9322
+valid loss 0.2682 acc 0.9130
+valid loss 0.2242 acc 0.9323
+valid loss 0.2157 acc 0.9344
+valid loss 0.2199 acc 0.9337
+valid loss 0.2732 acc 0.9117
+valid loss 0.2245 acc 0.9313
+valid loss 0.2798 acc 0.9095
+valid loss 0.2345 acc 0.9259
+valid loss 0.2569 acc 0.9164
+03/29 09:01:46 AM arch_epoch 077 top1_acc 0.9401 top5_avg_acc 0.9395 top20_avg_acc 0.9379 baseline 0.9245 
+03/29 09:01:47 AM ppo_epoch 000 loss -0.0124 
+03/29 09:01:48 AM ppo_epoch 001 loss -0.0124 
+03/29 09:01:49 AM ppo_epoch 002 loss -0.0124 
+03/29 09:01:51 AM ppo_epoch 003 loss -0.0124 
+03/29 09:01:52 AM ppo_epoch 004 loss -0.0125 
+03/29 09:01:53 AM ppo_epoch 005 loss -0.0125 
+03/29 09:01:54 AM ppo_epoch 006 loss -0.0126 
+03/29 09:01:55 AM ppo_epoch 007 loss -0.0127 
+03/29 09:01:56 AM ppo_epoch 008 loss -0.0127 
+03/29 09:01:57 AM ppo_epoch 009 loss -0.0128 
+valid loss 0.1921 acc 0.9427
+valid loss 0.2577 acc 0.9200
+valid loss 0.2402 acc 0.9283
+valid loss 0.2314 acc 0.9282
+valid loss 0.2113 acc 0.9332
+valid loss 0.2317 acc 0.9301
+valid loss 0.2253 acc 0.9259
+valid loss 0.2085 acc 0.9341
+valid loss 0.2394 acc 0.9250
+valid loss 0.2138 acc 0.9308
+valid loss 0.2374 acc 0.9297
+valid loss 0.2270 acc 0.9288
+valid loss 0.2101 acc 0.9354
+valid loss 0.2404 acc 0.9232
+valid loss 0.2350 acc 0.9279
+valid loss 0.2404 acc 0.9270
+valid loss 0.2214 acc 0.9275
+valid loss 0.2450 acc 0.9188
+valid loss 0.2074 acc 0.9340
+valid loss 0.2729 acc 0.9149
+03/29 09:13:31 AM arch_epoch 078 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9265 
+03/29 09:13:32 AM ppo_epoch 000 loss -0.0726 
+03/29 09:13:33 AM ppo_epoch 001 loss -0.0726 
+03/29 09:13:34 AM ppo_epoch 002 loss -0.0726 
+03/29 09:13:35 AM ppo_epoch 003 loss -0.0726 
+03/29 09:13:36 AM ppo_epoch 004 loss -0.0727 
+03/29 09:13:38 AM ppo_epoch 005 loss -0.0727 
+03/29 09:13:39 AM ppo_epoch 006 loss -0.0727 
+03/29 09:13:40 AM ppo_epoch 007 loss -0.0728 
+03/29 09:13:41 AM ppo_epoch 008 loss -0.0728 
+03/29 09:13:42 AM ppo_epoch 009 loss -0.0728 
+valid loss 0.2199 acc 0.9325
+valid loss 0.2322 acc 0.9250
+valid loss 0.2309 acc 0.9299
+valid loss 0.2556 acc 0.9213
+valid loss 0.2317 acc 0.9240
+valid loss 0.2276 acc 0.9266
+valid loss 0.2199 acc 0.9317
+valid loss 0.2203 acc 0.9316
+valid loss 0.2270 acc 0.9283
+valid loss 0.2663 acc 0.9135
+valid loss 0.2280 acc 0.9266
+valid loss 0.2794 acc 0.9110
+valid loss 0.2428 acc 0.9226
+valid loss 0.2220 acc 0.9302
+valid loss 0.2223 acc 0.9292
+valid loss 0.2390 acc 0.9238
+valid loss 0.2276 acc 0.9262
+valid loss 0.2285 acc 0.9231
+valid loss 0.2634 acc 0.9169
+valid loss 0.2569 acc 0.9186
+03/29 09:25:15 AM arch_epoch 079 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9249 
+03/29 09:25:16 AM ppo_epoch 000 loss 0.0097 
+03/29 09:25:17 AM ppo_epoch 001 loss 0.0097 
+03/29 09:25:18 AM ppo_epoch 002 loss 0.0097 
+03/29 09:25:19 AM ppo_epoch 003 loss 0.0097 
+03/29 09:25:21 AM ppo_epoch 004 loss 0.0096 
+03/29 09:25:22 AM ppo_epoch 005 loss 0.0096 
+03/29 09:25:23 AM ppo_epoch 006 loss 0.0096 
+03/29 09:25:25 AM ppo_epoch 007 loss 0.0096 
+03/29 09:25:26 AM ppo_epoch 008 loss 0.0096 
+03/29 09:25:27 AM ppo_epoch 009 loss 0.0095 
+valid loss 0.2159 acc 0.9326
+valid loss 0.2343 acc 0.9271
+valid loss 0.2638 acc 0.9178
+valid loss 0.2613 acc 0.9182
+valid loss 0.2422 acc 0.9202
+valid loss 0.2347 acc 0.9272
+valid loss 0.2512 acc 0.9191
+valid loss 0.2405 acc 0.9254
+valid loss 0.2253 acc 0.9245
+valid loss 0.2170 acc 0.9333
+valid loss 0.2224 acc 0.9309
+valid loss 0.2377 acc 0.9253
+valid loss 0.2255 acc 0.9300
+valid loss 0.2194 acc 0.9297
+valid loss 0.2503 acc 0.9224
+valid loss 0.2533 acc 0.9196
+valid loss 0.2198 acc 0.9296
+valid loss 0.2177 acc 0.9323
+valid loss 0.2367 acc 0.9237
+valid loss 0.2402 acc 0.9201
+03/29 09:36:08 AM arch_epoch 080 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9253 
+03/29 09:36:08 AM ppo_epoch 000 loss -0.0053 
+03/29 09:36:09 AM ppo_epoch 001 loss -0.0053 
+03/29 09:36:10 AM ppo_epoch 002 loss -0.0054 
+03/29 09:36:11 AM ppo_epoch 003 loss -0.0054 
+03/29 09:36:12 AM ppo_epoch 004 loss -0.0055 
+03/29 09:36:13 AM ppo_epoch 005 loss -0.0055 
+03/29 09:36:14 AM ppo_epoch 006 loss -0.0056 
+03/29 09:36:15 AM ppo_epoch 007 loss -0.0056 
+03/29 09:36:15 AM ppo_epoch 008 loss -0.0057 
+03/29 09:36:16 AM ppo_epoch 009 loss -0.0057 
+valid loss 0.2491 acc 0.9145
+valid loss 0.2367 acc 0.9267
+valid loss 0.2260 acc 0.9304
+valid loss 0.2150 acc 0.9337
+valid loss 0.2293 acc 0.9289
+valid loss 0.2309 acc 0.9255
+valid loss 0.2227 acc 0.9315
+valid loss 0.2190 acc 0.9310
+valid loss 0.2355 acc 0.9242
+valid loss 0.2033 acc 0.9382
+valid loss 0.2178 acc 0.9296
+valid loss 0.2592 acc 0.9176
+valid loss 0.2224 acc 0.9336
+valid loss 0.2417 acc 0.9241
+valid loss 0.2239 acc 0.9351
+valid loss 0.2587 acc 0.9189
+valid loss 0.2429 acc 0.9216
+valid loss 0.2203 acc 0.9296
+valid loss 0.2122 acc 0.9336
+valid loss 0.2411 acc 0.9242
+03/29 09:47:19 AM arch_epoch 081 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9268 
+03/29 09:47:20 AM ppo_epoch 000 loss -0.0331 
+03/29 09:47:21 AM ppo_epoch 001 loss -0.0331 
+03/29 09:47:22 AM ppo_epoch 002 loss -0.0332 
+03/29 09:47:23 AM ppo_epoch 003 loss -0.0332 
+03/29 09:47:24 AM ppo_epoch 004 loss -0.0332 
+03/29 09:47:25 AM ppo_epoch 005 loss -0.0332 
+03/29 09:47:26 AM ppo_epoch 006 loss -0.0333 
+03/29 09:47:27 AM ppo_epoch 007 loss -0.0333 
+03/29 09:47:28 AM ppo_epoch 008 loss -0.0334 
+03/29 09:47:30 AM ppo_epoch 009 loss -0.0334 
+valid loss 0.2378 acc 0.9278
+valid loss 0.2683 acc 0.9160
+valid loss 0.2392 acc 0.9255
+valid loss 0.2659 acc 0.9151
+valid loss 0.2143 acc 0.9338
+valid loss 0.2269 acc 0.9300
+valid loss 0.2224 acc 0.9299
+valid loss 0.2584 acc 0.9177
+valid loss 0.2089 acc 0.9309
+valid loss 0.2575 acc 0.9175
+valid loss 0.2352 acc 0.9254
+valid loss 0.2321 acc 0.9276
+valid loss 0.2564 acc 0.9199
+valid loss 0.2445 acc 0.9238
+valid loss 0.2170 acc 0.9335
+valid loss 0.2516 acc 0.9144
+valid loss 0.2644 acc 0.9162
+valid loss 0.2454 acc 0.9206
+valid loss 0.2361 acc 0.9242
+valid loss 0.2494 acc 0.9188
+03/29 09:58:18 AM arch_epoch 082 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9244 
+03/29 09:58:18 AM ppo_epoch 000 loss 0.0370 
+03/29 09:58:20 AM ppo_epoch 001 loss 0.0370 
+03/29 09:58:21 AM ppo_epoch 002 loss 0.0370 
+03/29 09:58:22 AM ppo_epoch 003 loss 0.0370 
+03/29 09:58:23 AM ppo_epoch 004 loss 0.0369 
+03/29 09:58:24 AM ppo_epoch 005 loss 0.0369 
+03/29 09:58:25 AM ppo_epoch 006 loss 0.0369 
+03/29 09:58:26 AM ppo_epoch 007 loss 0.0369 
+03/29 09:58:28 AM ppo_epoch 008 loss 0.0368 
+03/29 09:58:29 AM ppo_epoch 009 loss 0.0368 
+valid loss 0.2561 acc 0.9229
+valid loss 0.2202 acc 0.9307
+valid loss 0.2475 acc 0.9252
+valid loss 0.2643 acc 0.9167
+valid loss 0.2432 acc 0.9244
+valid loss 0.2634 acc 0.9174
+valid loss 0.2325 acc 0.9278
+valid loss 0.2719 acc 0.9110
+valid loss 0.2236 acc 0.9346
+valid loss 0.2161 acc 0.9330
+valid loss 0.2355 acc 0.9266
+valid loss 0.2078 acc 0.9310
+valid loss 0.2740 acc 0.9154
+valid loss 0.2175 acc 0.9276
+valid loss 0.2261 acc 0.9286
+valid loss 0.2287 acc 0.9296
+valid loss 0.2415 acc 0.9259
+valid loss 0.2352 acc 0.9231
+valid loss 0.2443 acc 0.9200
+valid loss 0.2410 acc 0.9244
+03/29 10:09:43 AM arch_epoch 083 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9247 
+03/29 10:09:43 AM ppo_epoch 000 loss -0.0040 
+03/29 10:09:45 AM ppo_epoch 001 loss -0.0040 
+03/29 10:09:46 AM ppo_epoch 002 loss -0.0040 
+03/29 10:09:47 AM ppo_epoch 003 loss -0.0040 
+03/29 10:09:48 AM ppo_epoch 004 loss -0.0040 
+03/29 10:09:49 AM ppo_epoch 005 loss -0.0041 
+03/29 10:09:50 AM ppo_epoch 006 loss -0.0041 
+03/29 10:09:52 AM ppo_epoch 007 loss -0.0041 
+03/29 10:09:53 AM ppo_epoch 008 loss -0.0041 
+03/29 10:09:54 AM ppo_epoch 009 loss -0.0042 
+valid loss 0.2213 acc 0.9322
+valid loss 0.2232 acc 0.9299
+valid loss 0.2305 acc 0.9251
+valid loss 0.2252 acc 0.9319
+valid loss 0.2367 acc 0.9255
+valid loss 0.2639 acc 0.9165
+valid loss 0.2534 acc 0.9194
+valid loss 0.2558 acc 0.9189
+valid loss 0.2230 acc 0.9291
+valid loss 0.2296 acc 0.9245
+valid loss 0.2220 acc 0.9296
+valid loss 0.2308 acc 0.9265
+valid loss 0.2413 acc 0.9198
+valid loss 0.2284 acc 0.9268
+valid loss 0.2060 acc 0.9356
+valid loss 0.2250 acc 0.9298
+valid loss 0.2196 acc 0.9325
+valid loss 0.2633 acc 0.9165
+valid loss 0.2612 acc 0.9153
+valid loss 0.2404 acc 0.9234
+03/29 10:20:43 AM arch_epoch 084 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9250 
+03/29 10:20:43 AM ppo_epoch 000 loss -0.0191 
+03/29 10:20:44 AM ppo_epoch 001 loss -0.0191 
+03/29 10:20:46 AM ppo_epoch 002 loss -0.0191 
+03/29 10:20:47 AM ppo_epoch 003 loss -0.0191 
+03/29 10:20:48 AM ppo_epoch 004 loss -0.0191 
+03/29 10:20:49 AM ppo_epoch 005 loss -0.0191 
+03/29 10:20:50 AM ppo_epoch 006 loss -0.0192 
+03/29 10:20:51 AM ppo_epoch 007 loss -0.0192 
+03/29 10:20:52 AM ppo_epoch 008 loss -0.0192 
+03/29 10:20:54 AM ppo_epoch 009 loss -0.0192 
+valid loss 0.2260 acc 0.9306
+valid loss 0.2249 acc 0.9297
+valid loss 0.2409 acc 0.9221
+valid loss 0.2243 acc 0.9302
+valid loss 0.2307 acc 0.9277
+valid loss 0.2234 acc 0.9306
+valid loss 0.2295 acc 0.9263
+valid loss 0.2380 acc 0.9267
+valid loss 0.2284 acc 0.9284
+valid loss 0.2527 acc 0.9154
+valid loss 0.2693 acc 0.9165
+valid loss 0.2518 acc 0.9190
+valid loss 0.2402 acc 0.9226
+valid loss 0.2316 acc 0.9288
+valid loss 0.2322 acc 0.9253
+valid loss 0.2469 acc 0.9202
+valid loss 0.2084 acc 0.9363
+valid loss 0.2461 acc 0.9201
+valid loss 0.2679 acc 0.9187
+valid loss 0.2370 acc 0.9244
+03/29 10:32:06 AM arch_epoch 085 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9247 
+03/29 10:32:06 AM ppo_epoch 000 loss -0.0128 
+03/29 10:32:07 AM ppo_epoch 001 loss -0.0128 
+03/29 10:32:09 AM ppo_epoch 002 loss -0.0128 
+03/29 10:32:10 AM ppo_epoch 003 loss -0.0129 
+03/29 10:32:11 AM ppo_epoch 004 loss -0.0129 
+03/29 10:32:12 AM ppo_epoch 005 loss -0.0130 
+03/29 10:32:13 AM ppo_epoch 006 loss -0.0130 
+03/29 10:32:14 AM ppo_epoch 007 loss -0.0131 
+03/29 10:32:15 AM ppo_epoch 008 loss -0.0132 
+03/29 10:32:16 AM ppo_epoch 009 loss -0.0132 
+valid loss 0.2633 acc 0.9211
+valid loss 0.2950 acc 0.9065
+valid loss 0.2369 acc 0.9236
+valid loss 0.2471 acc 0.9195
+valid loss 0.2344 acc 0.9259
+valid loss 0.2401 acc 0.9246
+valid loss 0.2157 acc 0.9335
+valid loss 0.2159 acc 0.9316
+valid loss 0.2318 acc 0.9301
+valid loss 0.2365 acc 0.9244
+valid loss 0.2438 acc 0.9233
+valid loss 0.2149 acc 0.9349
+valid loss 0.2366 acc 0.9275
+valid loss 0.2200 acc 0.9355
+valid loss 0.2354 acc 0.9288
+valid loss 0.2497 acc 0.9175
+valid loss 0.2277 acc 0.9262
+valid loss 0.2209 acc 0.9307
+valid loss 0.2268 acc 0.9286
+valid loss 0.2256 acc 0.9314
+03/29 10:43:53 AM arch_epoch 086 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9262 
+03/29 10:43:54 AM ppo_epoch 000 loss -0.0020 
+03/29 10:43:55 AM ppo_epoch 001 loss -0.0020 
+03/29 10:43:56 AM ppo_epoch 002 loss -0.0021 
+03/29 10:43:57 AM ppo_epoch 003 loss -0.0022 
+03/29 10:43:59 AM ppo_epoch 004 loss -0.0022 
+03/29 10:44:00 AM ppo_epoch 005 loss -0.0023 
+03/29 10:44:01 AM ppo_epoch 006 loss -0.0024 
+03/29 10:44:02 AM ppo_epoch 007 loss -0.0025 
+03/29 10:44:03 AM ppo_epoch 008 loss -0.0026 
+03/29 10:44:05 AM ppo_epoch 009 loss -0.0026 
+valid loss 0.2380 acc 0.9202
+valid loss 0.2494 acc 0.9251
+valid loss 0.2320 acc 0.9290
+valid loss 0.2444 acc 0.9237
+valid loss 0.2280 acc 0.9313
+valid loss 0.2398 acc 0.9246
+valid loss 0.2415 acc 0.9224
+valid loss 0.2433 acc 0.9253
+valid loss 0.2107 acc 0.9341
+valid loss 0.2150 acc 0.9335
+valid loss 0.2319 acc 0.9276
+valid loss 0.2354 acc 0.9283
+valid loss 0.2205 acc 0.9304
+valid loss 0.2296 acc 0.9276
+valid loss 0.2175 acc 0.9294
+valid loss 0.2304 acc 0.9257
+valid loss 0.2102 acc 0.9279
+valid loss 0.2910 acc 0.9089
+valid loss 0.2277 acc 0.9269
+valid loss 0.2320 acc 0.9251
+03/29 10:55:13 AM arch_epoch 087 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9261 
+03/29 10:55:14 AM ppo_epoch 000 loss -0.0076 
+03/29 10:55:15 AM ppo_epoch 001 loss -0.0076 
+03/29 10:55:16 AM ppo_epoch 002 loss -0.0076 
+03/29 10:55:17 AM ppo_epoch 003 loss -0.0076 
+03/29 10:55:18 AM ppo_epoch 004 loss -0.0076 
+03/29 10:55:19 AM ppo_epoch 005 loss -0.0076 
+03/29 10:55:20 AM ppo_epoch 006 loss -0.0075 
+03/29 10:55:21 AM ppo_epoch 007 loss -0.0075 
+03/29 10:55:23 AM ppo_epoch 008 loss -0.0075 
+03/29 10:55:24 AM ppo_epoch 009 loss -0.0076 
+valid loss 0.2627 acc 0.9139
+valid loss 0.2299 acc 0.9235
+valid loss 0.2154 acc 0.9344
+valid loss 0.2434 acc 0.9242
+valid loss 0.2550 acc 0.9236
+valid loss 0.2306 acc 0.9257
+valid loss 0.2408 acc 0.9254
+valid loss 0.2327 acc 0.9246
+valid loss 0.2361 acc 0.9255
+valid loss 0.2869 acc 0.9118
+valid loss 0.2625 acc 0.9194
+valid loss 0.2312 acc 0.9291
+valid loss 0.2910 acc 0.9035
+valid loss 0.2474 acc 0.9229
+valid loss 0.2349 acc 0.9228
+valid loss 0.2069 acc 0.9367
+valid loss 0.2365 acc 0.9239
+valid loss 0.2218 acc 0.9296
+valid loss 0.2353 acc 0.9285
+valid loss 0.2508 acc 0.9186
+03/29 11:06:16 AM arch_epoch 088 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9245 
+03/29 11:06:17 AM ppo_epoch 000 loss 0.0441 
+03/29 11:06:18 AM ppo_epoch 001 loss 0.0441 
+03/29 11:06:19 AM ppo_epoch 002 loss 0.0441 
+03/29 11:06:20 AM ppo_epoch 003 loss 0.0440 
+03/29 11:06:21 AM ppo_epoch 004 loss 0.0440 
+03/29 11:06:22 AM ppo_epoch 005 loss 0.0440 
+03/29 11:06:23 AM ppo_epoch 006 loss 0.0439 
+03/29 11:06:24 AM ppo_epoch 007 loss 0.0439 
+03/29 11:06:25 AM ppo_epoch 008 loss 0.0438 
+03/29 11:06:25 AM ppo_epoch 009 loss 0.0438 
+valid loss 0.2726 acc 0.9112
+valid loss 0.2672 acc 0.9139
+valid loss 0.2207 acc 0.9330
+valid loss 0.2327 acc 0.9311
+valid loss 0.2107 acc 0.9314
+valid loss 0.3077 acc 0.8998
+valid loss 0.2624 acc 0.9174
+valid loss 0.2247 acc 0.9300
+valid loss 0.2275 acc 0.9313
+valid loss 0.2563 acc 0.9161
+valid loss 0.2557 acc 0.9209
+valid loss 0.2227 acc 0.9257
+valid loss 0.2257 acc 0.9283
+valid loss 0.2224 acc 0.9318
+valid loss 0.2515 acc 0.9210
+valid loss 0.2448 acc 0.9192
+valid loss 0.2187 acc 0.9297
+valid loss 0.2646 acc 0.9163
+valid loss 0.2173 acc 0.9327
+valid loss 0.2383 acc 0.9256
+03/29 11:17:07 AM arch_epoch 089 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9241 
+03/29 11:17:08 AM ppo_epoch 000 loss 0.0312 
+03/29 11:17:09 AM ppo_epoch 001 loss 0.0311 
+03/29 11:17:10 AM ppo_epoch 002 loss 0.0310 
+03/29 11:17:11 AM ppo_epoch 003 loss 0.0309 
+03/29 11:17:12 AM ppo_epoch 004 loss 0.0307 
+03/29 11:17:13 AM ppo_epoch 005 loss 0.0306 
+03/29 11:17:14 AM ppo_epoch 006 loss 0.0305 
+03/29 11:17:15 AM ppo_epoch 007 loss 0.0304 
+03/29 11:17:17 AM ppo_epoch 008 loss 0.0303 
+03/29 11:17:18 AM ppo_epoch 009 loss 0.0302 
+valid loss 0.2322 acc 0.9248
+valid loss 0.2203 acc 0.9309
+valid loss 0.2837 acc 0.9114
+valid loss 0.2274 acc 0.9330
+valid loss 0.2332 acc 0.9277
+valid loss 0.2124 acc 0.9320
+valid loss 0.2206 acc 0.9305
+valid loss 0.2250 acc 0.9305
+valid loss 0.2345 acc 0.9258
+valid loss 0.2673 acc 0.9158
+valid loss 0.2373 acc 0.9255
+valid loss 0.2563 acc 0.9198
+valid loss 0.2544 acc 0.9185
+valid loss 0.2226 acc 0.9329
+valid loss 0.2335 acc 0.9295
+valid loss 0.2439 acc 0.9217
+valid loss 0.2383 acc 0.9231
+valid loss 0.2440 acc 0.9245
+valid loss 0.2259 acc 0.9268
+valid loss 0.2340 acc 0.9284
+03/29 11:28:09 AM arch_epoch 090 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9383 baseline 0.9250 
+03/29 11:28:10 AM ppo_epoch 000 loss -0.0242 
+03/29 11:28:11 AM ppo_epoch 001 loss -0.0242 
+03/29 11:28:12 AM ppo_epoch 002 loss -0.0242 
+03/29 11:28:13 AM ppo_epoch 003 loss -0.0243 
+03/29 11:28:14 AM ppo_epoch 004 loss -0.0243 
+03/29 11:28:15 AM ppo_epoch 005 loss -0.0244 
+03/29 11:28:16 AM ppo_epoch 006 loss -0.0244 
+03/29 11:28:17 AM ppo_epoch 007 loss -0.0245 
+03/29 11:28:18 AM ppo_epoch 008 loss -0.0246 
+03/29 11:28:20 AM ppo_epoch 009 loss -0.0246 
+valid loss 0.2491 acc 0.9195
+valid loss 0.2597 acc 0.9128
+valid loss 0.2323 acc 0.9285
+valid loss 0.2568 acc 0.9189
+valid loss 0.2336 acc 0.9274
+valid loss 0.1998 acc 0.9379
+valid loss 0.2331 acc 0.9314
+valid loss 0.2400 acc 0.9259
+valid loss 0.2368 acc 0.9246
+valid loss 0.2348 acc 0.9262
+valid loss 0.2434 acc 0.9202
+valid loss 0.2464 acc 0.9189
+valid loss 0.2245 acc 0.9287
+valid loss 0.2718 acc 0.9122
+valid loss 0.2218 acc 0.9271
+valid loss 0.2332 acc 0.9286
+valid loss 0.2349 acc 0.9270
+valid loss 0.2339 acc 0.9271
+valid loss 0.2481 acc 0.9212
+valid loss 0.2281 acc 0.9299
+03/29 11:38:59 AM arch_epoch 091 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9250 
+03/29 11:39:00 AM ppo_epoch 000 loss 0.0109 
+03/29 11:39:01 AM ppo_epoch 001 loss 0.0109 
+03/29 11:39:02 AM ppo_epoch 002 loss 0.0109 
+03/29 11:39:03 AM ppo_epoch 003 loss 0.0109 
+03/29 11:39:04 AM ppo_epoch 004 loss 0.0109 
+03/29 11:39:06 AM ppo_epoch 005 loss 0.0108 
+03/29 11:39:07 AM ppo_epoch 006 loss 0.0108 
+03/29 11:39:08 AM ppo_epoch 007 loss 0.0107 
+03/29 11:39:10 AM ppo_epoch 008 loss 0.0107 
+03/29 11:39:11 AM ppo_epoch 009 loss 0.0106 
+valid loss 0.2652 acc 0.9108
+valid loss 0.2225 acc 0.9298
+valid loss 0.2164 acc 0.9339
+valid loss 0.2383 acc 0.9260
+valid loss 0.2360 acc 0.9239
+valid loss 0.2382 acc 0.9271
+valid loss 0.2253 acc 0.9301
+valid loss 0.2400 acc 0.9239
+valid loss 0.3003 acc 0.9015
+valid loss 0.2257 acc 0.9277
+valid loss 0.2452 acc 0.9244
+valid loss 0.2560 acc 0.9173
+valid loss 0.2164 acc 0.9315
+valid loss 0.2006 acc 0.9367
+valid loss 0.3519 acc 0.8874
+valid loss 0.2184 acc 0.9336
+valid loss 0.2228 acc 0.9325
+valid loss 0.2078 acc 0.9370
+valid loss 0.2606 acc 0.9198
+valid loss 0.2481 acc 0.9219
+03/29 11:50:43 AM arch_epoch 092 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9243 
+03/29 11:50:44 AM ppo_epoch 000 loss 0.0186 
+03/29 11:50:45 AM ppo_epoch 001 loss 0.0185 
+03/29 11:50:46 AM ppo_epoch 002 loss 0.0184 
+03/29 11:50:47 AM ppo_epoch 003 loss 0.0182 
+03/29 11:50:49 AM ppo_epoch 004 loss 0.0180 
+03/29 11:50:50 AM ppo_epoch 005 loss 0.0178 
+03/29 11:50:51 AM ppo_epoch 006 loss 0.0176 
+03/29 11:50:52 AM ppo_epoch 007 loss 0.0176 
+03/29 11:50:53 AM ppo_epoch 008 loss 0.0176 
+03/29 11:50:54 AM ppo_epoch 009 loss 0.0176 
+valid loss 0.2237 acc 0.9302
+valid loss 0.2543 acc 0.9181
+valid loss 0.2213 acc 0.9302
+valid loss 0.2745 acc 0.9181
+valid loss 0.2451 acc 0.9242
+valid loss 0.2776 acc 0.9105
+valid loss 0.2193 acc 0.9273
+valid loss 0.2558 acc 0.9148
+valid loss 0.2518 acc 0.9233
+valid loss 0.2332 acc 0.9325
+valid loss 0.2357 acc 0.9274
+valid loss 0.2481 acc 0.9217
+valid loss 0.2360 acc 0.9233
+valid loss 0.2410 acc 0.9224
+valid loss 0.2550 acc 0.9203
+valid loss 0.2285 acc 0.9254
+valid loss 0.2149 acc 0.9316
+valid loss 0.2265 acc 0.9301
+valid loss 0.2508 acc 0.9176
+valid loss 0.2323 acc 0.9285
+03/29 12:01:41 PM arch_epoch 093 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9242 
+03/29 12:01:41 PM ppo_epoch 000 loss 0.0143 
+03/29 12:01:43 PM ppo_epoch 001 loss 0.0143 
+03/29 12:01:44 PM ppo_epoch 002 loss 0.0143 
+03/29 12:01:45 PM ppo_epoch 003 loss 0.0143 
+03/29 12:01:47 PM ppo_epoch 004 loss 0.0142 
+03/29 12:01:48 PM ppo_epoch 005 loss 0.0141 
+03/29 12:01:49 PM ppo_epoch 006 loss 0.0141 
+03/29 12:01:50 PM ppo_epoch 007 loss 0.0140 
+03/29 12:01:51 PM ppo_epoch 008 loss 0.0139 
+03/29 12:01:53 PM ppo_epoch 009 loss 0.0138 
+valid loss 0.2215 acc 0.9320
+valid loss 0.2358 acc 0.9265
+valid loss 0.2416 acc 0.9222
+valid loss 0.2370 acc 0.9215
+valid loss 0.2400 acc 0.9270
+valid loss 0.2301 acc 0.9256
+valid loss 0.2065 acc 0.9324
+valid loss 0.2474 acc 0.9205
+valid loss 0.2098 acc 0.9356
+valid loss 0.2248 acc 0.9292
+valid loss 0.2424 acc 0.9214
+valid loss 0.2273 acc 0.9294
+valid loss 0.2145 acc 0.9355
+valid loss 0.2162 acc 0.9322
+valid loss 0.2125 acc 0.9314
+valid loss 0.2537 acc 0.9220
+valid loss 0.2142 acc 0.9313
+valid loss 0.2350 acc 0.9243
+valid loss 0.2329 acc 0.9263
+valid loss 0.3058 acc 0.9000
+03/29 12:13:00 PM arch_epoch 094 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9252 
+03/29 12:13:01 PM ppo_epoch 000 loss -0.0467 
+03/29 12:13:02 PM ppo_epoch 001 loss -0.0467 
+03/29 12:13:03 PM ppo_epoch 002 loss -0.0467 
+03/29 12:13:04 PM ppo_epoch 003 loss -0.0467 
+03/29 12:13:06 PM ppo_epoch 004 loss -0.0467 
+03/29 12:13:07 PM ppo_epoch 005 loss -0.0467 
+03/29 12:13:08 PM ppo_epoch 006 loss -0.0468 
+03/29 12:13:09 PM ppo_epoch 007 loss -0.0468 
+03/29 12:13:10 PM ppo_epoch 008 loss -0.0469 
+03/29 12:13:11 PM ppo_epoch 009 loss -0.0469 
+valid loss 0.2452 acc 0.9221
+valid loss 0.2250 acc 0.9308
+valid loss 0.2274 acc 0.9270
+valid loss 0.2249 acc 0.9284
+valid loss 0.2293 acc 0.9292
+valid loss 0.2427 acc 0.9236
+valid loss 0.2133 acc 0.9361
+valid loss 0.2179 acc 0.9330
+valid loss 0.2353 acc 0.9266
+valid loss 0.2226 acc 0.9296
+valid loss 0.2671 acc 0.9169
+valid loss 0.2018 acc 0.9377
+valid loss 0.2668 acc 0.9124
+valid loss 0.2314 acc 0.9278
+valid loss 0.2095 acc 0.9331
+valid loss 0.2297 acc 0.9300
+valid loss 0.2375 acc 0.9250
+valid loss 0.2721 acc 0.9176
+valid loss 0.2269 acc 0.9323
+valid loss 0.2425 acc 0.9236
+03/29 12:24:45 PM arch_epoch 095 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9263 
+03/29 12:24:46 PM ppo_epoch 000 loss -0.0348 
+03/29 12:24:47 PM ppo_epoch 001 loss -0.0349 
+03/29 12:24:48 PM ppo_epoch 002 loss -0.0349 
+03/29 12:24:49 PM ppo_epoch 003 loss -0.0349 
+03/29 12:24:50 PM ppo_epoch 004 loss -0.0349 
+03/29 12:24:52 PM ppo_epoch 005 loss -0.0349 
+03/29 12:24:53 PM ppo_epoch 006 loss -0.0350 
+03/29 12:24:54 PM ppo_epoch 007 loss -0.0350 
+03/29 12:24:55 PM ppo_epoch 008 loss -0.0351 
+03/29 12:24:56 PM ppo_epoch 009 loss -0.0351 
+valid loss 0.2152 acc 0.9371
+valid loss 0.2618 acc 0.9159
+valid loss 0.2355 acc 0.9257
+valid loss 0.2281 acc 0.9275
+valid loss 0.2313 acc 0.9258
+valid loss 0.2393 acc 0.9242
+valid loss 0.2145 acc 0.9318
+valid loss 0.2330 acc 0.9250
+valid loss 0.2335 acc 0.9275
+valid loss 0.2355 acc 0.9258
+valid loss 0.2267 acc 0.9282
+valid loss 0.2098 acc 0.9355
+valid loss 0.2236 acc 0.9312
+valid loss 0.2423 acc 0.9240
+valid loss 0.2365 acc 0.9286
+valid loss 0.2557 acc 0.9169
+valid loss 0.2283 acc 0.9279
+valid loss 0.2148 acc 0.9344
+valid loss 0.2476 acc 0.9195
+valid loss 0.2253 acc 0.9303
+03/29 12:35:54 PM arch_epoch 096 top1_acc 0.9427 top5_avg_acc 0.9403 top20_avg_acc 0.9384 baseline 0.9268 
+03/29 12:35:55 PM ppo_epoch 000 loss -0.0124 
+03/29 12:35:57 PM ppo_epoch 001 loss -0.0124 
+03/29 12:35:58 PM ppo_epoch 002 loss -0.0124 
+03/29 12:35:59 PM ppo_epoch 003 loss -0.0125 
+03/29 12:36:00 PM ppo_epoch 004 loss -0.0125 
+03/29 12:36:01 PM ppo_epoch 005 loss -0.0125 
+03/29 12:36:02 PM ppo_epoch 006 loss -0.0126 
+03/29 12:36:03 PM ppo_epoch 007 loss -0.0126 
+03/29 12:36:04 PM ppo_epoch 008 loss -0.0126 
+03/29 12:36:06 PM ppo_epoch 009 loss -0.0127 
+valid loss 0.2226 acc 0.9283
+valid loss 0.2261 acc 0.9293
+valid loss 0.2170 acc 0.9318
+valid loss 0.2240 acc 0.9283
+valid loss 0.2249 acc 0.9276
+valid loss 0.2156 acc 0.9312
+valid loss 0.2649 acc 0.9125
+valid loss 0.2211 acc 0.9320
+valid loss 0.2530 acc 0.9188
+valid loss 0.2501 acc 0.9188
+valid loss 0.2020 acc 0.9375
+valid loss 0.2461 acc 0.9172
+valid loss 0.2520 acc 0.9226
+valid loss 0.2155 acc 0.9314
+valid loss 0.3516 acc 0.8852
+valid loss 0.2362 acc 0.9276
+valid loss 0.2341 acc 0.9282
+valid loss 0.1920 acc 0.9426
+valid loss 0.2180 acc 0.9334
+valid loss 0.2319 acc 0.9237
+03/29 12:47:12 PM arch_epoch 097 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9387 baseline 0.9259 
+03/29 12:47:13 PM ppo_epoch 000 loss 0.0184 
+03/29 12:47:14 PM ppo_epoch 001 loss 0.0184 
+03/29 12:47:15 PM ppo_epoch 002 loss 0.0183 
+03/29 12:47:16 PM ppo_epoch 003 loss 0.0182 
+03/29 12:47:18 PM ppo_epoch 004 loss 0.0182 
+03/29 12:47:19 PM ppo_epoch 005 loss 0.0181 
+03/29 12:47:20 PM ppo_epoch 006 loss 0.0180 
+03/29 12:47:21 PM ppo_epoch 007 loss 0.0179 
+03/29 12:47:22 PM ppo_epoch 008 loss 0.0179 
+03/29 12:47:23 PM ppo_epoch 009 loss 0.0178 
+valid loss 0.2171 acc 0.9291
+valid loss 0.2222 acc 0.9323
+valid loss 0.2345 acc 0.9243
+valid loss 0.2182 acc 0.9308
+valid loss 0.2248 acc 0.9289
+valid loss 0.2179 acc 0.9302
+valid loss 0.2381 acc 0.9276
+valid loss 0.2472 acc 0.9220
+valid loss 0.2269 acc 0.9273
+valid loss 0.2450 acc 0.9222
+valid loss 0.2288 acc 0.9268
+valid loss 0.2752 acc 0.9118
+valid loss 0.2228 acc 0.9314
+valid loss 0.2272 acc 0.9306
+valid loss 0.2213 acc 0.9312
+valid loss 0.2364 acc 0.9237
+valid loss 0.2154 acc 0.9352
+valid loss 0.2411 acc 0.9221
+valid loss 0.2471 acc 0.9246
+valid loss 0.2461 acc 0.9223
+03/29 12:58:26 PM arch_epoch 098 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9387 baseline 0.9262 
+03/29 12:58:26 PM ppo_epoch 000 loss -0.0202 
+03/29 12:58:28 PM ppo_epoch 001 loss -0.0202 
+03/29 12:58:29 PM ppo_epoch 002 loss -0.0202 
+03/29 12:58:30 PM ppo_epoch 003 loss -0.0202 
+03/29 12:58:31 PM ppo_epoch 004 loss -0.0202 
+03/29 12:58:33 PM ppo_epoch 005 loss -0.0202 
+03/29 12:58:34 PM ppo_epoch 006 loss -0.0203 
+03/29 12:58:35 PM ppo_epoch 007 loss -0.0203 
+03/29 12:58:37 PM ppo_epoch 008 loss -0.0203 
+03/29 12:58:38 PM ppo_epoch 009 loss -0.0204 
+valid loss 0.2208 acc 0.9302
+valid loss 0.2663 acc 0.9107
+valid loss 0.2260 acc 0.9312
+valid loss 0.2725 acc 0.9129
+valid loss 0.2400 acc 0.9237
+valid loss 0.2278 acc 0.9228
+valid loss 0.2127 acc 0.9341
+valid loss 0.2180 acc 0.9354
+valid loss 0.2349 acc 0.9242
+valid loss 0.2397 acc 0.9252
+valid loss 0.2534 acc 0.9197
+valid loss 0.2582 acc 0.9184
+valid loss 0.2278 acc 0.9272
+valid loss 0.2405 acc 0.9265
+valid loss 0.2507 acc 0.9245
+valid loss 0.2455 acc 0.9250
+valid loss 0.2259 acc 0.9275
+valid loss 0.2492 acc 0.9194
+valid loss 0.3066 acc 0.9038
+valid loss 0.2255 acc 0.9302
+03/29 01:09:55 PM arch_epoch 099 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9387 baseline 0.9244 
+03/29 01:09:55 PM ppo_epoch 000 loss 0.0293 
+03/29 01:09:56 PM ppo_epoch 001 loss 0.0293 
+03/29 01:09:58 PM ppo_epoch 002 loss 0.0292 
+03/29 01:09:59 PM ppo_epoch 003 loss 0.0291 
+03/29 01:10:00 PM ppo_epoch 004 loss 0.0290 
+03/29 01:10:01 PM ppo_epoch 005 loss 0.0289 
+03/29 01:10:02 PM ppo_epoch 006 loss 0.0288 
+03/29 01:10:03 PM ppo_epoch 007 loss 0.0287 
+03/29 01:10:05 PM ppo_epoch 008 loss 0.0287 
+03/29 01:10:06 PM ppo_epoch 009 loss 0.0286 
+valid loss 0.2774 acc 0.9105
+valid loss 0.2431 acc 0.9229
+valid loss 0.2764 acc 0.9098
+valid loss 0.2574 acc 0.9188
+valid loss 0.2435 acc 0.9264
+valid loss 0.2233 acc 0.9273
+valid loss 0.2019 acc 0.9386
+valid loss 0.2284 acc 0.9272
+valid loss 0.2491 acc 0.9185
+valid loss 0.2324 acc 0.9266
+valid loss 0.2143 acc 0.9361
+valid loss 0.2369 acc 0.9243
+valid loss 0.2380 acc 0.9233
+valid loss 0.2291 acc 0.9274
+valid loss 0.2035 acc 0.9360
+valid loss 0.2481 acc 0.9232
+valid loss 0.2282 acc 0.9289
+valid loss 0.2460 acc 0.9237
+valid loss 0.2170 acc 0.9300
+valid loss 0.2242 acc 0.9276
+03/29 01:20:53 PM arch_epoch 100 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9388 baseline 0.9255 
+03/29 01:20:53 PM ppo_epoch 000 loss 0.0076 
+03/29 01:20:55 PM ppo_epoch 001 loss 0.0076 
+03/29 01:20:56 PM ppo_epoch 002 loss 0.0076 
+03/29 01:20:57 PM ppo_epoch 003 loss 0.0076 
+03/29 01:20:58 PM ppo_epoch 004 loss 0.0076 
+03/29 01:20:59 PM ppo_epoch 005 loss 0.0076 
+03/29 01:21:01 PM ppo_epoch 006 loss 0.0075 
+03/29 01:21:02 PM ppo_epoch 007 loss 0.0075 
+03/29 01:21:03 PM ppo_epoch 008 loss 0.0075 
+03/29 01:21:05 PM ppo_epoch 009 loss 0.0075 
+valid loss 0.2150 acc 0.9334
+valid loss 0.2232 acc 0.9324
+valid loss 0.2278 acc 0.9285
+valid loss 0.2231 acc 0.9274
+valid loss 0.2033 acc 0.9370
+valid loss 0.2308 acc 0.9268
+valid loss 0.2331 acc 0.9272
+valid loss 0.2313 acc 0.9314
+valid loss 0.2158 acc 0.9339
+valid loss 0.2310 acc 0.9286
+valid loss 0.2269 acc 0.9262
+valid loss 0.2179 acc 0.9324
+valid loss 0.2394 acc 0.9205
+valid loss 0.2010 acc 0.9362
+valid loss 0.2255 acc 0.9297
+valid loss 0.2246 acc 0.9283
+valid loss 0.2127 acc 0.9328
+valid loss 0.2377 acc 0.9266
+valid loss 0.2407 acc 0.9209
+valid loss 0.2124 acc 0.9343
+03/29 01:31:54 PM arch_epoch 101 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9388 baseline 0.9281 
+03/29 01:31:55 PM ppo_epoch 000 loss -0.0664 
+03/29 01:31:56 PM ppo_epoch 001 loss -0.0664 
+03/29 01:31:57 PM ppo_epoch 002 loss -0.0664 
+03/29 01:31:59 PM ppo_epoch 003 loss -0.0664 
+03/29 01:32:00 PM ppo_epoch 004 loss -0.0665 
+03/29 01:32:01 PM ppo_epoch 005 loss -0.0665 
+03/29 01:32:02 PM ppo_epoch 006 loss -0.0665 
+03/29 01:32:03 PM ppo_epoch 007 loss -0.0665 
+03/29 01:32:05 PM ppo_epoch 008 loss -0.0665 
+03/29 01:32:06 PM ppo_epoch 009 loss -0.0666 
+valid loss 0.2626 acc 0.9134
+valid loss 0.2033 acc 0.9366
+valid loss 0.2431 acc 0.9202
+valid loss 0.2535 acc 0.9204
+valid loss 0.2012 acc 0.9339
+valid loss 0.2800 acc 0.9094
+valid loss 0.2256 acc 0.9296
+valid loss 0.2488 acc 0.9251
+valid loss 0.2218 acc 0.9270
+valid loss 0.2873 acc 0.9063
+valid loss 0.2065 acc 0.9371
+valid loss 0.2103 acc 0.9322
+valid loss 0.2423 acc 0.9231
+valid loss 0.2454 acc 0.9170
+valid loss 0.2169 acc 0.9316
+valid loss 0.2302 acc 0.9252
+valid loss 0.2200 acc 0.9286
+valid loss 0.2251 acc 0.9245
+valid loss 0.2156 acc 0.9331
+valid loss 0.2869 acc 0.9061
+03/29 01:43:17 PM arch_epoch 102 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9388 baseline 0.9255 
+03/29 01:43:18 PM ppo_epoch 000 loss 0.0571 
+03/29 01:43:19 PM ppo_epoch 001 loss 0.0571 
+03/29 01:43:20 PM ppo_epoch 002 loss 0.0570 
+03/29 01:43:21 PM ppo_epoch 003 loss 0.0569 
+03/29 01:43:21 PM ppo_epoch 004 loss 0.0567 
+03/29 01:43:22 PM ppo_epoch 005 loss 0.0565 
+03/29 01:43:23 PM ppo_epoch 006 loss 0.0563 
+03/29 01:43:24 PM ppo_epoch 007 loss 0.0562 
+03/29 01:43:25 PM ppo_epoch 008 loss 0.0561 
+03/29 01:43:26 PM ppo_epoch 009 loss 0.0561 
+valid loss 0.2167 acc 0.9307
+valid loss 0.2533 acc 0.9194
+valid loss 0.2335 acc 0.9265
+valid loss 0.2544 acc 0.9215
+valid loss 0.2370 acc 0.9294
+valid loss 0.2270 acc 0.9318
+valid loss 0.2356 acc 0.9219
+valid loss 0.2466 acc 0.9226
+valid loss 0.2118 acc 0.9369
+valid loss 0.2458 acc 0.9212
+valid loss 0.2271 acc 0.9270
+valid loss 0.2173 acc 0.9348
+valid loss 0.2558 acc 0.9156
+valid loss 0.2050 acc 0.9337
+valid loss 0.2288 acc 0.9273
+valid loss 0.2097 acc 0.9323
+valid loss 0.2619 acc 0.9164
+valid loss 0.2478 acc 0.9198
+valid loss 0.2457 acc 0.9217
+valid loss 0.2411 acc 0.9248
+03/29 01:54:46 PM arch_epoch 103 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9388 baseline 0.9255 
+03/29 01:54:46 PM ppo_epoch 000 loss -0.0125 
+03/29 01:54:47 PM ppo_epoch 001 loss -0.0125 
+03/29 01:54:49 PM ppo_epoch 002 loss -0.0125 
+03/29 01:54:50 PM ppo_epoch 003 loss -0.0124 
+03/29 01:54:51 PM ppo_epoch 004 loss -0.0124 
+03/29 01:54:52 PM ppo_epoch 005 loss -0.0125 
+03/29 01:54:53 PM ppo_epoch 006 loss -0.0125 
+03/29 01:54:54 PM ppo_epoch 007 loss -0.0125 
+03/29 01:54:55 PM ppo_epoch 008 loss -0.0126 
+03/29 01:54:56 PM ppo_epoch 009 loss -0.0126 
+valid loss 0.2249 acc 0.9306
+valid loss 0.2298 acc 0.9266
+valid loss 0.2407 acc 0.9238
+valid loss 0.2429 acc 0.9206
+valid loss 0.2292 acc 0.9308
+valid loss 0.2232 acc 0.9321
+valid loss 0.2340 acc 0.9229
+valid loss 0.2222 acc 0.9284
+valid loss 0.2357 acc 0.9255
+valid loss 0.2469 acc 0.9210
+valid loss 0.2473 acc 0.9239
+valid loss 0.2150 acc 0.9328
+valid loss 0.2596 acc 0.9168
+valid loss 0.2593 acc 0.9194
+valid loss 0.2604 acc 0.9164
+valid loss 0.2386 acc 0.9232
+valid loss 0.2395 acc 0.9259
+valid loss 0.3029 acc 0.9000
+valid loss 0.2535 acc 0.9172
+valid loss 0.2347 acc 0.9241
+03/29 02:06:28 PM arch_epoch 104 top1_acc 0.9427 top5_avg_acc 0.9410 top20_avg_acc 0.9388 baseline 0.9232 
+03/29 02:06:29 PM ppo_epoch 000 loss 0.0056 
+03/29 02:06:30 PM ppo_epoch 001 loss 0.0055 
+03/29 02:06:31 PM ppo_epoch 002 loss 0.0054 
+03/29 02:06:32 PM ppo_epoch 003 loss 0.0054 
+03/29 02:06:33 PM ppo_epoch 004 loss 0.0053 
+03/29 02:06:35 PM ppo_epoch 005 loss 0.0052 
+03/29 02:06:36 PM ppo_epoch 006 loss 0.0052 
+03/29 02:06:37 PM ppo_epoch 007 loss 0.0051 
+03/29 02:06:38 PM ppo_epoch 008 loss 0.0051 
+03/29 02:06:39 PM ppo_epoch 009 loss 0.0051 
+valid loss 0.2346 acc 0.9251
+valid loss 0.2044 acc 0.9404
+valid loss 0.2276 acc 0.9273
+valid loss 0.2190 acc 0.9302
+valid loss 0.2446 acc 0.9213
+valid loss 0.2369 acc 0.9278
+valid loss 0.2277 acc 0.9312
+valid loss 0.2530 acc 0.9197
+valid loss 0.2148 acc 0.9348
+valid loss 0.2439 acc 0.9258
+valid loss 0.2202 acc 0.9301
+valid loss 0.2227 acc 0.9274
+valid loss 0.2247 acc 0.9282
+valid loss 0.2472 acc 0.9215
+valid loss 0.2372 acc 0.9238
+valid loss 0.2457 acc 0.9238
+valid loss 0.2151 acc 0.9318
+valid loss 0.2523 acc 0.9205
+valid loss 0.2796 acc 0.9082
+valid loss 0.2297 acc 0.9314
+03/29 02:17:24 PM arch_epoch 105 top1_acc 0.9427 top5_avg_acc 0.9412 top20_avg_acc 0.9389 baseline 0.9249 
+03/29 02:17:25 PM ppo_epoch 000 loss -0.0654 
+03/29 02:17:26 PM ppo_epoch 001 loss -0.0654 
+03/29 02:17:27 PM ppo_epoch 002 loss -0.0654 
+03/29 02:17:28 PM ppo_epoch 003 loss -0.0654 
+03/29 02:17:30 PM ppo_epoch 004 loss -0.0655 
+03/29 02:17:31 PM ppo_epoch 005 loss -0.0655 
+03/29 02:17:32 PM ppo_epoch 006 loss -0.0656 
+03/29 02:17:33 PM ppo_epoch 007 loss -0.0656 
+03/29 02:17:34 PM ppo_epoch 008 loss -0.0657 
+03/29 02:17:35 PM ppo_epoch 009 loss -0.0657 

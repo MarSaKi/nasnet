@@ -31,15 +31,13 @@ class RandomSearch(object):
 
         for type in range(2):
             for node in range(steps):
-                actions_index.append(random.choice(nodes))
-                actions_index.append(random.choice(nodes))
+                actions_index.append(random.choice(nodes[:node+2]))
+                actions_index.append(random.choice(nodes[:node+2]))
                 actions_index.append(random.choice(OPS))
                 actions_index.append(random.choice(OPS))
                 actions_index.append(random.choice(combs))
 
         return actions_index
-
-
 
     def multi_solve_environment(self):
         workers_top20 = []
@@ -80,3 +78,5 @@ class RandomSearch(object):
             logging.info(
                 'arch_epoch {:0>3d} top1_acc {:.4f} top5_avg_acc {:.4f} top20_avg_acc {:.4f}'.format(
                     arch_epoch, top1_acc, top5_avg_acc, top20_avg_acc))
+            for i in range(5):
+                print(workers_top20[i].genotype)

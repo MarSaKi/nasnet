@@ -1,52 +1,42 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def valid_compare(path1, path2, outname):
-    f1 = open(path1, 'r')
-    f2 = open(path2, 'r')
-    acc1 = []
-    acc2 = []
-
-    for line in f1:
-        if 'arch_epoch' in line and 'acc' in line:
-            print(line)
-            line = line.rstrip('\n').split(' ')
-            acc_idx = line.index('acc') + 1
-            acc = float(line[acc_idx])
-            acc1.append(acc)
-
-    for line in f2:
-        if 'arch_epoch' in line and 'acc' in line:
-            line = line.rstrip('\n').split(' ')
-            acc_idx = line.index('acc') + 1
-            acc = float(line[acc_idx])
-            acc2.append(acc)
-
-    epochs = np.linspace(0, 99, 100)
-    plt.figure()
-    plt.plot(epochs, acc1, label = 'batch size 128', color = 'cyan')
-    plt.plot(epochs, acc2, label = 'batch size 1024', color = 'orange')
-    plt.legend(loc = 'best')
-    plt.savefig('fig/{}'.format(outname))
-
-def plot_line(path,out):
+def get_acc(path):
     f = open(path, 'r')
-    acc = []
+    top1_acc = []
+    top5_acc = []
+    top20_acc = []
     for line in f:
-        if 'arch_epoch' in line and 'acc' in line:
+        if 'arch_epoch' in line and 'top1_acc' in line:
             print(line)
             line = line.rstrip('\n').split(' ')
-            acc_idx = line.index('acc') + 1
-            tacc = float(line[acc_idx])
-            acc.append(tacc)
-    epochs = np.linspace(0,len(acc)-1,len(acc))
+            top1_acc.append(float(line[line.index('top1_acc')+1]))
+            top5_acc.append(float(line[line.index('top5_avg_acc') + 1]))
+            top20_acc.append(float(line[line.index('top20_avg_acc') + 1]))
+    return top1_acc[:100], top5_acc[:100], top20_acc[:100]
+
+def draw_acc(RS_path, PG_path, PPO_path, out_path):
+    '''rs_top1, rs_top5, rs_top20 = get_acc(RS_path)
+    pg_top1, pg_top5, pg_top20 = get_acc(PG_path)'''
+    ppo_top1, ppo_top5, ppo_top20 = get_acc(PPO_path)
+    epochs = np.linspace(0, 99, 100)
+
     plt.figure()
-    plt.plot(epochs, acc, label = 'batch size 1024', color = 'orange')
-    plt.legend(loc = 'best')
-    plt.savefig(out)
+    '''plt.plot(epochs, rs_top1, label='RS top1 acc', color='green')
+    plt.plot(epochs, rs_top5, label='RS top5 acc', linestyle='-.', color='green')
+    plt.plot(epochs, rs_top20, label='RS top20 acc', linestyle='--', color='green')
 
+    plt.plot(epochs, pg_top1, label='PG top1 acc', color='blue')
+    plt.plot(epochs, pg_top5, label='PG top5 acc', linestyle='-.', color='blue')
+    plt.plot(epochs, pg_top20, label='PG top20 acc', linestyle='--', color='blue')'''
 
+    plt.plot(epochs, ppo_top1, label='PPO top1 acc', color='red')
+    plt.plot(epochs, ppo_top5, label='PPO top5 acc', linestyle='-.', color='red')
+    plt.plot(epochs, ppo_top20, label='PPO top20 acc', linestyle='--', color='red')
 
-plot_line('log/log.txt', 'fig/tmp.pdf')
+    plt.legend(loc='lower right')
+    plt.xlabel('epoch')
+    plt.ylabel('acc at 5 epochs')
+    plt.savefig(out_path)
 
-#valid_compare('log/log.txt', 'log/dynamic_b.txt', 'dif_batch_size.pdf')
+draw_acc(None, None, 'log/search_PPO.log', 'fig/search.pdf')

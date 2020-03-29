@@ -82,6 +82,8 @@ class PPO(object):
             top20_avg_acc = np.mean([worker.acc for worker in workers_top20])
             logging.info('arch_epoch {:0>3d} top1_acc {:.4f} top5_avg_acc {:.4f} top20_avg_acc {:.4f} baseline {:.4f} '.format(
                 arch_epoch, top1_acc, top5_avg_acc, top20_avg_acc, self.baseline))
+            for i in range(5):
+                print(workers_top20[i].genotype)
 
             for ppo_epoch in range(self.ppo_epochs):
                 loss = 0

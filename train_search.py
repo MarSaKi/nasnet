@@ -27,7 +27,7 @@ parser.add_argument('--model_weight_decay', type=float, default=3e-4)
 parser.add_argument('--model_momentum', type=float, default=0.9)
 parser.add_argument('--init_channel', type=int, default=4)
 #architecture
-parser.add_argument('--arch_epochs', type=int, default=300)
+parser.add_argument('--arch_epochs', type=int, default=100)
 parser.add_argument('--arch_lr', type=float, default=3.5e-4)
 parser.add_argument('--episodes', type=int, default=20)
 parser.add_argument('--entropy_weight', type=float, default=1e-5)
@@ -55,27 +55,30 @@ def main():
 
     logging.info('args = %s', args)
 
-    torch.manual_seed(args.seed)
-    np.random.seed(args.seed)
-    if torch.cuda.is_available():
-        device = torch.device('cuda:{}'.format(str(args.gpu)))
-        cudnn.benchmark = True
-        cudnn.enable = True
-        logging.info('using gpu : {}'.format(args.gpu))
-        torch.cuda.manual_seed(args.seed)
-    else:
-        device = torch.device('cpu')
-        logging.info('using cpu')
+    if args.algorithm == 'PPO' or args.algorithm == 'PG':
+        torch.manual_seed(args.seed)
+        np.random.seed(args.seed)
+        if torch.cuda.is_available():
+            device = torch.device('cuda:{}'.format(str(args.gpu)))
+            cudnn.benchmark = True
+            cudnn.enable = True
+            logging.info('using gpu : {}'.format(args.gpu))
+            torch.cuda.manual_seed(args.seed)
+        else:
+            device = torch.device('cpu')
+            logging.info('using cpu')
 
-    if args.algorithm == 'PPO':
-        ppo = PPO(args, device)
-        ppo.multi_solve_environment()
-    elif args.algorithm == 'PG':
-        pg = PolicyGradient(args, device)
-        pg.multi_solve_environment()
+        if args.algorithm == 'PPO':
+            ppo = PPO(args, device)
+            ppo.multi_solve_environment()
+        elif args.algorithm == 'PG':
+            pg = PolicyGradient(args, device)
+            pg.multi_solve_environment()
+
     else:
         rs = RandomSearch(args)
         rs.multi_solve_environment()
+
 
 if __name__ == '__main__':
     main()
