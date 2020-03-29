@@ -39,4 +39,4 @@ def draw_acc(RS_path, PG_path, PPO_path, out_path):
     plt.ylabel('acc at 5 epochs')
     plt.savefig(out_path)
 
-draw_acc(None, None, 'log/search_PPO.log', 'fig/search.pdf')
+draw_acc(None, None, 'log/train_PPO.log', 'fig/search.pdf')
