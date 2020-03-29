@@ -16,13 +16,14 @@ python train_search.py --cutout --algorithm PG  #use policy gradient
 python train_search.py --cutout --algorithm PPO #use PPO
 ```
 Note the validation performance in this step does not indicate the final performance of the architecture. One must train the obtained genotype/architecture from scratch using full-sized models.
-Also the default setting is train with 20 processes and 3 GPU. If you want to change the processes to 10, you can use:
+Also the default setting is training with 20 processes and 3 GPU. Change the processes to 10:
 ```
 python train_search.py --cutout --episodes 10
 ```
+or modify code in random_search.py, policy_gradient.py and PPO.py .
 
 ## Architecture Evaluation
-Because of the limitation of time and computation source, I didn't train the candidate models from scratch. To evaluate architecture, you can train the candidate models obtained from 'Architecture Search' from scratch.
+Because of the limitation of time and computation source, I didn't train the candidate genotypes/architectures from scratch.
 
 ## Results
 ```
