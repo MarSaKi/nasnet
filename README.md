@@ -30,6 +30,6 @@ Because of the limitation of time and computation resource, I didn't train the c
 python draw.py
 ```
 <p align="center">
-  <img src="fig/search.pdf" alt="search_process" width="48%">
+  <img src="fig/search.png" alt="search_process" width="75%">
 </p>
 We can see RL search is better than random search, also PPO is more stable and faster.
