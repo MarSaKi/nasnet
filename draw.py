@@ -40,4 +40,4 @@ def draw_acc(RS_path, PG_path, PPO_path, out_path):
     plt.ylabel('Accuracy at 5 Epochs')
     plt.savefig(out_path)
 
-draw_acc('log/train_RS.log', 'log/train_PG.log', 'log/train_PPO.log', 'fig/search.pdf')
+draw_acc('log/train_RS.log', 'log/train_PG.log', 'log/train_PPO.log', 'fig/search.png')
