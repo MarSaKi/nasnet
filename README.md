@@ -23,9 +23,13 @@ python train_search.py --cutout --episodes 10
 or modify code in random_search.py, policy_gradient.py and PPO.py .
 
 ## Architecture Evaluation
-Because of the limitation of time and computation source, I didn't train the candidate genotypes/architectures from scratch.
+Because of the limitation of time and computation resource, I didn't train the candidate genotypes/architectures from scratch.
 
 ## Results
 ```
 python draw.py
 ```
+<p align="center">
+  <img src="fig/search.pdf" alt="search_process" width="48%">
+</p>
+We can see RL search is better than random search, also PPO is more stable and faster.
